@@ -19,5 +19,8 @@ describe("Budget", function () {
 
         // id should be defined
         expect(budget.id).toEqual(budgetId);
+
+        expect(Budgets.insert).toHaveBeenCalledWith({name: budgetName, owner: null}, jasmine.any(Function));
+
     });
 });
