@@ -2,7 +2,7 @@ Meteor.startup(function () {
     // code to run on server at startup
     if (Meteor.users.find().count() == 0) {
         var users = [
-            {name: "Normal User", email: "normal@test.com", roles: [], password: "normal22"},
+            {name: "Normal User", email: "normal@test.com", roles: ['normal'], password: "normal22"},
             {name: "Admin User", email: "admin@test.com", roles: ['admin'], password: "admin22"}
         ];
 
