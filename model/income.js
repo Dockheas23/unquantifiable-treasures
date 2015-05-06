@@ -1,38 +1,41 @@
-Budgets = new Meteor.Collection("budget");
+Incomes = new Meteor.Collection("income");
 
-Budgets.allow({
+Incomes.allow({
     insert: function (userId, doc) {
         return (userId && doc.owner === Meteor.userId() &&
         (Roles.userIsInRole(userId, "admin")) || Roles.userIsInRole(userId, "normal"));
     }
 });
 
-Budget = function (name, owner) {
-    this._name = name;
-    this._owner = owner;
+Income = function (budget, date, amount) {
+    this._budget = budget;
+    this._date = date;
+    this._amount = amount;
 };
 
-Budget.prototype = {
+Income.prototype = {
     get id() {
-        // readonly
         return this._id;
     },
-    get owner() {
-        // readonly
-        return this._owner;
+    get amount() {
+        return this._amount;
     },
-    get name() {
-        return this._name;
+    get budget() {
+        return this._budget;
     },
-    set name(value) {
-        this._name = value;
+    get date() {
+        return this._date;
     },
     save: function (callback) {
         // remember the context since in callback it is changed
         var that = this;
-        var doc = {name: this.name, owner: Meteor.userId()};
+        var doc = {
+            amount: this._amount,
+            budget: this._budget,
+            date: this._date,
+        };
 
-        Budgets.insert(doc, function (error, result) {
+        Incomes.insert(doc, function (error, result) {
             that._id = result;
             if (callback) {
                 callback(error, result);

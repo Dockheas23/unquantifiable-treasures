@@ -14,7 +14,7 @@ describe("Budget", function () {
                 expect(error).toBeUndefined();
 
                 // delete created tutorial
-                Budget.remove(id);
+                Budgets.remove(result);
 
                 Meteor.logout(function () {
                     done();

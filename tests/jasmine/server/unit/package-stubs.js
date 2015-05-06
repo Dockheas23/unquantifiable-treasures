@@ -1,6 +1,8 @@
 // DEPENDS ON GLOBAL OBJECT: 'ComponentMocker'
 
 var packageMetadata = {
+  "insecure": {},
+  "autopublish": {},
   "reload": {},
   "json": {},
   "base64": {
@@ -116,6 +118,9 @@ var packageMetadata = {
         "declare": {
           "type": "function"
         },
+        "isValidUrl": {
+          "type": "function"
+        },
         "classify": {
           "type": "function"
         },
@@ -146,6 +151,9 @@ var packageMetadata = {
                   "type": "function"
                 },
                 "declare": {
+                  "type": "function"
+                },
+                "isValidUrl": {
                   "type": "function"
                 },
                 "classify": {
@@ -6225,6 +6233,9 @@ var packageMetadata = {
                 "autorun": {
                   "type": "function"
                 },
+                "subscribe": {
+                  "type": "function"
+                },
                 "firstNode": {
                   "type": "function"
                 },
@@ -6265,7 +6276,7 @@ var packageMetadata = {
         },
         "getData": {
           "type": "function",
-          "refID": 31
+          "refID": 33
         },
         "getElementData": {
           "type": "function"
@@ -6290,7 +6301,7 @@ var packageMetadata = {
         },
         "registerHelper": {
           "type": "function",
-          "refID": 47
+          "refID": 49
         },
         "Template": {
           "type": "function",
@@ -6299,17 +6310,26 @@ var packageMetadata = {
               "type": "function"
             },
             "currentData": {
-              "ref": 31
+              "ref": 33
             },
             "parentData": {
               "type": "function"
             },
             "registerHelper": {
-              "ref": 47
+              "ref": 49
             },
             "prototype": {
               "type": "object",
               "members": {
+                "onCreated": {
+                  "type": "function"
+                },
+                "onRendered": {
+                  "type": "function"
+                },
+                "onDestroyed": {
+                  "type": "function"
+                },
                 "constructView": {
                   "type": "function"
                 },
@@ -6342,6 +6362,12 @@ var packageMetadata = {
                   "type": "function"
                 },
                 "autorun": {
+                  "type": "function"
+                },
+                "subscribe": {
+                  "type": "function"
+                },
+                "subscriptionsReady": {
                   "type": "function"
                 }
               }
@@ -6390,6 +6416,9 @@ var packageMetadata = {
                 "autorun": {
                   "type": "function"
                 },
+                "subscribe": {
+                  "type": "function"
+                },
                 "firstNode": {
                   "type": "function"
                 },
@@ -6430,7 +6459,7 @@ var packageMetadata = {
         },
         "getData": {
           "type": "function",
-          "refID": 31
+          "refID": 33
         },
         "getElementData": {
           "type": "function"
@@ -6455,7 +6484,7 @@ var packageMetadata = {
         },
         "registerHelper": {
           "type": "function",
-          "refID": 47
+          "refID": 49
         },
         "Template": {
           "type": "function",
@@ -6464,17 +6493,26 @@ var packageMetadata = {
               "type": "function"
             },
             "currentData": {
-              "ref": 31
+              "ref": 33
             },
             "parentData": {
               "type": "function"
             },
             "registerHelper": {
-              "ref": 47
+              "ref": 49
             },
             "prototype": {
               "type": "object",
               "members": {
+                "onCreated": {
+                  "type": "function"
+                },
+                "onRendered": {
+                  "type": "function"
+                },
+                "onDestroyed": {
+                  "type": "function"
+                },
                 "constructView": {
                   "type": "function"
                 },
@@ -6507,6 +6545,12 @@ var packageMetadata = {
                   "type": "function"
                 },
                 "autorun": {
+                  "type": "function"
+                },
+                "subscribe": {
+                  "type": "function"
+                },
+                "subscriptionsReady": {
                   "type": "function"
                 }
               }
@@ -6632,6 +6676,9 @@ var packageMetadata = {
                 "autorun": {
                   "type": "function"
                 },
+                "subscribe": {
+                  "type": "function"
+                },
                 "firstNode": {
                   "type": "function"
                 },
@@ -6672,7 +6719,7 @@ var packageMetadata = {
         },
         "getData": {
           "type": "function",
-          "refID": 31
+          "refID": 33
         },
         "getElementData": {
           "type": "function"
@@ -6697,7 +6744,7 @@ var packageMetadata = {
         },
         "registerHelper": {
           "type": "function",
-          "refID": 47
+          "refID": 49
         },
         "Template": {
           "type": "function",
@@ -6706,17 +6753,26 @@ var packageMetadata = {
               "type": "function"
             },
             "currentData": {
-              "ref": 31
+              "ref": 33
             },
             "parentData": {
               "type": "function"
             },
             "registerHelper": {
-              "ref": 47
+              "ref": 49
             },
             "prototype": {
               "type": "object",
               "members": {
+                "onCreated": {
+                  "type": "function"
+                },
+                "onRendered": {
+                  "type": "function"
+                },
+                "onDestroyed": {
+                  "type": "function"
+                },
                 "constructView": {
                   "type": "function"
                 },
@@ -6749,6 +6805,12 @@ var packageMetadata = {
                   "type": "function"
                 },
                 "autorun": {
+                  "type": "function"
+                },
+                "subscribe": {
+                  "type": "function"
+                },
+                "subscriptionsReady": {
                   "type": "function"
                 }
               }
@@ -6797,6 +6859,9 @@ var packageMetadata = {
                 "autorun": {
                   "type": "function"
                 },
+                "subscribe": {
+                  "type": "function"
+                },
                 "firstNode": {
                   "type": "function"
                 },
@@ -6837,7 +6902,7 @@ var packageMetadata = {
         },
         "getData": {
           "type": "function",
-          "refID": 31
+          "refID": 33
         },
         "getElementData": {
           "type": "function"
@@ -6862,7 +6927,7 @@ var packageMetadata = {
         },
         "registerHelper": {
           "type": "function",
-          "refID": 47
+          "refID": 49
         },
         "Template": {
           "type": "function",
@@ -6871,17 +6936,26 @@ var packageMetadata = {
               "type": "function"
             },
             "currentData": {
-              "ref": 31
+              "ref": 33
             },
             "parentData": {
               "type": "function"
             },
             "registerHelper": {
-              "ref": 47
+              "ref": 49
             },
             "prototype": {
               "type": "object",
               "members": {
+                "onCreated": {
+                  "type": "function"
+                },
+                "onRendered": {
+                  "type": "function"
+                },
+                "onDestroyed": {
+                  "type": "function"
+                },
                 "constructView": {
                   "type": "function"
                 },
@@ -6914,6 +6988,12 @@ var packageMetadata = {
                   "type": "function"
                 },
                 "autorun": {
+                  "type": "function"
+                },
+                "subscribe": {
+                  "type": "function"
+                },
+                "subscriptionsReady": {
                   "type": "function"
                 }
               }
@@ -7007,7 +7087,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "d4e95abb0ef4b7adddafb5b0fcc223a2e258a8e0"
+                  "value": "27939249a1242a14da40d7a61632b0a481ffdb7d"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7209,2213 +7289,6 @@ var packageMetadata = {
     },
     "main": {
       "type": "function"
-    },
-    "WebAppInternals": {
-      "type": "object",
-      "members": {
-        "identifyBrowser": {
-          "type": "function"
-        },
-        "generateBoilerplateInstance": {
-          "type": "function"
-        },
-        "staticFilesMiddleware": {
-          "type": "function"
-        },
-        "bindToProxy": {
-          "type": "function"
-        },
-        "addRoute": {
-          "type": "function"
-        },
-        "reloadClientPrograms": {
-          "type": "function"
-        },
-        "generateBoilerplate": {
-          "type": "function"
-        },
-        "staticFiles": {
-          "type": "object",
-          "members": {
-            "/packages/underscore.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/underscore.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/0a80a8623e1b40b5df5a05582f288ddd586eaa18.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/0a80a8623e1b40b5df5a05582f288ddd586eaa18.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/underscore.js.map"
-                }
-              }
-            },
-            "/packages/meteor.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/meteor.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/81e2f06cff198adaa81b3bc09fc4f3728b7370ec.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/81e2f06cff198adaa81b3bc09fc4f3728b7370ec.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/meteor.js.map"
-                }
-              }
-            },
-            "/packages/json.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/json.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/e22856eae714c681199eabc5c0710b904b125554.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/e22856eae714c681199eabc5c0710b904b125554.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/json.js.map"
-                }
-              }
-            },
-            "/packages/base64.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/base64.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/1a63019243b73298e2964e6d4680f25bca657726.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/1a63019243b73298e2964e6d4680f25bca657726.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/base64.js.map"
-                }
-              }
-            },
-            "/packages/ejson.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ejson.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/71047b64b5196348bdbe5fd5eea9ac97a5a9eb14.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/71047b64b5196348bdbe5fd5eea9ac97a5a9eb14.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ejson.js.map"
-                }
-              }
-            },
-            "/packages/logging.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/logging.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/07e201b648f16be8435a4f666156995eeda0c750.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/07e201b648f16be8435a4f666156995eeda0c750.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/logging.js.map"
-                }
-              }
-            },
-            "/packages/reload.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/reload.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/da8974b7231dd8c0caccb5f322dcf97329d486d1.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/da8974b7231dd8c0caccb5f322dcf97329d486d1.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/reload.js.map"
-                }
-              }
-            },
-            "/packages/tracker.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/tracker.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/7f0c5481709a504dd2254ba2a71c1cee78adc280.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/7f0c5481709a504dd2254ba2a71c1cee78adc280.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/tracker.js.map"
-                }
-              }
-            },
-            "/packages/random.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/random.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/fe7b46080c91ce482acf6fc326afbc5b176f0502.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/fe7b46080c91ce482acf6fc326afbc5b176f0502.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/random.js.map"
-                }
-              }
-            },
-            "/packages/retry.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/retry.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/1f1dd2c35d300110fdaba51ce4473583bc3bf031.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/1f1dd2c35d300110fdaba51ce4473583bc3bf031.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/retry.js.map"
-                }
-              }
-            },
-            "/packages/check.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/check.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/6a833c91fc716468839ed932ff4762828cda2dc8.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/6a833c91fc716468839ed932ff4762828cda2dc8.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/check.js.map"
-                }
-              }
-            },
-            "/packages/id-map.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/id-map.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/9ea6eaae8d74693ce2505a858d9a5e60cf191298.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/9ea6eaae8d74693ce2505a858d9a5e60cf191298.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/id-map.js.map"
-                }
-              }
-            },
-            "/packages/ordered-dict.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ordered-dict.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/bf8af2f26c8d96bf8b2e6b407d3ed69f23c2cd37.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/bf8af2f26c8d96bf8b2e6b407d3ed69f23c2cd37.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ordered-dict.js.map"
-                }
-              }
-            },
-            "/packages/geojson-utils.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/geojson-utils.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/81b79d5cf96d00b4b7a28987debcffb665c17526.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/81b79d5cf96d00b4b7a28987debcffb665c17526.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/geojson-utils.js.map"
-                }
-              }
-            },
-            "/packages/minimongo.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/minimongo.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/e8806aa7782b729b2517ebc0cd10b321667f1427.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/e8806aa7782b729b2517ebc0cd10b321667f1427.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/minimongo.js.map"
-                }
-              }
-            },
-            "/packages/ddp.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ddp.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/41b62dcceb3ce0de6ca79c6aed088cccde6a44d8.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/41b62dcceb3ce0de6ca79c6aed088cccde6a44d8.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ddp.js.map"
-                }
-              }
-            },
-            "/packages/follower-livedata.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/follower-livedata.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/74156c6baa89da861fc4ddb58ef158eac71e58e0.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/74156c6baa89da861fc4ddb58ef158eac71e58e0.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/follower-livedata.js.map"
-                }
-              }
-            },
-            "/packages/application-configuration.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/application-configuration.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/dcbf1f0774460fccf098a4c9e8fad4c3a0f2952f.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/dcbf1f0774460fccf098a4c9e8fad4c3a0f2952f.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/application-configuration.js.map"
-                }
-              }
-            },
-            "/packages/mongo.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/mongo.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/052f30e968644b2b39a96605ffee73a7684ff37b.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/052f30e968644b2b39a96605ffee73a7684ff37b.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/mongo.js.map"
-                }
-              }
-            },
-            "/packages/autoupdate.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/autoupdate.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/c823646e93561d86e6bcb3cbd2457a8540e519c1.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/c823646e93561d86e6bcb3cbd2457a8540e519c1.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/autoupdate.js.map"
-                }
-              }
-            },
-            "/packages/meteor-platform.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/meteor-platform.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/499a2f8522e25820b1153c69a92751ccaae507b3.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/499a2f8522e25820b1153c69a92751ccaae507b3.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/meteor-platform.js.map"
-                }
-              }
-            },
-            "/packages/localstorage.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/localstorage.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/9ec7d68858d2e33aa807e5cfd5e12bb4d62fe00c.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/9ec7d68858d2e33aa807e5cfd5e12bb4d62fe00c.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/localstorage.js.map"
-                }
-              }
-            },
-            "/packages/jquery.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/jquery.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/265926494aaa3929cd2e30da265211c5929f37a4.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/265926494aaa3929cd2e30da265211c5929f37a4.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/jquery.js.map"
-                }
-              }
-            },
-            "/packages/deps.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/deps.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/504589e1e9585dec8f9f6094e5a87b22de3783a1.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/504589e1e9585dec8f9f6094e5a87b22de3783a1.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/deps.js.map"
-                }
-              }
-            },
-            "/packages/htmljs.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/htmljs.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/567eb96d5d22631c03d6aca6afa4c42f0d1295f2.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/567eb96d5d22631c03d6aca6afa4c42f0d1295f2.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/htmljs.js.map"
-                }
-              }
-            },
-            "/packages/observe-sequence.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/observe-sequence.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/2fd807ea171ead273b9e6458607cb226012d9240.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/2fd807ea171ead273b9e6458607cb226012d9240.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/observe-sequence.js.map"
-                }
-              }
-            },
-            "/packages/reactive-var.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/reactive-var.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/20335b7b37165980ddd9f23943b2e5b00aae1cc2.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/20335b7b37165980ddd9f23943b2e5b00aae1cc2.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/reactive-var.js.map"
-                }
-              }
-            },
-            "/packages/blaze.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/blaze.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/efa68f65e67544b5a05509804bf97e2c91ce75eb.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/efa68f65e67544b5a05509804bf97e2c91ce75eb.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/blaze.js.map"
-                }
-              }
-            },
-            "/packages/accounts-base.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/accounts-base.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/88bb0577cebfbd40b522bb337f8ff8af92244c2f.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/88bb0577cebfbd40b522bb337f8ff8af92244c2f.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/accounts-base.js.map"
-                }
-              }
-            },
-            "/packages/sha.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/sha.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/65ef52f7221944768bfc2049d6b7e163c8ae2615.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/65ef52f7221944768bfc2049d6b7e163c8ae2615.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/sha.js.map"
-                }
-              }
-            },
-            "/packages/srp.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/srp.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/e2e28156e8c912d504a3586351c8a1119f664cfd.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/e2e28156e8c912d504a3586351c8a1119f664cfd.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/srp.js.map"
-                }
-              }
-            },
-            "/packages/accounts-password.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/accounts-password.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/6c517b689e15ab07dd443895b7ed801683dda159.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/6c517b689e15ab07dd443895b7ed801683dda159.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/accounts-password.js.map"
-                }
-              }
-            },
-            "/packages/alanning_roles.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/alanning_roles.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/79ec06e46df4edfbc286f83d1ad8064d46d44990.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/79ec06e46df4edfbc286f83d1ad8064d46d44990.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/alanning_roles.js.map"
-                }
-              }
-            },
-            "/packages/ui.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ui.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/5a663333fd30f8fd913f110e0ef779e84f67c4b8.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/5a663333fd30f8fd913f110e0ef779e84f67c4b8.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ui.js.map"
-                }
-              }
-            },
-            "/packages/templating.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/templating.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/599ba307216da826d8b335332ebcc9a497a369a0.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/599ba307216da826d8b335332ebcc9a497a369a0.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/templating.js.map"
-                }
-              }
-            },
-            "/packages/iron_core.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_core.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/d966a1f70c94792fd94c8a155bdbef9bec5e0047.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/d966a1f70c94792fd94c8a155bdbef9bec5e0047.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_core.js.map"
-                }
-              }
-            },
-            "/packages/iron_dynamic-template.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_dynamic-template.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/0666476bb2ab57c4e5697b26901f23d8430eb885.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/0666476bb2ab57c4e5697b26901f23d8430eb885.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_dynamic-template.js.map"
-                }
-              }
-            },
-            "/packages/iron_layout.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_layout.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/4e65c46acdaf0ce6a8b1a479d7b9d0b5c0902062.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/4e65c46acdaf0ce6a8b1a479d7b9d0b5c0902062.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_layout.js.map"
-                }
-              }
-            },
-            "/packages/iron_url.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_url.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/6979e41649a22dcf609df30fc533e36037c7ae58.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/6979e41649a22dcf609df30fc533e36037c7ae58.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_url.js.map"
-                }
-              }
-            },
-            "/packages/iron_middleware-stack.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_middleware-stack.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/0e0f6983a838a6516556b08e62894f89720e2c44.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/0e0f6983a838a6516556b08e62894f89720e2c44.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_middleware-stack.js.map"
-                }
-              }
-            },
-            "/packages/iron_location.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_location.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/ca4f0f6672edbfb6cafab6e5c024208d9364eac9.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/ca4f0f6672edbfb6cafab6e5c024208d9364eac9.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_location.js.map"
-                }
-              }
-            },
-            "/packages/reactive-dict.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/reactive-dict.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/6b25309b1f0dcf775b44984324878d6f8ad1abc2.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/6b25309b1f0dcf775b44984324878d6f8ad1abc2.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/reactive-dict.js.map"
-                }
-              }
-            },
-            "/packages/iron_controller.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_controller.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/b02790701804563eafedb2e68c602154983ade06.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/b02790701804563eafedb2e68c602154983ade06.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_controller.js.map"
-                }
-              }
-            },
-            "/packages/iron_router.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_router.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/a427868585af16bb88b7c9996b2449aebb8dbf51.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/a427868585af16bb88b7c9996b2449aebb8dbf51.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/iron_router.js.map"
-                }
-              }
-            },
-            "/packages/coffeescript.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/coffeescript.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/969f68786bbc68e6cad299e74922a53af3d1404b.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/969f68786bbc68e6cad299e74922a53af3d1404b.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/coffeescript.js.map"
-                }
-              }
-            },
-            "/packages/practicalmeteor_chai.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/practicalmeteor_chai.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/7fbbbec9a13f4adf082b394c5ddd7230d84afc48.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/7fbbbec9a13f4adf082b394c5ddd7230d84afc48.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/practicalmeteor_chai.js.map"
-                }
-              }
-            },
-            "/packages/practicalmeteor_loglevel.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/practicalmeteor_loglevel.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/9185331dfa11fd235edfbef93838d4ca3244d638.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/9185331dfa11fd235edfbef93838d4ca3244d638.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/practicalmeteor_loglevel.js.map"
-                }
-              }
-            },
-            "/packages/velocity_core.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_core.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/82241038c303e73253980ddbae67ac50a3e9f6ad.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/82241038c303e73253980ddbae67ac50a3e9f6ad.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_core.js.map"
-                }
-              }
-            },
-            "/packages/velocity_shim.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_shim.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/14363d085a412115605c41536e4f2867425b89d5.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/14363d085a412115605c41536e4f2867425b89d5.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_shim.js.map"
-                }
-              }
-            },
-            "/packages/sanjo_jasmine.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/sanjo_jasmine.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/04ba42a040aed861ffffa46e10517174e66b3a8b.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/04ba42a040aed861ffffa46e10517174e66b3a8b.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/sanjo_jasmine.js.map"
-                }
-              }
-            },
-            "/packages/amplify.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/amplify.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/0943ecb804169b991257a319fa92b9e6f34e2d1b.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/0943ecb804169b991257a319fa92b9e6f34e2d1b.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/amplify.js.map"
-                }
-              }
-            },
-            "/packages/less.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/less.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/7d1bf981a25a449d6270558bcfc983313c40cd26.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/7d1bf981a25a449d6270558bcfc983313c40cd26.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/less.js.map"
-                }
-              }
-            },
-            "/packages/velocity_html-reporter.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_html-reporter.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/ce964321f60af6148e18fddaa0ce1ee81926dfec.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/ce964321f60af6148e18fddaa0ce1ee81926dfec.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_html-reporter.js.map"
-                }
-              }
-            },
-            "/packages/sacha_spin.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/sacha_spin.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/6ab6fb94c8dfd98b9fdc1a9831a8051edeec5c04.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/6ab6fb94c8dfd98b9fdc1a9831a8051edeec5c04.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/sacha_spin.js.map"
-                }
-              }
-            },
-            "/packages/ian_bootstrap-3.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ian_bootstrap-3.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/a2a36818d13bdacafe1f7dcf25be8ac99320c6fd.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/a2a36818d13bdacafe1f7dcf25be8ac99320c6fd.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ian_bootstrap-3.js.map"
-                }
-              }
-            },
-            "/packages/session.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/session.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/e436deefadc999c21b6fd16e8e1ecce55c3c3a55.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/e436deefadc999c21b6fd16e8e1ecce55c3c3a55.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/session.js.map"
-                }
-              }
-            },
-            "/packages/handlebars.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/handlebars.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/038145b6256cd6a69c11650ed6bf12b093920095.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/038145b6256cd6a69c11650ed6bf12b093920095.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/handlebars.js.map"
-                }
-              }
-            },
-            "/packages/stylus.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/stylus.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/48b7e3e0953c004a73211d7489462e73ed11be2c.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/48b7e3e0953c004a73211d7489462e73ed11be2c.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/stylus.js.map"
-                }
-              }
-            },
-            "/packages/anti_i18n.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/anti_i18n.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/b753e9e958be5df82d8bdde8dc342a2870ccf372.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/b753e9e958be5df82d8bdde8dc342a2870ccf372.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/anti_i18n.js.map"
-                }
-              }
-            },
-            "/packages/ian_accounts-ui-bootstrap-3.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ian_accounts-ui-bootstrap-3.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/5b8c3c455586158b2bac77b8cc911f46160b0dae.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/5b8c3c455586158b2bac77b8cc911f46160b0dae.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ian_accounts-ui-bootstrap-3.js.map"
-                }
-              }
-            },
-            "/packages/tap_i18n.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/tap_i18n.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/ea1b0a3cdcb50177911d67fbd354f728f9ede5a1.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/ea1b0a3cdcb50177911d67fbd354f728f9ede5a1.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/tap_i18n.js.map"
-                }
-              }
-            },
-            "/packages/velocity_test-proxy.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_test-proxy.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/dc79b083814b4193694252a0990680bef4b433cb.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/dc79b083814b4193694252a0990680bef4b433cb.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_test-proxy.js.map"
-                }
-              }
-            },
-            "/packages/velocity_node-soft-mirror.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_node-soft-mirror.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/cfbadc9d9aff21e824a2b9cf98841d5961cd08d2.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/cfbadc9d9aff21e824a2b9cf98841d5961cd08d2.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_node-soft-mirror.js.map"
-                }
-              }
-            },
-            "/packages/xolvio_cucumber.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/xolvio_cucumber.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/0fa3ab4a90a8da70a6c4085774546beb7d659f52.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/0fa3ab4a90a8da70a6c4085774546beb7d659f52.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/xolvio_cucumber.js.map"
-                }
-              }
-            },
-            "/packages/xolvio_webdriver.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/xolvio_webdriver.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/b4aaae36f0b35e04e536449178fe7320fce44899.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/b4aaae36f0b35e04e536449178fe7320fce44899.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/xolvio_webdriver.js.map"
-                }
-              }
-            },
-            "/packages/webapp.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/webapp.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/e1be090051b82f046484dccc2de7d747e50c7328.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/e1be090051b82f046484dccc2de7d747e50c7328.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/webapp.js.map"
-                }
-              }
-            },
-            "/packages/livedata.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/livedata.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/718526445deb4d9baacb6d92c551adea1d36c1e1.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/718526445deb4d9baacb6d92c551adea1d36c1e1.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/livedata.js.map"
-                }
-              }
-            },
-            "/packages/spacebars.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/spacebars.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/3c496d2950151d744a8574297b46d2763a123bdf.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/3c496d2950151d744a8574297b46d2763a123bdf.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/spacebars.js.map"
-                }
-              }
-            },
-            "/packages/launch-screen.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/launch-screen.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/13e1092ebecdb7208762500188f1dc2dea5603e9.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/13e1092ebecdb7208762500188f1dc2dea5603e9.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/launch-screen.js.map"
-                }
-              }
-            },
-            "/packages/global-imports.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/global-imports.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/client/views/about/template.about.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/client/views/about/template.about.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/client/views/application/template.layout.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/client/views/application/template.layout.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/client/views/application/template.loading.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/client/views/application/template.loading.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/client/views/application/template.template404.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/client/views/application/template.template404.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/client/views/header/template.header.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/client/views/header/template.header.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/client/views/home/template.home.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/client/views/home/template.home.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/client/template.index.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/client/template.index.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/lib/router.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/lib/router.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/client/views/home/home.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/client/views/home/home.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/model/budget.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/app/model/budget.js"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/service-configuration.js": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/service-configuration.js"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/packages/262da6fb1e9c97be84333c429c9a2929c80f8e3b.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "js"
-                }
-              }
-            },
-            "/packages/262da6fb1e9c97be84333c429c9a2929c80f8e3b.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/service-configuration.js.map"
-                }
-              }
-            },
-            "/6838476df135bfc3f8762e0f32cc5445e00c93bc.css": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/6838476df135bfc3f8762e0f32cc5445e00c93bc.css"
-                },
-                "sourceMapUrl": {
-                  "type": "constant",
-                  "value": "/6838476df135bfc3f8762e0f32cc5445e00c93bc.map"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "css"
-                }
-              }
-            },
-            "/6838476df135bfc3f8762e0f32cc5445e00c93bc.map": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/6838476df135bfc3f8762e0f32cc5445e00c93bc.css.map"
-                }
-              }
-            },
-            "/packages/velocity_html-reporter/lib/velocity_logo.svg": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_html-reporter/lib/velocity_logo.svg"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "asset"
-                }
-              }
-            },
-            "/packages/velocity_html-reporter/lib/velocity_cog.svg": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_html-reporter/lib/velocity_cog.svg"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "asset"
-                }
-              }
-            },
-            "/packages/velocity_html-reporter/lib/icon-time.png": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/velocity_html-reporter/lib/icon-time.png"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "asset"
-                }
-              }
-            },
-            "/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.eot": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.eot"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "asset"
-                }
-              }
-            },
-            "/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.ttf": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.ttf"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "asset"
-                }
-              }
-            },
-            "/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.svg": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.svg"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "asset"
-                }
-              }
-            },
-            "/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.woff": {
-              "type": "object",
-              "members": {
-                "absolutePath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures/.meteor/local/build/programs/web.browser/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.woff"
-                },
-                "sourceMapUrl": {
-                  "type": "undefined"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "asset"
-                }
-              }
-            },
-            "manifest.json": {
-              "type": "object",
-              "members": {
-                "content": {
-                  "type": "constant",
-                  "value": "{\"manifest\":[{\"path\":\"packages/underscore.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/underscore.js?0a80a8623e1b40b5df5a05582f288ddd586eaa18\",\"sourceMap\":\"packages/underscore.js.map\",\"sourceMapUrl\":\"/packages/0a80a8623e1b40b5df5a05582f288ddd586eaa18.map\",\"size\":150686,\"hash\":\"0a80a8623e1b40b5df5a05582f288ddd586eaa18\"},{\"path\":\"packages/meteor.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/meteor.js?81e2f06cff198adaa81b3bc09fc4f3728b7370ec\",\"sourceMap\":\"packages/meteor.js.map\",\"sourceMapUrl\":\"/packages/81e2f06cff198adaa81b3bc09fc4f3728b7370ec.map\",\"size\":109437,\"hash\":\"81e2f06cff198adaa81b3bc09fc4f3728b7370ec\"},{\"path\":\"packages/json.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/json.js?e22856eae714c681199eabc5c0710b904b125554\",\"sourceMap\":\"packages/json.js.map\",\"sourceMapUrl\":\"/packages/e22856eae714c681199eabc5c0710b904b125554.map\",\"size\":58343,\"hash\":\"e22856eae714c681199eabc5c0710b904b125554\"},{\"path\":\"packages/base64.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/base64.js?1a63019243b73298e2964e6d4680f25bca657726\",\"sourceMap\":\"packages/base64.js.map\",\"sourceMapUrl\":\"/packages/1a63019243b73298e2964e6d4680f25bca657726.map\",\"size\":15685,\"hash\":\"1a63019243b73298e2964e6d4680f25bca657726\"},{\"path\":\"packages/ejson.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/ejson.js?71047b64b5196348bdbe5fd5eea9ac97a5a9eb14\",\"sourceMap\":\"packages/ejson.js.map\",\"sourceMapUrl\":\"/packages/71047b64b5196348bdbe5fd5eea9ac97a5a9eb14.map\",\"size\":81471,\"hash\":\"71047b64b5196348bdbe5fd5eea9ac97a5a9eb14\"},{\"path\":\"packages/logging.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/logging.js?07e201b648f16be8435a4f666156995eeda0c750\",\"sourceMap\":\"packages/logging.js.map\",\"sourceMapUrl\":\"/packages/07e201b648f16be8435a4f666156995eeda0c750.map\",\"size\":27996,\"hash\":\"07e201b648f16be8435a4f666156995eeda0c750\"},{\"path\":\"packages/reload.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/reload.js?da8974b7231dd8c0caccb5f322dcf97329d486d1\",\"sourceMap\":\"packages/reload.js.map\",\"sourceMapUrl\":\"/packages/da8974b7231dd8c0caccb5f322dcf97329d486d1.map\",\"size\":25926,\"hash\":\"da8974b7231dd8c0caccb5f322dcf97329d486d1\"},{\"path\":\"packages/tracker.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/tracker.js?7f0c5481709a504dd2254ba2a71c1cee78adc280\",\"sourceMap\":\"packages/tracker.js.map\",\"sourceMapUrl\":\"/packages/7f0c5481709a504dd2254ba2a71c1cee78adc280.map\",\"size\":68185,\"hash\":\"7f0c5481709a504dd2254ba2a71c1cee78adc280\"},{\"path\":\"packages/random.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/random.js?fe7b46080c91ce482acf6fc326afbc5b176f0502\",\"sourceMap\":\"packages/random.js.map\",\"sourceMapUrl\":\"/packages/fe7b46080c91ce482acf6fc326afbc5b176f0502.map\",\"size\":24099,\"hash\":\"fe7b46080c91ce482acf6fc326afbc5b176f0502\"},{\"path\":\"packages/retry.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/retry.js?1f1dd2c35d300110fdaba51ce4473583bc3bf031\",\"sourceMap\":\"packages/retry.js.map\",\"sourceMapUrl\":\"/packages/1f1dd2c35d300110fdaba51ce4473583bc3bf031.map\",\"size\":7245,\"hash\":\"1f1dd2c35d300110fdaba51ce4473583bc3bf031\"},{\"path\":\"packages/check.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/check.js?6a833c91fc716468839ed932ff4762828cda2dc8\",\"sourceMap\":\"packages/check.js.map\",\"sourceMapUrl\":\"/packages/6a833c91fc716468839ed932ff4762828cda2dc8.map\",\"size\":35647,\"hash\":\"6a833c91fc716468839ed932ff4762828cda2dc8\"},{\"path\":\"packages/id-map.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/id-map.js?9ea6eaae8d74693ce2505a858d9a5e60cf191298\",\"sourceMap\":\"packages/id-map.js.map\",\"sourceMapUrl\":\"/packages/9ea6eaae8d74693ce2505a858d9a5e60cf191298.map\",\"size\":8584,\"hash\":\"9ea6eaae8d74693ce2505a858d9a5e60cf191298\"},{\"path\":\"packages/ordered-dict.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/ordered-dict.js?bf8af2f26c8d96bf8b2e6b407d3ed69f23c2cd37\",\"sourceMap\":\"packages/ordered-dict.js.map\",\"sourceMapUrl\":\"/packages/bf8af2f26c8d96bf8b2e6b407d3ed69f23c2cd37.map\",\"size\":20395,\"hash\":\"bf8af2f26c8d96bf8b2e6b407d3ed69f23c2cd37\"},{\"path\":\"packages/geojson-utils.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/geojson-utils.js?81b79d5cf96d00b4b7a28987debcffb665c17526\",\"sourceMap\":\"packages/geojson-utils.js.map\",\"sourceMapUrl\":\"/packages/81b79d5cf96d00b4b7a28987debcffb665c17526.map\",\"size\":48339,\"hash\":\"81b79d5cf96d00b4b7a28987debcffb665c17526\"},{\"path\":\"packages/minimongo.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/minimongo.js?e8806aa7782b729b2517ebc0cd10b321667f1427\",\"sourceMap\":\"packages/minimongo.js.map\",\"sourceMapUrl\":\"/packages/e8806aa7782b729b2517ebc0cd10b321667f1427.map\",\"size\":455881,\"hash\":\"e8806aa7782b729b2517ebc0cd10b321667f1427\"},{\"path\":\"packages/ddp.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/ddp.js?41b62dcceb3ce0de6ca79c6aed088cccde6a44d8\",\"sourceMap\":\"packages/ddp.js.map\",\"sourceMapUrl\":\"/packages/41b62dcceb3ce0de6ca79c6aed088cccde6a44d8.map\",\"size\":617153,\"hash\":\"41b62dcceb3ce0de6ca79c6aed088cccde6a44d8\"},{\"path\":\"packages/follower-livedata.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/follower-livedata.js?74156c6baa89da861fc4ddb58ef158eac71e58e0\",\"sourceMap\":\"packages/follower-livedata.js.map\",\"sourceMapUrl\":\"/packages/74156c6baa89da861fc4ddb58ef158eac71e58e0.map\",\"size\":1490,\"hash\":\"74156c6baa89da861fc4ddb58ef158eac71e58e0\"},{\"path\":\"packages/application-configuration.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/application-configuration.js?dcbf1f0774460fccf098a4c9e8fad4c3a0f2952f\",\"sourceMap\":\"packages/application-configuration.js.map\",\"sourceMapUrl\":\"/packages/dcbf1f0774460fccf098a4c9e8fad4c3a0f2952f.map\",\"size\":1485,\"hash\":\"dcbf1f0774460fccf098a4c9e8fad4c3a0f2952f\"},{\"path\":\"packages/mongo.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/mongo.js?052f30e968644b2b39a96605ffee73a7684ff37b\",\"sourceMap\":\"packages/mongo.js.map\",\"sourceMapUrl\":\"/packages/052f30e968644b2b39a96605ffee73a7684ff37b.map\",\"size\":147662,\"hash\":\"052f30e968644b2b39a96605ffee73a7684ff37b\"},{\"path\":\"packages/autoupdate.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/autoupdate.js?c823646e93561d86e6bcb3cbd2457a8540e519c1\",\"sourceMap\":\"packages/autoupdate.js.map\",\"sourceMapUrl\":\"/packages/c823646e93561d86e6bcb3cbd2457a8540e519c1.map\",\"size\":17152,\"hash\":\"c823646e93561d86e6bcb3cbd2457a8540e519c1\"},{\"path\":\"packages/meteor-platform.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/meteor-platform.js?499a2f8522e25820b1153c69a92751ccaae507b3\",\"sourceMap\":\"packages/meteor-platform.js.map\",\"sourceMapUrl\":\"/packages/499a2f8522e25820b1153c69a92751ccaae507b3.map\",\"size\":1384,\"hash\":\"499a2f8522e25820b1153c69a92751ccaae507b3\"},{\"path\":\"packages/localstorage.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/localstorage.js?9ec7d68858d2e33aa807e5cfd5e12bb4d62fe00c\",\"sourceMap\":\"packages/localstorage.js.map\",\"sourceMapUrl\":\"/packages/9ec7d68858d2e33aa807e5cfd5e12bb4d62fe00c.map\",\"size\":7092,\"hash\":\"9ec7d68858d2e33aa807e5cfd5e12bb4d62fe00c\"},{\"path\":\"packages/jquery.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/jquery.js?265926494aaa3929cd2e30da265211c5929f37a4\",\"sourceMap\":\"packages/jquery.js.map\",\"sourceMapUrl\":\"/packages/265926494aaa3929cd2e30da265211c5929f37a4.map\",\"size\":1295407,\"hash\":\"265926494aaa3929cd2e30da265211c5929f37a4\"},{\"path\":\"packages/deps.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/deps.js?504589e1e9585dec8f9f6094e5a87b22de3783a1\",\"sourceMap\":\"packages/deps.js.map\",\"sourceMapUrl\":\"/packages/504589e1e9585dec8f9f6094e5a87b22de3783a1.map\",\"size\":1442,\"hash\":\"504589e1e9585dec8f9f6094e5a87b22de3783a1\"},{\"path\":\"packages/htmljs.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/htmljs.js?567eb96d5d22631c03d6aca6afa4c42f0d1295f2\",\"sourceMap\":\"packages/htmljs.js.map\",\"sourceMapUrl\":\"/packages/567eb96d5d22631c03d6aca6afa4c42f0d1295f2.map\",\"size\":60161,\"hash\":\"567eb96d5d22631c03d6aca6afa4c42f0d1295f2\"},{\"path\":\"packages/observe-sequence.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/observe-sequence.js?2fd807ea171ead273b9e6458607cb226012d9240\",\"sourceMap\":\"packages/observe-sequence.js.map\",\"sourceMapUrl\":\"/packages/2fd807ea171ead273b9e6458607cb226012d9240.map\",\"size\":30271,\"hash\":\"2fd807ea171ead273b9e6458607cb226012d9240\"},{\"path\":\"packages/reactive-var.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/reactive-var.js?20335b7b37165980ddd9f23943b2e5b00aae1cc2\",\"sourceMap\":\"packages/reactive-var.js.map\",\"sourceMapUrl\":\"/packages/20335b7b37165980ddd9f23943b2e5b00aae1cc2.map\",\"size\":13963,\"hash\":\"20335b7b37165980ddd9f23943b2e5b00aae1cc2\"},{\"path\":\"packages/blaze.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/blaze.js?efa68f65e67544b5a05509804bf97e2c91ce75eb\",\"sourceMap\":\"packages/blaze.js.map\",\"sourceMapUrl\":\"/packages/efa68f65e67544b5a05509804bf97e2c91ce75eb.map\",\"size\":391530,\"hash\":\"efa68f65e67544b5a05509804bf97e2c91ce75eb\"},{\"path\":\"packages/accounts-base.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/accounts-base.js?88bb0577cebfbd40b522bb337f8ff8af92244c2f\",\"sourceMap\":\"packages/accounts-base.js.map\",\"sourceMapUrl\":\"/packages/88bb0577cebfbd40b522bb337f8ff8af92244c2f.map\",\"size\":109093,\"hash\":\"88bb0577cebfbd40b522bb337f8ff8af92244c2f\"},{\"path\":\"packages/sha.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/sha.js?65ef52f7221944768bfc2049d6b7e163c8ae2615\",\"sourceMap\":\"packages/sha.js.map\",\"sourceMapUrl\":\"/packages/65ef52f7221944768bfc2049d6b7e163c8ae2615.map\",\"size\":19584,\"hash\":\"65ef52f7221944768bfc2049d6b7e163c8ae2615\"},{\"path\":\"packages/srp.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/srp.js?e2e28156e8c912d504a3586351c8a1119f664cfd\",\"sourceMap\":\"packages/srp.js.map\",\"sourceMapUrl\":\"/packages/e2e28156e8c912d504a3586351c8a1119f664cfd.map\",\"size\":173470,\"hash\":\"e2e28156e8c912d504a3586351c8a1119f664cfd\"},{\"path\":\"packages/accounts-password.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/accounts-password.js?6c517b689e15ab07dd443895b7ed801683dda159\",\"sourceMap\":\"packages/accounts-password.js.map\",\"sourceMapUrl\":\"/packages/6c517b689e15ab07dd443895b7ed801683dda159.map\",\"size\":33053,\"hash\":\"6c517b689e15ab07dd443895b7ed801683dda159\"},{\"path\":\"packages/alanning_roles.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/alanning_roles.js?79ec06e46df4edfbc286f83d1ad8064d46d44990\",\"sourceMap\":\"packages/alanning_roles.js.map\",\"sourceMapUrl\":\"/packages/79ec06e46df4edfbc286f83d1ad8064d46d44990.map\",\"size\":94498,\"hash\":\"79ec06e46df4edfbc286f83d1ad8064d46d44990\"},{\"path\":\"packages/ui.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/ui.js?5a663333fd30f8fd913f110e0ef779e84f67c4b8\",\"sourceMap\":\"packages/ui.js.map\",\"sourceMapUrl\":\"/packages/5a663333fd30f8fd913f110e0ef779e84f67c4b8.map\",\"size\":1529,\"hash\":\"5a663333fd30f8fd913f110e0ef779e84f67c4b8\"},{\"path\":\"packages/templating.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/templating.js?599ba307216da826d8b335332ebcc9a497a369a0\",\"sourceMap\":\"packages/templating.js.map\",\"sourceMapUrl\":\"/packages/599ba307216da826d8b335332ebcc9a497a369a0.map\",\"size\":11910,\"hash\":\"599ba307216da826d8b335332ebcc9a497a369a0\"},{\"path\":\"packages/iron_core.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/iron_core.js?d966a1f70c94792fd94c8a155bdbef9bec5e0047\",\"sourceMap\":\"packages/iron_core.js.map\",\"sourceMapUrl\":\"/packages/d966a1f70c94792fd94c8a155bdbef9bec5e0047.map\",\"size\":32915,\"hash\":\"d966a1f70c94792fd94c8a155bdbef9bec5e0047\"},{\"path\":\"packages/iron_dynamic-template.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/iron_dynamic-template.js?0666476bb2ab57c4e5697b26901f23d8430eb885\",\"sourceMap\":\"packages/iron_dynamic-template.js.map\",\"sourceMapUrl\":\"/packages/0666476bb2ab57c4e5697b26901f23d8430eb885.map\",\"size\":85663,\"hash\":\"0666476bb2ab57c4e5697b26901f23d8430eb885\"},{\"path\":\"packages/iron_layout.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/iron_layout.js?4e65c46acdaf0ce6a8b1a479d7b9d0b5c0902062\",\"sourceMap\":\"packages/iron_layout.js.map\",\"sourceMapUrl\":\"/packages/4e65c46acdaf0ce6a8b1a479d7b9d0b5c0902062.map\",\"size\":62058,\"hash\":\"4e65c46acdaf0ce6a8b1a479d7b9d0b5c0902062\"},{\"path\":\"packages/iron_url.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/iron_url.js?6979e41649a22dcf609df30fc533e36037c7ae58\",\"sourceMap\":\"packages/iron_url.js.map\",\"sourceMapUrl\":\"/packages/6979e41649a22dcf609df30fc533e36037c7ae58.map\",\"size\":69302,\"hash\":\"6979e41649a22dcf609df30fc533e36037c7ae58\"},{\"path\":\"packages/iron_middleware-stack.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/iron_middleware-stack.js?0e0f6983a838a6516556b08e62894f89720e2c44\",\"sourceMap\":\"packages/iron_middleware-stack.js.map\",\"sourceMapUrl\":\"/packages/0e0f6983a838a6516556b08e62894f89720e2c44.map\",\"size\":47239,\"hash\":\"0e0f6983a838a6516556b08e62894f89720e2c44\"},{\"path\":\"packages/iron_location.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/iron_location.js?ca4f0f6672edbfb6cafab6e5c024208d9364eac9\",\"sourceMap\":\"packages/iron_location.js.map\",\"sourceMapUrl\":\"/packages/ca4f0f6672edbfb6cafab6e5c024208d9364eac9.map\",\"size\":52275,\"hash\":\"ca4f0f6672edbfb6cafab6e5c024208d9364eac9\"},{\"path\":\"packages/reactive-dict.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/reactive-dict.js?6b25309b1f0dcf775b44984324878d6f8ad1abc2\",\"sourceMap\":\"packages/reactive-dict.js.map\",\"sourceMapUrl\":\"/packages/6b25309b1f0dcf775b44984324878d6f8ad1abc2.map\",\"size\":19802,\"hash\":\"6b25309b1f0dcf775b44984324878d6f8ad1abc2\"},{\"path\":\"packages/iron_controller.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/iron_controller.js?b02790701804563eafedb2e68c602154983ade06\",\"sourceMap\":\"packages/iron_controller.js.map\",\"sourceMapUrl\":\"/packages/b02790701804563eafedb2e68c602154983ade06.map\",\"size\":41091,\"hash\":\"b02790701804563eafedb2e68c602154983ade06\"},{\"path\":\"packages/iron_router.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/iron_router.js?a427868585af16bb88b7c9996b2449aebb8dbf51\",\"sourceMap\":\"packages/iron_router.js.map\",\"sourceMapUrl\":\"/packages/a427868585af16bb88b7c9996b2449aebb8dbf51.map\",\"size\":216733,\"hash\":\"a427868585af16bb88b7c9996b2449aebb8dbf51\"},{\"path\":\"packages/coffeescript.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/coffeescript.js?969f68786bbc68e6cad299e74922a53af3d1404b\",\"sourceMap\":\"packages/coffeescript.js.map\",\"sourceMapUrl\":\"/packages/969f68786bbc68e6cad299e74922a53af3d1404b.map\",\"size\":1294,\"hash\":\"969f68786bbc68e6cad299e74922a53af3d1404b\"},{\"path\":\"packages/practicalmeteor_chai.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/practicalmeteor_chai.js?7fbbbec9a13f4adf082b394c5ddd7230d84afc48\",\"sourceMap\":\"packages/practicalmeteor_chai.js.map\",\"sourceMapUrl\":\"/packages/7fbbbec9a13f4adf082b394c5ddd7230d84afc48.map\",\"size\":570118,\"hash\":\"7fbbbec9a13f4adf082b394c5ddd7230d84afc48\"},{\"path\":\"packages/practicalmeteor_loglevel.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/practicalmeteor_loglevel.js?9185331dfa11fd235edfbef93838d4ca3244d638\",\"sourceMap\":\"packages/practicalmeteor_loglevel.js.map\",\"sourceMapUrl\":\"/packages/9185331dfa11fd235edfbef93838d4ca3244d638.map\",\"size\":28719,\"hash\":\"9185331dfa11fd235edfbef93838d4ca3244d638\"},{\"path\":\"packages/velocity_core.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/velocity_core.js?82241038c303e73253980ddbae67ac50a3e9f6ad\",\"sourceMap\":\"packages/velocity_core.js.map\",\"sourceMapUrl\":\"/packages/82241038c303e73253980ddbae67ac50a3e9f6ad.map\",\"size\":12238,\"hash\":\"82241038c303e73253980ddbae67ac50a3e9f6ad\"},{\"path\":\"packages/velocity_shim.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/velocity_shim.js?14363d085a412115605c41536e4f2867425b89d5\",\"sourceMap\":\"packages/velocity_shim.js.map\",\"sourceMapUrl\":\"/packages/14363d085a412115605c41536e4f2867425b89d5.map\",\"size\":2905,\"hash\":\"14363d085a412115605c41536e4f2867425b89d5\"},{\"path\":\"packages/sanjo_jasmine.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/sanjo_jasmine.js?04ba42a040aed861ffffa46e10517174e66b3a8b\",\"sourceMap\":\"packages/sanjo_jasmine.js.map\",\"sourceMapUrl\":\"/packages/04ba42a040aed861ffffa46e10517174e66b3a8b.map\",\"size\":496993,\"hash\":\"04ba42a040aed861ffffa46e10517174e66b3a8b\"},{\"path\":\"packages/amplify.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/amplify.js?0943ecb804169b991257a319fa92b9e6f34e2d1b\",\"sourceMap\":\"packages/amplify.js.map\",\"sourceMapUrl\":\"/packages/0943ecb804169b991257a319fa92b9e6f34e2d1b.map\",\"size\":88428,\"hash\":\"0943ecb804169b991257a319fa92b9e6f34e2d1b\"},{\"path\":\"packages/less.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/less.js?7d1bf981a25a449d6270558bcfc983313c40cd26\",\"sourceMap\":\"packages/less.js.map\",\"sourceMapUrl\":\"/packages/7d1bf981a25a449d6270558bcfc983313c40cd26.map\",\"size\":1286,\"hash\":\"7d1bf981a25a449d6270558bcfc983313c40cd26\"},{\"path\":\"packages/velocity_html-reporter.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/velocity_html-reporter.js?ce964321f60af6148e18fddaa0ce1ee81926dfec\",\"sourceMap\":\"packages/velocity_html-reporter.js.map\",\"sourceMapUrl\":\"/packages/ce964321f60af6148e18fddaa0ce1ee81926dfec.map\",\"size\":85688,\"hash\":\"ce964321f60af6148e18fddaa0ce1ee81926dfec\"},{\"path\":\"packages/sacha_spin.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/sacha_spin.js?6ab6fb94c8dfd98b9fdc1a9831a8051edeec5c04\",\"sourceMap\":\"packages/sacha_spin.js.map\",\"sourceMapUrl\":\"/packages/6ab6fb94c8dfd98b9fdc1a9831a8051edeec5c04.map\",\"size\":48440,\"hash\":\"6ab6fb94c8dfd98b9fdc1a9831a8051edeec5c04\"},{\"path\":\"packages/ian_bootstrap-3.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/ian_bootstrap-3.js?a2a36818d13bdacafe1f7dcf25be8ac99320c6fd\",\"sourceMap\":\"packages/ian_bootstrap-3.js.map\",\"sourceMapUrl\":\"/packages/a2a36818d13bdacafe1f7dcf25be8ac99320c6fd.map\",\"size\":295526,\"hash\":\"a2a36818d13bdacafe1f7dcf25be8ac99320c6fd\"},{\"path\":\"packages/session.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/session.js?e436deefadc999c21b6fd16e8e1ecce55c3c3a55\",\"sourceMap\":\"packages/session.js.map\",\"sourceMapUrl\":\"/packages/e436deefadc999c21b6fd16e8e1ecce55c3c3a55.map\",\"size\":6497,\"hash\":\"e436deefadc999c21b6fd16e8e1ecce55c3c3a55\"},{\"path\":\"packages/handlebars.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/handlebars.js?038145b6256cd6a69c11650ed6bf12b093920095\",\"sourceMap\":\"packages/handlebars.js.map\",\"sourceMapUrl\":\"/packages/038145b6256cd6a69c11650ed6bf12b093920095.map\",\"size\":1292,\"hash\":\"038145b6256cd6a69c11650ed6bf12b093920095\"},{\"path\":\"packages/stylus.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/stylus.js?48b7e3e0953c004a73211d7489462e73ed11be2c\",\"sourceMap\":\"packages/stylus.js.map\",\"sourceMapUrl\":\"/packages/48b7e3e0953c004a73211d7489462e73ed11be2c.map\",\"size\":1288,\"hash\":\"48b7e3e0953c004a73211d7489462e73ed11be2c\"},{\"path\":\"packages/anti_i18n.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/anti_i18n.js?b753e9e958be5df82d8bdde8dc342a2870ccf372\",\"sourceMap\":\"packages/anti_i18n.js.map\",\"sourceMapUrl\":\"/packages/b753e9e958be5df82d8bdde8dc342a2870ccf372.map\",\"size\":11110,\"hash\":\"b753e9e958be5df82d8bdde8dc342a2870ccf372\"},{\"path\":\"packages/ian_accounts-ui-bootstrap-3.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/ian_accounts-ui-bootstrap-3.js?5b8c3c455586158b2bac77b8cc911f46160b0dae\",\"sourceMap\":\"packages/ian_accounts-ui-bootstrap-3.js.map\",\"sourceMapUrl\":\"/packages/5b8c3c455586158b2bac77b8cc911f46160b0dae.map\",\"size\":357771,\"hash\":\"5b8c3c455586158b2bac77b8cc911f46160b0dae\"},{\"path\":\"packages/tap_i18n.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/tap_i18n.js?ea1b0a3cdcb50177911d67fbd354f728f9ede5a1\",\"sourceMap\":\"packages/tap_i18n.js.map\",\"sourceMapUrl\":\"/packages/ea1b0a3cdcb50177911d67fbd354f728f9ede5a1.map\",\"size\":361064,\"hash\":\"ea1b0a3cdcb50177911d67fbd354f728f9ede5a1\"},{\"path\":\"packages/velocity_test-proxy.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/velocity_test-proxy.js?dc79b083814b4193694252a0990680bef4b433cb\",\"sourceMap\":\"packages/velocity_test-proxy.js.map\",\"sourceMapUrl\":\"/packages/dc79b083814b4193694252a0990680bef4b433cb.map\",\"size\":4090,\"hash\":\"dc79b083814b4193694252a0990680bef4b433cb\"},{\"path\":\"packages/velocity_node-soft-mirror.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/velocity_node-soft-mirror.js?cfbadc9d9aff21e824a2b9cf98841d5961cd08d2\",\"sourceMap\":\"packages/velocity_node-soft-mirror.js.map\",\"sourceMapUrl\":\"/packages/cfbadc9d9aff21e824a2b9cf98841d5961cd08d2.map\",\"size\":1310,\"hash\":\"cfbadc9d9aff21e824a2b9cf98841d5961cd08d2\"},{\"path\":\"packages/xolvio_cucumber.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/xolvio_cucumber.js?0fa3ab4a90a8da70a6c4085774546beb7d659f52\",\"sourceMap\":\"packages/xolvio_cucumber.js.map\",\"sourceMapUrl\":\"/packages/0fa3ab4a90a8da70a6c4085774546beb7d659f52.map\",\"size\":1300,\"hash\":\"0fa3ab4a90a8da70a6c4085774546beb7d659f52\"},{\"path\":\"packages/xolvio_webdriver.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/xolvio_webdriver.js?b4aaae36f0b35e04e536449178fe7320fce44899\",\"sourceMap\":\"packages/xolvio_webdriver.js.map\",\"sourceMapUrl\":\"/packages/b4aaae36f0b35e04e536449178fe7320fce44899.map\",\"size\":1480,\"hash\":\"b4aaae36f0b35e04e536449178fe7320fce44899\"},{\"path\":\"packages/webapp.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/webapp.js?e1be090051b82f046484dccc2de7d747e50c7328\",\"sourceMap\":\"packages/webapp.js.map\",\"sourceMapUrl\":\"/packages/e1be090051b82f046484dccc2de7d747e50c7328.map\",\"size\":3106,\"hash\":\"e1be090051b82f046484dccc2de7d747e50c7328\"},{\"path\":\"packages/livedata.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/livedata.js?718526445deb4d9baacb6d92c551adea1d36c1e1\",\"sourceMap\":\"packages/livedata.js.map\",\"sourceMapUrl\":\"/packages/718526445deb4d9baacb6d92c551adea1d36c1e1.map\",\"size\":1413,\"hash\":\"718526445deb4d9baacb6d92c551adea1d36c1e1\"},{\"path\":\"packages/spacebars.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/spacebars.js?3c496d2950151d744a8574297b46d2763a123bdf\",\"sourceMap\":\"packages/spacebars.js.map\",\"sourceMapUrl\":\"/packages/3c496d2950151d744a8574297b46d2763a123bdf.map\",\"size\":42134,\"hash\":\"3c496d2950151d744a8574297b46d2763a123bdf\"},{\"path\":\"packages/launch-screen.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/launch-screen.js?13e1092ebecdb7208762500188f1dc2dea5603e9\",\"sourceMap\":\"packages/launch-screen.js.map\",\"sourceMapUrl\":\"/packages/13e1092ebecdb7208762500188f1dc2dea5603e9.map\",\"size\":9707,\"hash\":\"13e1092ebecdb7208762500188f1dc2dea5603e9\"},{\"path\":\"packages/global-imports.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/global-imports.js?1732aee1bb5020ca344579886e06e2b515875fa1\",\"size\":1105,\"hash\":\"1732aee1bb5020ca344579886e06e2b515875fa1\"},{\"path\":\"app/client/views/about/template.about.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/client/views/about/template.about.js?b996d25569a3c98668704303959b97769520fb27\",\"size\":312,\"hash\":\"b996d25569a3c98668704303959b97769520fb27\"},{\"path\":\"app/client/views/application/template.layout.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/client/views/application/template.layout.js?cdca7d3f8fbe4d079512543cee3bff9139fd83c7\",\"size\":267,\"hash\":\"cdca7d3f8fbe4d079512543cee3bff9139fd83c7\"},{\"path\":\"app/client/views/application/template.loading.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/client/views/application/template.loading.js?52d92b0e7209908afe3964cd39112d59465479b2\",\"size\":365,\"hash\":\"52d92b0e7209908afe3964cd39112d59465479b2\"},{\"path\":\"app/client/views/application/template.template404.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/client/views/application/template.template404.js?aa977a17d38c0716134385245acf9d94e76bddab\",\"size\":286,\"hash\":\"aa977a17d38c0716134385245acf9d94e76bddab\"},{\"path\":\"app/client/views/header/template.header.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/client/views/header/template.header.js?23a8d4e0105980ffb752d296f227d91d8a0ad7a0\",\"size\":1035,\"hash\":\"23a8d4e0105980ffb752d296f227d91d8a0ad7a0\"},{\"path\":\"app/client/views/home/template.home.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/client/views/home/template.home.js?ad1e3072d21fc1070509a19673cfd59e3f2a3849\",\"size\":430,\"hash\":\"ad1e3072d21fc1070509a19673cfd59e3f2a3849\"},{\"path\":\"app/client/template.index.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/client/template.index.js?702eb0b67f2a7fe67f3ed93d3f70d1535fede05a\",\"size\":144,\"hash\":\"702eb0b67f2a7fe67f3ed93d3f70d1535fede05a\"},{\"path\":\"app/lib/router.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/lib/router.js?00f5840fb90f84a2aee52df93442c7053f52967d\",\"size\":202,\"hash\":\"00f5840fb90f84a2aee52df93442c7053f52967d\"},{\"path\":\"app/client/views/home/home.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/client/views/home/home.js?a754c0c02505e2566533d743183aaee70e74326a\",\"size\":277,\"hash\":\"a754c0c02505e2566533d743183aaee70e74326a\"},{\"path\":\"app/model/budget.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/model/budget.js?04672043c3b6f549d44763b3b14961e101f7a773\",\"size\":1003,\"hash\":\"04672043c3b6f549d44763b3b14961e101f7a773\"},{\"path\":\"packages/service-configuration.js\",\"where\":\"client\",\"type\":\"js\",\"cacheable\":true,\"url\":\"/packages/service-configuration.js?262da6fb1e9c97be84333c429c9a2929c80f8e3b\",\"sourceMap\":\"packages/service-configuration.js.map\",\"sourceMapUrl\":\"/packages/262da6fb1e9c97be84333c429c9a2929c80f8e3b.map\",\"size\":5082,\"hash\":\"262da6fb1e9c97be84333c429c9a2929c80f8e3b\"},{\"path\":\"6838476df135bfc3f8762e0f32cc5445e00c93bc.css\",\"where\":\"client\",\"type\":\"css\",\"cacheable\":true,\"url\":\"/6838476df135bfc3f8762e0f32cc5445e00c93bc.css\",\"sourceMap\":\"6838476df135bfc3f8762e0f32cc5445e00c93bc.css.map\",\"sourceMapUrl\":\"/6838476df135bfc3f8762e0f32cc5445e00c93bc.map\",\"size\":152599,\"hash\":\"6838476df135bfc3f8762e0f32cc5445e00c93bc\"},{\"path\":\"packages/velocity_html-reporter/lib/velocity_logo.svg\",\"where\":\"client\",\"type\":\"asset\",\"cacheable\":false,\"url\":\"/packages/velocity_html-reporter/lib/velocity_logo.svg\",\"size\":3723,\"hash\":\"bd19ecdc8eb1084f7bb562c298e4ce41f9cdc698\"},{\"path\":\"packages/velocity_html-reporter/lib/velocity_cog.svg\",\"where\":\"client\",\"type\":\"asset\",\"cacheable\":false,\"url\":\"/packages/velocity_html-reporter/lib/velocity_cog.svg\",\"size\":987,\"hash\":\"6e74acfffcbd2bafdc8a95d9db7762ece07b1e81\"},{\"path\":\"packages/velocity_html-reporter/lib/icon-time.png\",\"where\":\"client\",\"type\":\"asset\",\"cacheable\":false,\"url\":\"/packages/velocity_html-reporter/lib/icon-time.png\",\"size\":2834,\"hash\":\"868f492022a4dab0f1522de6aae0773531bc6e85\"},{\"path\":\"packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.eot\",\"where\":\"client\",\"type\":\"asset\",\"cacheable\":false,\"url\":\"/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.eot\",\"size\":20335,\"hash\":\"f3a9a3b609133c3d21d6b42abbf7f43bd111df72\"},{\"path\":\"packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.ttf\",\"where\":\"client\",\"type\":\"asset\",\"cacheable\":false,\"url\":\"/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.ttf\",\"size\":41280,\"hash\":\"aafafdc09404c4aa4447d7e898a2183def9cc1b1\"},{\"path\":\"packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.svg\",\"where\":\"client\",\"type\":\"asset\",\"cacheable\":false,\"url\":\"/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.svg\",\"size\":62926,\"hash\":\"66b1fc67e37d01ee45ca75c4eefb144d2dbe98fa\"},{\"path\":\"packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.woff\",\"where\":\"client\",\"type\":\"asset\",\"cacheable\":false,\"url\":\"/packages/ian_bootstrap-3/fonts/glyphicons-halflings-regular.woff\",\"size\":23320,\"hash\":\"22037a3455914e5662fa51a596677bdb329e2c5c\"},{\"path\":\"head.html\",\"where\":\"internal\",\"type\":\"head\",\"hash\":\"1cfeee83f24ed2a212c53d7b2d14b49c2a1df7b0\"}],\"version\":\"d4e95abb0ef4b7adddafb5b0fcc223a2e258a8e0\"}"
-                },
-                "type": {
-                  "type": "constant",
-                  "value": "json"
-                }
-              }
-            }
-          }
-        },
-        "inlineScriptsAllowed": {
-          "type": "function"
-        },
-        "setInlineScriptsAllowed": {
-          "type": "function"
-        },
-        "setBundledJsCssPrefix": {
-          "type": "function"
-        },
-        "addStaticJs": {
-          "type": "function"
-        },
-        "getBoilerplate": {
-          "type": "function"
-        },
-        "additionalStaticJs": {
-          "type": "object"
-        },
-        "validPid": {
-          "type": "function"
-        },
-        "refreshableAssets": {
-          "type": "object",
-          "members": {
-            "allCss": {
-              "type": "array"
-            }
-          }
-        }
-      }
     }
   },
   "check": {
@@ -9688,38 +7561,6 @@ var packageMetadata = {
       }
     }
   },
-  "follower-livedata": {
-    "Follower": {
-      "type": "object",
-      "members": {
-        "connect": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "application-configuration": {
-    "AppConfig": {
-      "type": "object",
-      "members": {
-        "findGalaxy": {
-          "type": "function"
-        },
-        "getAppConfig": {
-          "type": "function"
-        },
-        "getStarForThisJob": {
-          "type": "function"
-        },
-        "configurePackage": {
-          "type": "function"
-        },
-        "configureService": {
-          "type": "function"
-        }
-      }
-    }
-  },
   "binary-heap": {
     "MaxHeap": {
       "type": "function",
@@ -9982,6 +7823,12 @@ var packageMetadata = {
                 "upsert": {
                   "type": "function"
                 },
+                "rawCollection": {
+                  "type": "function"
+                },
+                "rawDatabase": {
+                  "type": "function"
+                },
                 "allow": {
                   "type": "function"
                 },
@@ -10007,11 +7854,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "QFBmvKF9d3bhyuFpH"
+          "value": "c0a55fc8503f8bb433d86f308308b6f9de461b6c"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "2152ebbfb9a3fd8a709a331e054faec8c297ac13"
+          "value": "9c2d9eb19a1b4ecdda22ab80ea84634ee493b224"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -10029,40 +7876,22 @@ var packageMetadata = {
     "NpmModuleBcrypt": {
       "type": "object",
       "members": {
-        "gen_salt_sync": {
-          "type": "function"
-        },
         "genSaltSync": {
-          "type": "function"
-        },
-        "gen_salt": {
           "type": "function"
         },
         "genSalt": {
           "type": "function"
         },
-        "encrypt_sync": {
-          "type": "function"
-        },
         "hashSync": {
           "type": "function"
         },
-        "encrypt": {
-          "type": "function"
-        },
         "hash": {
-          "type": "function"
-        },
-        "compare_sync": {
           "type": "function"
         },
         "compareSync": {
           "type": "function"
         },
         "compare": {
-          "type": "function"
-        },
-        "get_rounds": {
           "type": "function"
         },
         "getRounds": {
@@ -10087,13 +7916,13 @@ var packageMetadata = {
             }
           }
         },
-        "validateLoginAttempt": {
-          "type": "function"
-        },
         "onLogin": {
           "type": "function"
         },
         "onLoginFailure": {
+          "type": "function"
+        },
+        "validateLoginAttempt": {
           "type": "function"
         },
         "registerLoginHandler": {
@@ -10211,6 +8040,12 @@ var packageMetadata = {
               "type": "function"
             },
             "upsert": {
+              "type": "function"
+            },
+            "rawCollection": {
+              "type": "function"
+            },
+            "rawDatabase": {
               "type": "function"
             },
             "allow": {
@@ -11184,6 +9019,482 @@ var packageMetadata = {
       }
     }
   },
+  "velocity:chokidar": {
+    "chokidar": {
+      "type": "object",
+      "members": {
+        "isBinaryPath": {
+          "type": "function"
+        },
+        "FSWatcher": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "add": {
+                  "type": "function"
+                },
+                "close": {
+                  "type": "function"
+                },
+                "setMaxListeners": {
+                  "type": "function"
+                },
+                "emit": {
+                  "type": "function"
+                },
+                "addListener": {
+                  "type": "function",
+                  "refID": 13
+                },
+                "on": {
+                  "ref": 13
+                },
+                "once": {
+                  "type": "function"
+                },
+                "removeListener": {
+                  "type": "function"
+                },
+                "removeAllListeners": {
+                  "type": "function"
+                },
+                "listeners": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "watch": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "velocity:meteor-internals": {
+    "VelocityMeteorInternals": {
+      "type": "object",
+      "members": {
+        "parseStack": {
+          "type": "object",
+          "members": {
+            "markBottom": {
+              "type": "function"
+            }
+          }
+        },
+        "buildmessage": {
+          "type": "object",
+          "members": {
+            "markBoundary": {
+              "type": "function"
+            }
+          }
+        },
+        "files": {
+          "type": "object",
+          "members": {
+            "cwd": {
+              "type": "function"
+            },
+            "findAppDir": {
+              "type": "function"
+            },
+            "findPackageDir": {
+              "type": "function"
+            },
+            "statOrNull": {
+              "type": "function"
+            },
+            "runJavaScript": {
+              "type": "function"
+            },
+            "FancySyntaxError": {
+              "type": "function"
+            },
+            "writeFile": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "writeFile"
+                }
+              }
+            },
+            "appendFile": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "appendFile"
+                }
+              }
+            },
+            "readFile": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "readFile"
+                }
+              }
+            },
+            "stat": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "stat"
+                }
+              }
+            },
+            "lstat": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "lstat"
+                }
+              }
+            },
+            "exists": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "exists"
+                }
+              }
+            },
+            "rename": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "rename"
+                }
+              }
+            },
+            "realpath": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "realpath"
+                }
+              }
+            },
+            "readdir": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "readdir"
+                }
+              }
+            },
+            "rmdir": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "rmdir"
+                }
+              }
+            },
+            "mkdir": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "mkdir"
+                }
+              }
+            },
+            "unlink": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "unlink"
+                }
+              }
+            },
+            "chmod": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "chmod"
+                }
+              }
+            },
+            "open": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "open"
+                }
+              }
+            },
+            "read": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "read"
+                }
+              }
+            },
+            "write": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "write"
+                }
+              }
+            },
+            "close": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "close"
+                }
+              }
+            },
+            "symlink": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "symlink"
+                }
+              }
+            },
+            "readlink": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "readlink"
+                }
+              }
+            },
+            "createReadStream": {
+              "type": "function"
+            },
+            "createWriteStream": {
+              "type": "function"
+            },
+            "watchFile": {
+              "type": "function"
+            },
+            "unwatchFile": {
+              "type": "function"
+            },
+            "pathJoin": {
+              "type": "function"
+            },
+            "pathNormalize": {
+              "type": "function"
+            },
+            "pathRelative": {
+              "type": "function"
+            },
+            "pathResolve": {
+              "type": "function"
+            },
+            "pathDirname": {
+              "type": "function"
+            },
+            "pathBasename": {
+              "type": "function"
+            },
+            "pathExtname": {
+              "type": "function"
+            },
+            "pathSep": {
+              "type": "constant",
+              "value": "/"
+            },
+            "pathDelimiter": {
+              "type": "constant",
+              "value": ":"
+            },
+            "pathOsDelimiter": {
+              "type": "constant",
+              "value": ":"
+            },
+            "convertToStandardPath": {
+              "type": "function"
+            },
+            "convertToOSPath": {
+              "type": "function"
+            },
+            "convertToWindowsPath": {
+              "type": "function"
+            },
+            "convertToPosixPath": {
+              "type": "function"
+            },
+            "convertToStandardLineEndings": {
+              "type": "function"
+            },
+            "convertToOSLineEndings": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sanjo:long-running-child-process": {
+    "LongRunningChildProcess": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "taskName": {
+              "type": "null",
+              "value": null
+            },
+            "child": {
+              "type": "null",
+              "value": null
+            },
+            "pid": {
+              "type": "null",
+              "value": null
+            },
+            "getTaskName": {
+              "type": "function"
+            },
+            "getChild": {
+              "type": "function"
+            },
+            "getPid": {
+              "type": "function"
+            },
+            "isDead": {
+              "type": "function"
+            },
+            "isRunning": {
+              "type": "function"
+            },
+            "readPid": {
+              "type": "function"
+            },
+            "spawn": {
+              "type": "function"
+            },
+            "kill": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sanjo:meteor-version": {
+    "MeteorVersion": {
+      "type": "object",
+      "members": {
+        "getSemanticVersion": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "package-version-parser": {
+    "PackageVersion": {
+      "type": "function",
+      "members": {
+        "parse": {
+          "type": "function"
+        },
+        "versionMagnitude": {
+          "type": "function"
+        },
+        "lessThan": {
+          "type": "function"
+        },
+        "majorVersion": {
+          "type": "function"
+        },
+        "compare": {
+          "type": "function"
+        },
+        "getValidServerVersion": {
+          "type": "function"
+        },
+        "VersionConstraint": {
+          "type": "function"
+        },
+        "parseVersionConstraint": {
+          "type": "function"
+        },
+        "PackageConstraint": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "toString": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "parsePackageConstraint": {
+          "type": "function"
+        },
+        "validatePackageName": {
+          "type": "function"
+        },
+        "invalidFirstFormatConstraint": {
+          "type": "function"
+        },
+        "removeBuildID": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "sanjo:meteor-files-helpers": {
+    "MeteorFilesHelpers": {
+      "type": "object",
+      "members": {
+        "getAppPath": {
+          "type": "function"
+        },
+        "getMeteorToolPath": {
+          "type": "function"
+        },
+        "getMeteorInstallationPath": {
+          "type": "function"
+        },
+        "getNodeModulePath": {
+          "type": "function"
+        },
+        "getPackageVersions": {
+          "type": "function"
+        },
+        "getPackageVersion": {
+          "type": "function"
+        },
+        "isPackageInstalled": {
+          "type": "function"
+        }
+      }
+    }
+  },
   "velocity:core": {
     "Velocity": {
       "type": "object",
@@ -11195,6 +9506,12 @@ var packageMetadata = {
           "type": "function"
         },
         "getTestsPath": {
+          "type": "function"
+        },
+        "getPackagesPath": {
+          "type": "function"
+        },
+        "getPackagePath": {
           "type": "function"
         },
         "postProcessors": {
@@ -11212,21 +9529,38 @@ var packageMetadata = {
         "onTest": {
           "type": "function"
         },
-        "Mirror": {
-          "type": "object",
-          "members": {
-            "start": {
-              "type": "function"
-            }
-          }
+        "setOption": {
+          "type": "function"
         },
-        "ProxyPackageSync": {
-          "type": "object",
-          "members": {
-            "regeneratePackageJs": {
-              "type": "function"
-            }
-          }
+        "setOptions": {
+          "type": "function"
+        },
+        "getOption": {
+          "type": "function"
+        },
+        "mirrorMeteorReleaseName": {
+          "type": "constant",
+          "value": "velocity:METEOR"
+        },
+        "mirrorMeteorVersion": {
+          "type": "constant",
+          "value": "1.1.0.2_1"
+        },
+        "mirrorMeteorRelease": {
+          "type": "constant",
+          "value": "velocity:METEOR@1.1.0.2_1"
+        },
+        "mirrorMeteorToolReleaseName": {
+          "type": "constant",
+          "value": "velocity:meteor-tool"
+        },
+        "mirrorMeteorToolVersion": {
+          "type": "constant",
+          "value": "1.1.3_2"
+        },
+        "mirrorMeteorToolRelease": {
+          "type": "constant",
+          "value": "velocity:meteor-tool@1.1.3_2"
         }
       }
     },
@@ -11249,6 +9583,12 @@ var packageMetadata = {
           "type": "function"
         },
         "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
           "type": "function"
         },
         "allow": {
@@ -11280,6 +9620,12 @@ var packageMetadata = {
         "upsert": {
           "type": "function"
         },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
         "allow": {
           "type": "function"
         },
@@ -11307,6 +9653,12 @@ var packageMetadata = {
           "type": "function"
         },
         "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
           "type": "function"
         },
         "allow": {
@@ -11338,6 +9690,12 @@ var packageMetadata = {
         "upsert": {
           "type": "function"
         },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
         "allow": {
           "type": "function"
         },
@@ -11365,6 +9723,12 @@ var packageMetadata = {
           "type": "function"
         },
         "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
           "type": "function"
         },
         "allow": {
@@ -11396,6 +9760,47 @@ var packageMetadata = {
         "upsert": {
           "type": "function"
         },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
+        "allow": {
+          "type": "function"
+        },
+        "deny": {
+          "type": "function"
+        }
+      }
+    },
+    "VelocityOptions": {
+      "type": "object",
+      "members": {
+        "find": {
+          "type": "function"
+        },
+        "findOne": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "update": {
+          "type": "function"
+        },
+        "remove": {
+          "type": "function"
+        },
+        "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
         "allow": {
           "type": "function"
         },
@@ -11419,72 +9824,6 @@ var packageMetadata = {
       }
     }
   },
-  "alanning:package-stubber": {
-    "PackageStubber": {
-      "type": "object",
-      "members": {
-        "functionReplacementStr": {
-          "type": "constant",
-          "value": "function emptyFn () {}"
-        },
-        "validate": {
-          "type": "object",
-          "members": {
-            "stubPackages": {
-              "type": "function"
-            },
-            "deepCopyReplaceFn": {
-              "type": "function"
-            }
-          }
-        },
-        "stubPackages": {
-          "type": "function"
-        },
-        "listTestPackages": {
-          "type": "function"
-        },
-        "listPackages": {
-          "type": "function"
-        },
-        "listPackageExports": {
-          "type": "function"
-        },
-        "deepCopyReplaceFn": {
-          "type": "function"
-        },
-        "shouldIgnorePackage": {
-          "type": "function"
-        },
-        "replaceFnPlaceholders": {
-          "type": "function"
-        },
-        "stubGenerators": {
-          "type": "object",
-          "members": {
-            "function": {
-              "type": "function"
-            },
-            "object": {
-              "type": "function"
-            },
-            "string": {
-              "type": "function"
-            },
-            "number": {
-              "type": "function"
-            },
-            "undefined": {
-              "type": "function"
-            }
-          }
-        },
-        "generateStubJsCode": {
-          "type": "function"
-        }
-      }
-    }
-  },
   "sanjo:karma": {
     "Karma": {
       "type": "object",
@@ -11501,127 +9840,7 @@ var packageMetadata = {
       "type": "object",
       "members": {
         "karmaChilds": {
-          "type": "object",
-          "members": {
-            "jasmine-client-unit": {
-              "type": "object",
-              "members": {
-                "taskName": {
-                  "type": "constant",
-                  "value": "jasmine-client-unit"
-                },
-                "appPath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/unquantifiable-treasures"
-                },
-                "pid": {
-                  "type": "constant",
-                  "value": 6845
-                },
-                "fout": {
-                  "type": "constant",
-                  "value": 38
-                },
-                "child": {
-                  "type": "object",
-                  "members": {
-                    "domain": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "signalCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "exitCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "pid": {
-                      "type": "constant",
-                      "value": 6845
-                    },
-                    "stdin": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdout": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stderr": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdio": {
-                      "type": "array"
-                    },
-                    "spawn": {
-                      "type": "function"
-                    },
-                    "kill": {
-                      "type": "function"
-                    },
-                    "ref": {
-                      "type": "function"
-                    },
-                    "unref": {
-                      "type": "function"
-                    },
-                    "setMaxListeners": {
-                      "type": "function"
-                    },
-                    "emit": {
-                      "type": "function"
-                    },
-                    "addListener": {
-                      "type": "function",
-                      "refID": 17
-                    },
-                    "on": {
-                      "ref": 17
-                    },
-                    "once": {
-                      "type": "function"
-                    },
-                    "removeListener": {
-                      "type": "function"
-                    },
-                    "removeAllListeners": {
-                      "type": "function"
-                    },
-                    "listeners": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "getTaskName": {
-                  "type": "function"
-                },
-                "getChild": {
-                  "type": "function"
-                },
-                "getPid": {
-                  "type": "function"
-                },
-                "isDead": {
-                  "type": "function"
-                },
-                "isRunning": {
-                  "type": "function"
-                },
-                "readPid": {
-                  "type": "function"
-                },
-                "spawn": {
-                  "type": "function"
-                },
-                "kill": {
-                  "type": "function"
-                }
-              }
-            }
-          }
+          "type": "object"
         },
         "getKarmaChild": {
           "type": "function"
@@ -11644,9 +9863,6 @@ var packageMetadata = {
         "getConfigPath": {
           "type": "function"
         },
-        "getAppPath": {
-          "type": "function"
-        },
         "getKarmaPath": {
           "type": "function"
         }
@@ -11667,13 +9883,16 @@ var packageMetadata = {
   "sacha:spin": {},
   "ian:bootstrap-3": {},
   "ian:accounts-ui-bootstrap-3": {},
-  "tap:http-methods": {
+  "cfs:http-methods": {
     "HTTP": {
       "type": "object",
       "members": {
         "methodsMaxDataLength": {
           "type": "constant",
           "value": 5242880
+        },
+        "defaultAuth": {
+          "type": "function"
         },
         "methods": {
           "type": "function"
@@ -11705,6 +9924,9 @@ var packageMetadata = {
           "type": "function"
         },
         "getUserId": {
+          "type": "function"
+        },
+        "defaultOptionsHandler": {
           "type": "function"
         }
       }
@@ -13890,11 +12112,11 @@ var packageMetadata = {
             },
             "pluralNotFound": {
               "type": "constant",
-              "value": "plural_not_found0.0370145570486784"
+              "value": "plural_not_found0.7933735547121614"
             },
             "contextNotFound": {
               "type": "constant",
-              "value": "context_not_found0.4343951891642064"
+              "value": "context_not_found0.6122420614119619"
             },
             "cookieExpirationTime": {
               "type": "undefined"
@@ -13941,7 +12163,7 @@ var packageMetadata = {
         "packages": {
           "type": "object"
         },
-        "languages_available_for_project": {
+        "languages_names": {
           "type": "object"
         },
         "translations": {
@@ -13951,6 +12173,9 @@ var packageMetadata = {
           "type": "function"
         },
         "getLanguages": {
+          "type": "function"
+        },
+        "loadTranslations": {
           "type": "function"
         },
         "server_translators": {
@@ -13970,75 +12195,7 @@ var packageMetadata = {
       }
     }
   },
-  "velocity:test-proxy": {},
-  "velocity:node-soft-mirror": {},
-  "xolvio:cucumber": {
-    "cucumber": {
-      "type": "object"
-    }
-  },
-  "xolvio:webdriver": {
-    "wdio": {
-      "type": "object",
-      "members": {
-        "instance": {
-          "type": "object",
-          "members": {
-            "version": {
-              "type": "constant",
-              "value": "2.2.3"
-            },
-            "ErrorHandler": {
-              "type": "function",
-              "members": {
-                "super_": {
-                  "type": "function",
-                  "members": {
-                    "captureStackTrace": {
-                      "type": "function"
-                    },
-                    "stackTraceLimit": {
-                      "type": "constant",
-                      "value": null
-                    },
-                    "prepareStackTrace": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "CommandError": {
-                  "type": "function"
-                },
-                "ProtocolError": {
-                  "type": "function"
-                },
-                "RuntimeError": {
-                  "type": "function"
-                },
-                "prototype": {
-                  "type": "object",
-                  "members": {
-                    "toJSON": {
-                      "type": "function"
-                    },
-                    "addToCallStack": {
-                      "type": "function"
-                    }
-                  }
-                }
-              }
-            },
-            "remote": {
-              "type": "function"
-            }
-          }
-        },
-        "getGhostDriver": {
-          "type": "function"
-        }
-      }
-    }
-  },
+  "mrt:jquery-ui": {},
   "session": {},
   "livedata": {
     "DDP": {
@@ -14132,6 +12289,12 @@ var packageMetadata = {
               "type": "function"
             },
             "upsert": {
+              "type": "function"
+            },
+            "rawCollection": {
+              "type": "function"
+            },
+            "rawDatabase": {
               "type": "function"
             },
             "allow": {

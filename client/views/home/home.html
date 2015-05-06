@@ -3,5 +3,62 @@
         <h1>Welcome to Unquantifiable Treasures!</h1>
         <button class="btn-success">Make a Budget</button>
         <p>{{message}}</p>
+        <p>{{envelopeCount}}</p>
+        <h2>Envelopes</h2>
+        <ul>
+            {{#each envelopes}}
+            {{> envelope}}
+            {{/each}}
+        </ul>
+        <h3>Add envelope</h3>
+        <form class="new-envelope">
+            <input type="text" name="envelopeName" placeholder="Envelope Name"/>
+            <button type="submit">Add Envelope</button>
+        </form>
+        <h2>Income</h2>
+        <ul>
+            {{#each incomes}}
+            {{> income}}
+            {{/each}}
+        </ul>
+        <h3>Add income</h3>
+        <form class="new-income">
+            <input type="text" name="incomeDate" placeholder="Date" class="date"/>
+            <input type="text" name="incomeAmount" placeholder="Amount"/>
+            <button type="submit">Add Income</button>
+        </form>
+        <h2>Demands</h2>
+        <ul>
+            {{#each demands}}
+            {{> demand}}
+            {{/each}}
+        </ul>
+        <h3>Add demand</h3>
+        <form class="new-demand">
+            <select name="envelope">
+                {{#each envelopes}}
+                {{> envelopeoption}}
+                {{/each}}
+            </select>
+            <input type="text" name="demandDate" placeholder="Date" class="date"/>
+            <input type="text" name="demandAmount" placeholder="Amount"/>
+            <button type="submit">Add Demand</button>
+        </form>
     </div>
+</template>
+
+<template name="envelope">
+    <li>{{name}}</li>
+</template>
+
+<template name="envelopeoption">
+    <option value='{{_id}}'>{{name}}</option>
+</template>
+
+<template name="income">
+    <li>{{date}}: {{amount}}</li>
+</template>
+
+<template name="demand">
+    <li>{{date}}: {{envelope.name}}: {{amount}}</li>
 </template>

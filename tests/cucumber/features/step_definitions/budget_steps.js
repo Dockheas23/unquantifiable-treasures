@@ -13,20 +13,24 @@
          */
         var helper = this;
 
-        this.Given(/^I am on the home page$/, function (callback) {
-            callback.pending();
+        this.Given(/^I am on the home page$/, function (next) {
+            console.log("Given 1");
+            next();
         });
 
-        this.Given(/^I am logged in$/, function (callback) {
-            callback.pending();
+        this.Given(/^I am logged in$/, function (next) {
+            console.log("Given 2");
+            next();
         });
 
-        this.When(/^I click on "([^"]*)"$/, function (button, callback) {
-            callback.pending();
+        this.When(/^I click on "([^"]*)"$/, function (button, next) {
+            console.log("When: " + button);
+            next();
         });
 
-        this.Then(/^A new budget should be created$/, function (callback) {
-            callback.pending();
+        this.Then(/^A new budget should be created$/, function (next) {
+            console.log("Then");
+            next();
         });
 
 
