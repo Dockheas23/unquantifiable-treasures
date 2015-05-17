@@ -17,6 +17,29 @@ FillClient = function (args) {
  * @returns {{balance: number, fills: *[]}}
  */
 FillClient.prototype.getFills = function (args) {
+
+    /**
+     Example request:
+
+     budgetRequest: {
+            income: [{
+                date: "2015/3/1",
+                amount: 2222
+            }],
+            demands: [{
+                envelope: "",
+                amount: 1111,
+                period: {
+                    start: "",
+                    end: "" // Optional
+                }
+            }],
+            balance: 11111 // income to this date (user input)
+        }
+
+     */
+
+
     return {
         balance: 8948,
         fills: [{

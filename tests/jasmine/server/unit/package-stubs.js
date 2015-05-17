@@ -7087,7 +7087,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "aee972f02462419d906037396f031a6218925225"
+                  "value": "cf5858224935b4086b0c8707469e15d7f48b3e52"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7211,7 +7211,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 0
+              "value": 2
             },
             "timeout": {
               "type": "constant",
@@ -7854,11 +7854,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "5b796b94d507134e08bfe49e2d2dcf5093715219"
+          "value": "cc6a4d2d08f0d52fed9a105b2ec58dd7588593d4"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "9dd3cffbd558f5037de3e0c791c40691c44f07d0"
+          "value": "5faff51ba0605d9c014148c1218e83701ebab568"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -9855,7 +9855,84 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 7009
+                  "value": 7117
+                },
+                "fout": {
+                  "type": "constant",
+                  "value": 34
+                },
+                "child": {
+                  "type": "object",
+                  "members": {
+                    "domain": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "signalCode": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "exitCode": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "pid": {
+                      "type": "constant",
+                      "value": 7117
+                    },
+                    "stdin": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "stdout": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "stderr": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "stdio": {
+                      "type": "array"
+                    },
+                    "spawn": {
+                      "type": "function"
+                    },
+                    "kill": {
+                      "type": "function"
+                    },
+                    "ref": {
+                      "type": "function"
+                    },
+                    "unref": {
+                      "type": "function"
+                    },
+                    "setMaxListeners": {
+                      "type": "function"
+                    },
+                    "emit": {
+                      "type": "function"
+                    },
+                    "addListener": {
+                      "type": "function",
+                      "refID": 17
+                    },
+                    "on": {
+                      "ref": 17
+                    },
+                    "once": {
+                      "type": "function"
+                    },
+                    "removeListener": {
+                      "type": "function"
+                    },
+                    "removeAllListeners": {
+                      "type": "function"
+                    },
+                    "listeners": {
+                      "type": "function"
+                    }
+                  }
                 },
                 "getTaskName": {
                   "type": "function"
@@ -12155,11 +12232,11 @@ var packageMetadata = {
             },
             "pluralNotFound": {
               "type": "constant",
-              "value": "plural_not_found0.16827846528030932"
+              "value": "plural_not_found0.5274809165857732"
             },
             "contextNotFound": {
               "type": "constant",
-              "value": "context_not_found0.8349656520877033"
+              "value": "context_not_found0.5675069354474545"
             },
             "cookieExpirationTime": {
               "type": "undefined"
