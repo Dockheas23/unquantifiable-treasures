@@ -7087,7 +7087,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "27939249a1242a14da40d7a61632b0a481ffdb7d"
+                  "value": "f77dcfa8f1a5cbde9f5a1e6002dbd596f082f831"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7854,7 +7854,7 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "c0a55fc8503f8bb433d86f308308b6f9de461b6c"
+          "value": "2720d061925eef6e1e26d8004dc3f54f9b53508a"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
@@ -9840,7 +9840,50 @@ var packageMetadata = {
       "type": "object",
       "members": {
         "karmaChilds": {
-          "type": "object"
+          "type": "object",
+          "members": {
+            "jasmine-client-unit": {
+              "type": "object",
+              "members": {
+                "taskName": {
+                  "type": "constant",
+                  "value": "jasmine-client-unit"
+                },
+                "appPath": {
+                  "type": "constant",
+                  "value": "/Users/ruairiobrien/Dev/GR/unquantifiable-treasures"
+                },
+                "pid": {
+                  "type": "constant",
+                  "value": 6336
+                },
+                "getTaskName": {
+                  "type": "function"
+                },
+                "getChild": {
+                  "type": "function"
+                },
+                "getPid": {
+                  "type": "function"
+                },
+                "isDead": {
+                  "type": "function"
+                },
+                "isRunning": {
+                  "type": "function"
+                },
+                "readPid": {
+                  "type": "function"
+                },
+                "spawn": {
+                  "type": "function"
+                },
+                "kill": {
+                  "type": "function"
+                }
+              }
+            }
+          }
         },
         "getKarmaChild": {
           "type": "function"
@@ -12112,11 +12155,11 @@ var packageMetadata = {
             },
             "pluralNotFound": {
               "type": "constant",
-              "value": "plural_not_found0.7933735547121614"
+              "value": "plural_not_found0.38886623457074165"
             },
             "contextNotFound": {
               "type": "constant",
-              "value": "context_not_found0.6122420614119619"
+              "value": "context_not_found0.18141168565489352"
             },
             "cookieExpirationTime": {
               "type": "undefined"

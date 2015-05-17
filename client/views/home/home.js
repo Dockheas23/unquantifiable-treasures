@@ -30,7 +30,7 @@ Template.home.events({
         Demands.insert({
             envelope: Envelopes.findOne({_id: envelopeId}),
             date: new Date(demandDate),
-            amount: amount,
+            amount: amount
         });
         event.target.demandAmount.value = '';
         return false;
@@ -41,7 +41,7 @@ Template.home.events({
         var amount = event.target.incomeAmount.value;
         Incomes.insert({
             date: new Date(incomeDate),
-            amount: amount,
+            amount: amount
         });
         event.target.incomeDate.value = '';
         event.target.incomeAmount.value = '';
@@ -50,7 +50,7 @@ Template.home.events({
     'submit .new-envelope': function (event) {
         var envelopeName = event.target.envelopeName.value;
         Envelopes.insert({
-            name: envelopeName,
+            name: envelopeName
         });
         event.target.envelopeName.value = '';
         return false;

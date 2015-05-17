@@ -7,10 +7,11 @@ Fills.allow({
     }
 });
 
-Fill = function (demand, date, amount) {
+Fill = function (demand, date, amount, owner) {
     this._demand = demand;
     this._date = date;
     this._amount = amount;
+    this._owner = owner;
 };
 
 Fill.prototype = {
@@ -26,6 +27,9 @@ Fill.prototype = {
     get date() {
         return this._date;
     },
+    get owner() {
+        return this._owner;
+    },
     save: function (callback) {
         // remember the context since in callback it is changed
         var that = this;
@@ -33,6 +37,7 @@ Fill.prototype = {
             amount: this._amount,
             demand: this._demand,
             date: this._date,
+            owner: this._owner
         };
 
         Fills.insert(doc, function (error, result) {

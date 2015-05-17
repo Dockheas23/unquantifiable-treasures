@@ -7,10 +7,10 @@ Demands.allow({
     }
 });
 
-Demand = function (budget, envelope, amount) {
-    this._budget = budget;
+Demand = function (envelope, amount, owner) {
     this._envelope = envelope;
     this._amount = amount;
+    this._owner = owner;
 };
 
 Demand.prototype = {
@@ -20,19 +20,19 @@ Demand.prototype = {
     get amount() {
         return this._amount;
     },
-    get budget() {
-        return this._budget;
-    },
     get envelope() {
         return this._envelope;
+    },
+    get owner() {
+        return this._owner;
     },
     save: function (callback) {
         // remember the context since in callback it is changed
         var that = this;
         var doc = {
             amount: this._amount,
-            budget: this._budget,
             envelope: this._envelope,
+            owner: this._owner
         };
 
         Demands.insert(doc, function (error, result) {

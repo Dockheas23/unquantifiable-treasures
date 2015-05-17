@@ -7,8 +7,9 @@ Envelopes.allow({
     }
 });
 
-Envelope = function (name) {
+Envelope = function (name, owner) {
     this._name = name;
+    this._owner = owner;
 };
 
 Envelope.prototype = {
@@ -18,11 +19,15 @@ Envelope.prototype = {
     get name() {
         return this._name;
     },
+    get owner() {
+        return this._owner;
+    },
     save: function (callback) {
         // remember the context since in callback it is changed
         var that = this;
         var doc = {
             name: this._name,
+            owner: this._owner
         };
 
         Envelopes.insert(doc, function (error, result) {

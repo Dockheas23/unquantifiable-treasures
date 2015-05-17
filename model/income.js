@@ -7,10 +7,10 @@ Incomes.allow({
     }
 });
 
-Income = function (budget, date, amount) {
-    this._budget = budget;
+Income = function (date, amount, owner) {
     this._date = date;
     this._amount = amount;
+    this._owner = owner;
 };
 
 Income.prototype = {
@@ -20,19 +20,19 @@ Income.prototype = {
     get amount() {
         return this._amount;
     },
-    get budget() {
-        return this._budget;
-    },
     get date() {
         return this._date;
+    },
+    get owner() {
+        return this._owner;
     },
     save: function (callback) {
         // remember the context since in callback it is changed
         var that = this;
         var doc = {
             amount: this._amount,
-            budget: this._budget,
             date: this._date,
+            owner: this._owner
         };
 
         Incomes.insert(doc, function (error, result) {
