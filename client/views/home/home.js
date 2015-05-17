@@ -1,13 +1,8 @@
-Session.setDefault("message", '');
-
 Template.home.onRendered(function() {
     $('.date').datepicker({ dateFormat: 'yy-mm-dd' });
 });
 
 Template.home.helpers({
-    message: function () {
-        return Session.get("message");
-    },
     demands: function() {
         return Demands.find({});
     },
@@ -16,12 +11,16 @@ Template.home.helpers({
     },
     envelopes: function() {
         return Envelopes.find({});
-    },
+    }
 });
 
 Template.home.events({
-    'click button': function () {
-        Session.set("message", 'You can fuck off');
+    'click #makeBudget': function () {
+        Meteor.call('getFills', function (err, result) {
+            window.alert(JSON.stringify(result));
+            Session.set("endBalance", result.balance);
+            Session.set("fills", result.fills);
+        });
     },
     'submit .new-demand': function (event) {
         var envelopeId = event.target.envelope.value;

@@ -1,50 +1,110 @@
 <template name="home">
-    <div class="container">
-        <h1>Welcome to Unquantifiable Treasures!</h1>
-        <p>{{envelopeCount}}</p>
-        <h2>Envelopes</h2>
-        <ul>
-            {{#each envelopes}}
-            {{> envelope}}
-            {{/each}}
-        </ul>
-        <h3>Add envelope</h3>
-        <form class="new-envelope">
-            <input type="text" name="envelopeName" placeholder="Envelope Name"/>
-            <button type="submit">Add Envelope</button>
-        </form>
-        <h2>Income</h2>
-        <ul>
-            {{#each incomes}}
-            {{> income}}
-            {{/each}}
-        </ul>
-        <h3>Add income</h3>
-        <form class="new-income">
-            <input type="text" name="incomeDate" placeholder="Date" class="date"/>
-            <input type="text" name="incomeAmount" placeholder="Amount"/>
-            <button type="submit">Add Income</button>
-        </form>
-        <h2>Demands</h2>
-        <ul>
-            {{#each demands}}
-            {{> demand}}
-            {{/each}}
-        </ul>
-        <h3>Add demand</h3>
-        <form class="new-demand">
-            <select name="envelope">
-                {{#each envelopes}}
-                {{> envelopeoption}}
-                {{/each}}
-            </select>
-            <input type="text" name="demandDate" placeholder="Date" class="date"/>
-            <input type="text" name="demandAmount" placeholder="Amount"/>
-            <button type="submit">Add Demand</button>
-        </form>
-    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="page-header text-center">
+                        <h1>
+                            Welcome to Unquantifiable Treasures!
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p>{{envelopeCount}}</p>
 
-    <button class="btn-success">Make a Budget</button>
+                    <h2>Envelopes</h2>
+                    <ul>
+                        {{#each envelopes}}
+                            {{> envelope}}
+                        {{/each}}
+                    </ul>
+                    <h3>Add envelope</h3>
+
+                    <form class="new-envelope">
+                        <input type="text" name="envelopeName" placeholder="Envelope Name"/>
+                        <button type="submit">Add Envelope</button>
+                    </form>
+                    <h2>Income</h2>
+                    <ul>
+                        {{#each incomes}}
+                            {{> income}}
+                        {{/each}}
+                    </ul>
+                    <h3>Add income</h3>
+
+                    <form class="new-income">
+                        <input type="text" name="incomeDate" placeholder="Date" class="date"/>
+                        <input type="text" name="incomeAmount" placeholder="Amount"/>
+                        <button type="submit">Add Income</button>
+                    </form>
+                    <h2>Demands</h2>
+                    <ul>
+                        {{#each demands}}
+                            {{> demand}}
+                        {{/each}}
+                    </ul>
+                    <h3>Add demand</h3>
+
+                    <form class="new-demand">
+                        <select name="envelope">
+                            {{#each envelopes}}
+                                {{> envelopeoption}}
+                            {{/each}}
+                        </select>
+                        <input type="text" name="demandDate" placeholder="Date" class="date"/>
+                        <input type="text" name="demandAmount" placeholder="Amount"/>
+                        <button type="submit">Add Demand</button>
+                    </form>
+                    <form>
+                        <button id="makeBudget" class="btn-success">Make a Budget</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+                            <div>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a>Money</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4  col-xs-6">
+                            <div>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a>Money</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+                            <div>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a>Money</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+                    <span class="text-right"><address><strong>Unquantifiable Treasures, Inc.</strong><br/> <strong>George
+                        Boyle</strong><br/> <a href="mailto:#">georgs@thebuds.net</a></address></span>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <template name="envelope">
