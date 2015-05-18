@@ -1,5 +1,4 @@
-FROM danieldent/meteor
+FROM meteorhacks/meteord:onbuild
 MAINTAINER George Boyle <george@thebuds.net>
-RUN git clone https://github.com/Dockheas23/unquantifiable-treasures /opt/ut-meteor
-EXPOSE 3000
-CMD cd /opt/ut-meteor && meteor
+ENV ROOT_URL=http://104.155.19.251
+ENV MONGO_URL=mongodb://higgs:youfoolsturnitoff@dogen.mongohq.com:10079/unquantifiable-treasures-database
