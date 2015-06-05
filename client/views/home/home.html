@@ -57,9 +57,28 @@
                         <input type="text" name="demandAmount" placeholder="Amount"/>
                         <button type="submit">Add Demand</button>
                     </form>
-                    <form>
-                        <button id="makeBudget" class="btn-success">Make a Budget</button>
+
+                    <h2>Make a Budget</h2>
+                    <p>
+                    <form class="make-budget">
+                        <input id="openingBalance" type="text" placeholder="Opening Balance"/>
+                        <button type="submit" class="btn-success">Make a Budget</button>
                     </form>
+                    </p>
+                    <h2>Result</h2>
+                    <h3>Fills</h3>
+                    <ul>
+                        {{#each fills}}
+                            {{> fill}}
+                        {{/each}}
+                    </ul>
+                    <h3>Closing Balance</h3>
+                    <p>{{closingBalance}}</p>
+
+                    <h2>Clear Budget</h2>
+                    <p>
+                    <button id="clearBudget">Clear Budget</button>
+                    </p>
                 </div>
             </div>
         </div>
@@ -99,8 +118,13 @@
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
-                    <span class="text-right"><address><strong>Unquantifiable Treasures, Inc.</strong><br/> <strong>George
-                        Boyle</strong><br/> <a href="mailto:#">georgs@thebuds.net</a></address></span>
+                    <span class="text-right">
+                        <address>
+                            <strong>Unquantifiable Treasures, Inc.</strong><br/>
+                            <strong>George Boyle</strong> <a href="mailto:george@thebuds.net">george@thebuds.net</a> <br/>
+                            <strong>Ruairi O'Brien</strong> <a href="mailto:ruairitobrien@gmail.com">ruairitobrien@gmail.com</a>
+                        </address>
+                    </span>
                 </div>
             </div>
         </div>
@@ -121,4 +145,8 @@
 
 <template name="demand">
     <li>{{date}}: {{envelope.name}}: {{amount}}</li>
+</template>
+
+<template name="fill">
+    <li>{{date}}: {{envelope}}: {{amount}}</li>
 </template>

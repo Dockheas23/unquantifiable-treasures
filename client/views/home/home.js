@@ -11,16 +11,48 @@ Template.home.helpers({
     },
     envelopes: function() {
         return Envelopes.find({});
+    },
+    fills: function() {
+        return Session.get("fills");
+    },
+    closingBalance: function() {
+        return Session.get("closingBalance");
     }
 });
 
+function getDateString(date) {
+    return date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+}
+
+function getBudgetRequest(balance) {
+    budgetRequest = {balance: balance, income: [], demands: []};
+    Demands.find({}).forEach(function(demand) {
+        budgetRequest.demands.push(
+                {
+                    period: {start: getDateString(demand.date)},
+                    envelope: demand.envelope.name,
+                    amount: Number(demand.amount)
+                });
+    });
+    Incomes.find({}).forEach(function(income) {
+        budgetRequest.income.push(
+                {
+                    date: getDateString(income.date),
+                    amount: Number(income.amount)
+                });
+    });
+    return budgetRequest;
+}
+
 Template.home.events({
-    'click #makeBudget': function () {
-        Meteor.call('getFills', function (err, result) {
-            window.alert(JSON.stringify(result));
-            Session.set("endBalance", result.balance);
-            Session.set("fills", result.fills);
-        });
+    'submit .make-budget': function (event) {
+        var balance = Number(event.target.openingBalance.value) || 0
+        Meteor.call('getFills', {budgetRequest: getBudgetRequest(balance)},
+                function (err, result) {
+                    Session.set("closingBalance", result.balance);
+                    Session.set("fills", result.fills);
+                });
+        event.preventDefault();
     },
     'submit .new-demand': function (event) {
         var envelopeId = event.target.envelope.value;
@@ -29,7 +61,7 @@ Template.home.events({
         Demands.insert({
             envelope: Envelopes.findOne({_id: envelopeId}),
             date: new Date(demandDate),
-            amount: amount
+            amount: Number(amount)
         });
         event.target.demandAmount.value = '';
         return false;
@@ -40,7 +72,7 @@ Template.home.events({
         var amount = event.target.incomeAmount.value;
         Incomes.insert({
             date: new Date(incomeDate),
-            amount: amount
+            amount: Number(amount)
         });
         event.target.incomeDate.value = '';
         event.target.incomeAmount.value = '';
@@ -53,5 +85,10 @@ Template.home.events({
         });
         event.target.envelopeName.value = '';
         return false;
+    },
+    'click #clearBudget': function () {
+        console.log("HEYO");
+        Incomes.remove({});
+        Demands.remove({});
     }
 });
