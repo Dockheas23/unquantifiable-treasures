@@ -9,5 +9,12 @@ Meteor.methods({
     getFills: function (args) {
         var fillClient = new FillClient();
         return fillClient.getFills(args);
+    },
+
+    clearBudget: function () {
+        Demands.remove({owner: Meteor.userId()});
+        Envelopes.remove({owner: Meteor.userId()});
+        Incomes.remove({owner: Meteor.userId()});
     }
+
 });

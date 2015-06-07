@@ -4,6 +4,10 @@ Envelopes.allow({
     insert: function (userId, doc) {
         return (userId && doc.owner === Meteor.userId() &&
         (Roles.userIsInRole(userId, "admin")) || Roles.userIsInRole(userId, "normal"));
+    },
+    remove: function (userId, doc) {
+        var demand = Demands.findOne({envelope: doc});
+        return demand == null && doc.owner === userId;
     }
 });
 

@@ -58,11 +58,11 @@
                         <button type="submit">Add Demand</button>
                     </form>
 
-                    <h2>Make a Budget</h2>
+                    <h2>Run Budget</h2>
                     <p>
-                    <form class="make-budget">
+                    <form class="run-budget">
                         <input id="openingBalance" type="text" placeholder="Opening Balance"/>
-                        <button type="submit" class="btn-success">Make a Budget</button>
+                        <button type="submit" class="btn-success">Run Budget</button>
                     </form>
                     </p>
                     <h2>Result</h2>
@@ -132,7 +132,10 @@
 </template>
 
 <template name="envelope">
-    <li>{{name}}</li>
+    <li>
+        {{name}}
+        <button class="delete-envelope" type="button" data-button="{{_id}}">Delete</button>
+    </li>
 </template>
 
 <template name="envelopeoption">
@@ -140,11 +143,17 @@
 </template>
 
 <template name="income">
-    <li>{{date}}: {{amount}}</li>
+    <li>
+        {{date}}: {{amount}}
+        <button class="delete-income" type="button" data-button="{{_id}}">Delete</button>
+    </li>
 </template>
 
 <template name="demand">
-    <li>{{date}}: {{envelope.name}}: {{amount}}</li>
+    <li>
+        {{date}}: {{envelope.name}}: {{amount}}
+        <button class="delete-demand" type="button" data-button="{{_id}}">Delete</button>
+    </li>
 </template>
 
 <template name="fill">

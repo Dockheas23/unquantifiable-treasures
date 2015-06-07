@@ -4,6 +4,9 @@ Incomes.allow({
     insert: function (userId, doc) {
         return (userId && doc.owner === Meteor.userId() &&
         (Roles.userIsInRole(userId, "admin")) || Roles.userIsInRole(userId, "normal"));
+    },
+    remove: function (userId, doc) {
+        return doc.owner === userId;
     }
 });
 

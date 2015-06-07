@@ -4,13 +4,13 @@ Template.home.onRendered(function() {
 
 Template.home.helpers({
     demands: function() {
-        return Demands.find({});
+        return Demands.find({owner: Meteor.userId()});
     },
     incomes: function() {
-        return Incomes.find({});
+        return Incomes.find({owner: Meteor.userId()});
     },
     envelopes: function() {
-        return Envelopes.find({});
+        return Envelopes.find({owner: Meteor.userId()});
     },
     fills: function() {
         return Session.get("fills");
@@ -45,7 +45,7 @@ function getBudgetRequest(balance) {
 }
 
 Template.home.events({
-    'submit .make-budget': function (event) {
+    'submit .run-budget': function (event) {
         var balance = Number(event.target.openingBalance.value) || 0
         Meteor.call('getFills', {budgetRequest: getBudgetRequest(balance)},
                 function (err, result) {
@@ -61,18 +61,19 @@ Template.home.events({
         Demands.insert({
             envelope: Envelopes.findOne({_id: envelopeId}),
             date: new Date(demandDate),
-            amount: Number(amount)
+            amount: Number(amount),
+            owner: Meteor.userId()
         });
         event.target.demandAmount.value = '';
         return false;
     },
     'submit .new-income': function (event) {
-        console.log(event);
         var incomeDate = event.target.incomeDate.value;
         var amount = event.target.incomeAmount.value;
         Incomes.insert({
             date: new Date(incomeDate),
-            amount: Number(amount)
+            amount: Number(amount),
+            owner: Meteor.userId()
         });
         event.target.incomeDate.value = '';
         event.target.incomeAmount.value = '';
@@ -81,14 +82,27 @@ Template.home.events({
     'submit .new-envelope': function (event) {
         var envelopeName = event.target.envelopeName.value;
         Envelopes.insert({
-            name: envelopeName
+            name: envelopeName,
+            owner: Meteor.userId()
         });
         event.target.envelopeName.value = '';
         return false;
     },
+    'click .delete-demand': function (event) {
+        var demandId = event.target.attributes['data-button'].value;
+        Demands.remove({_id: demandId});
+    },
+    'click .delete-envelope': function (event) {
+        var envelopeId = event.target.attributes['data-button'].value;
+        Envelopes.remove({_id: envelopeId});
+    },
+    'click .delete-income': function (event) {
+        var incomeId = event.target.attributes['data-button'].value;
+        Incomes.remove({_id: incomeId});
+    },
     'click #clearBudget': function () {
-        console.log("HEYO");
-        Incomes.remove({});
-        Demands.remove({});
+        Meteor.call('clearBudget', function (err, result) {
+            console.log('Clear budget complete');
+        });
     }
 });
