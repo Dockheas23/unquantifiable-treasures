@@ -102,7 +102,8 @@ Template.home.events({
     },
     'click #clearBudget': function () {
         Meteor.call('clearBudget', function (err, result) {
-            console.log('Clear budget complete');
+            Session.set("closingBalance", null);
+            Session.set("fills", null);
         });
     }
 });
