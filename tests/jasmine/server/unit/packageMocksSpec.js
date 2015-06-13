@@ -7088,7 +7088,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "680ac87855384a34d9dc915598187d03e6ed08b2"
+                  "value": "899e93ed9bfaddda0a070a0fe921772786716c6f"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7855,11 +7855,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "0957d256d25bf674939949fd22184eaa131a8ace"
+          "value": "547bd350d8bbf12987e38b728de537f8c27f3822"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "5faff51ba0605d9c014148c1218e83701ebab568"
+          "value": "7c3c0fbabf36f3831d714136a16872daab262e53"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -8157,6 +8157,9 @@ var packageMetadata = {
           "type": "function"
         },
         "getGroupsForUser": {
+          "type": "function"
+        },
+        "setRolesOnUserObj": {
           "type": "function"
         }
       }
@@ -8625,6 +8628,9 @@ var packageMetadata = {
                 },
                 "delete": {
                   "type": "function"
+                },
+                "patch": {
+                  "type": "function"
                 }
               }
             }
@@ -9024,9 +9030,6 @@ var packageMetadata = {
     "chokidar": {
       "type": "object",
       "members": {
-        "isBinaryPath": {
-          "type": "function"
-        },
         "FSWatcher": {
           "type": "function",
           "members": {
@@ -9034,6 +9037,9 @@ var packageMetadata = {
               "type": "object",
               "members": {
                 "add": {
+                  "type": "function"
+                },
+                "unwatch": {
                   "type": "function"
                 },
                 "close": {
@@ -9545,11 +9551,11 @@ var packageMetadata = {
         },
         "mirrorMeteorVersion": {
           "type": "constant",
-          "value": "1.1.0.2_1"
+          "value": "1.1.0.2_3"
         },
         "mirrorMeteorRelease": {
           "type": "constant",
-          "value": "velocity:METEOR@1.1.0.2_1"
+          "value": "velocity:METEOR@1.1.0.2_3"
         },
         "mirrorMeteorToolReleaseName": {
           "type": "constant",
@@ -9557,11 +9563,11 @@ var packageMetadata = {
         },
         "mirrorMeteorToolVersion": {
           "type": "constant",
-          "value": "1.1.3_2"
+          "value": "1.1.3_4"
         },
         "mirrorMeteorToolRelease": {
           "type": "constant",
-          "value": "velocity:meteor-tool@1.1.3_2"
+          "value": "velocity:meteor-tool@1.1.3_4"
         }
       }
     },
@@ -9841,7 +9847,50 @@ var packageMetadata = {
       "type": "object",
       "members": {
         "karmaChilds": {
-          "type": "object"
+          "type": "object",
+          "members": {
+            "jasmine-client-unit": {
+              "type": "object",
+              "members": {
+                "taskName": {
+                  "type": "constant",
+                  "value": "jasmine-client-unit"
+                },
+                "appPath": {
+                  "type": "constant",
+                  "value": "/Users/ruairiobrien/Dev/GR/unquantifiable-treasures"
+                },
+                "pid": {
+                  "type": "constant",
+                  "value": 6688
+                },
+                "getTaskName": {
+                  "type": "function"
+                },
+                "getChild": {
+                  "type": "function"
+                },
+                "getPid": {
+                  "type": "function"
+                },
+                "isDead": {
+                  "type": "function"
+                },
+                "isRunning": {
+                  "type": "function"
+                },
+                "readPid": {
+                  "type": "function"
+                },
+                "spawn": {
+                  "type": "function"
+                },
+                "kill": {
+                  "type": "function"
+                }
+              }
+            }
+          }
         },
         "getKarmaChild": {
           "type": "function"
@@ -12773,11 +12822,11 @@ var packageMetadata = {
             },
             "pluralNotFound": {
               "type": "constant",
-              "value": "plural_not_found0.5327842142432928"
+              "value": "plural_not_found0.46195500530302525"
             },
             "contextNotFound": {
               "type": "constant",
-              "value": "context_not_found0.34427491622045636"
+              "value": "context_not_found0.8876727353781462"
             },
             "cookieExpirationTime": {
               "type": "undefined"

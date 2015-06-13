@@ -1,5 +1,5 @@
-var url = 'http://104.155.19.251:8001/budget/json';
-//var url = 'http://localhost:8001/budget/json';
+//var url = 'http://104.155.19.251:8001/budget/json';
+var url = 'http://localhost:8000/budgets';
 
 FillClient = function (args) {
     if (args) {
@@ -23,20 +23,20 @@ FillClient.prototype.getFills = function (args) {
      Example request:
 
      budgetRequest: {
-            income: [{
-                date: "2015-3-1",
-                amount: 2222
-            }],
-            demands: [{
-                envelope: "",
-                amount: 1111,
-                period: {
-                    start: "2015-3-5",
-                    end: "" // Optional
-                }
-            }],
-            balance: 11111 // income to this date (user input)
-        }
+                income: [{
+                    date: "2015-3-1",
+                    amount: 2222
+                }],
+                demands: [{
+                    envelope: "",
+                    amount: 1111,
+                    period: {
+                        start: "2015-3-5",
+                        end: "" // Optional
+                    }
+                }],
+                balance: 11111 // income to this date (user input)
+            }
 
      */
 
