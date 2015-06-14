@@ -7088,7 +7088,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "899e93ed9bfaddda0a070a0fe921772786716c6f"
+                  "value": "9390dc89397207d41560faf9e69a01b2de62a748"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7212,7 +7212,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 0
+              "value": 1
             },
             "timeout": {
               "type": "constant",
@@ -7855,11 +7855,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "547bd350d8bbf12987e38b728de537f8c27f3822"
+          "value": "3219cdd02902b983e0d9595aacee4768cc1f0180"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "7c3c0fbabf36f3831d714136a16872daab262e53"
+          "value": "5c6d60162a534c7d1f0bc60b4e8426437e96a102"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -9862,7 +9862,84 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 6688
+                  "value": 7649
+                },
+                "fout": {
+                  "type": "constant",
+                  "value": 39
+                },
+                "child": {
+                  "type": "object",
+                  "members": {
+                    "domain": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "signalCode": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "exitCode": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "pid": {
+                      "type": "constant",
+                      "value": 7649
+                    },
+                    "stdin": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "stdout": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "stderr": {
+                      "type": "null",
+                      "value": null
+                    },
+                    "stdio": {
+                      "type": "array"
+                    },
+                    "spawn": {
+                      "type": "function"
+                    },
+                    "kill": {
+                      "type": "function"
+                    },
+                    "ref": {
+                      "type": "function"
+                    },
+                    "unref": {
+                      "type": "function"
+                    },
+                    "setMaxListeners": {
+                      "type": "function"
+                    },
+                    "emit": {
+                      "type": "function"
+                    },
+                    "addListener": {
+                      "type": "function",
+                      "refID": 17
+                    },
+                    "on": {
+                      "ref": 17
+                    },
+                    "once": {
+                      "type": "function"
+                    },
+                    "removeListener": {
+                      "type": "function"
+                    },
+                    "removeAllListeners": {
+                      "type": "function"
+                    },
+                    "listeners": {
+                      "type": "function"
+                    }
+                  }
                 },
                 "getTaskName": {
                   "type": "function"
@@ -12822,11 +12899,11 @@ var packageMetadata = {
             },
             "pluralNotFound": {
               "type": "constant",
-              "value": "plural_not_found0.46195500530302525"
+              "value": "plural_not_found0.16411660169251263"
             },
             "contextNotFound": {
               "type": "constant",
-              "value": "context_not_found0.8876727353781462"
+              "value": "context_not_found0.9844464361667633"
             },
             "cookieExpirationTime": {
               "type": "undefined"
@@ -12906,6 +12983,7 @@ var packageMetadata = {
     }
   },
   "mrt:jquery-ui": {},
+  "mizzao:jquery-ui": {},
   "session": {},
   "livedata": {
     "DDP": {

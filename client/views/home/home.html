@@ -11,74 +11,18 @@
                 </div>
             </div>
             <div class="row">
+                {{> envelopeTemplate}}
+            </div>
+            <div class="row">
+                {{> incomeTemplate}}
+            </div>
+
+            <div class="row">
+                {{> demandTemplate}}
+            </div>
+            <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <p>{{envelopeCount}}</p>
-
-                    <h2>Envelopes</h2>
-                    <ul>
-                        {{#each envelopes}}
-                            {{> envelope}}
-                        {{/each}}
-                    </ul>
-                    <h3>Add envelope</h3>
-
-                    <form class="new-envelope">
-                        <input type="text" name="envelopeName" placeholder="Envelope Name"/>
-                        <button type="submit">Add Envelope</button>
-                    </form>
-                    <h2>Income</h2>
-                    <ul>
-                        {{#each incomes}}
-                            {{> income}}
-                        {{/each}}
-                    </ul>
-                    <h3>Add income</h3>
-
-                    <form class="new-income">
-                        <input type="text" name="incomeDate" placeholder="Date" class="date"/>
-                        <input type="text" name="incomeAmount" placeholder="Amount"/>
-                        <button type="submit">Add Income</button>
-                    </form>
-                    <h2>Demands</h2>
-                    <ul>
-                        {{#each demands}}
-                            {{> demand}}
-                        {{/each}}
-                    </ul>
-                    <h3>Add demand</h3>
-
-                    <form class="new-demand">
-                        <select name="envelope">
-                            {{#each envelopes}}
-                                {{> envelopeoption}}
-                            {{/each}}
-                        </select>
-                        <input type="text" name="demandDate" placeholder="Date" class="date"/>
-                        <input type="text" name="demandAmount" placeholder="Amount"/>
-                        <button type="submit">Add Demand</button>
-                    </form>
-
-                    <h2>Run Budget</h2>
-                    <p>
-                    <form class="run-budget">
-                        <input id="openingBalance" type="text" placeholder="Opening Balance"/>
-                        <button type="submit" class="btn-success">Run Budget</button>
-                    </form>
-                    </p>
-                    <h2>Result</h2>
-                    <h3>Fills</h3>
-                    <ul>
-                        {{#each fills}}
-                            {{> fill}}
-                        {{/each}}
-                    </ul>
-                    <h3>Closing Balance</h3>
-                    <p>{{closingBalance}}</p>
-
-                    <h2>Clear Budget</h2>
-                    <p>
-                    <button id="clearBudget">Clear Budget</button>
-                    </p>
+                    {{> budgetTemplate}}
                 </div>
             </div>
         </div>
@@ -121,7 +65,8 @@
                     <span class="text-right">
                         <address>
                             <strong>Unquantifiable Treasures, Inc.</strong><br/>
-                            <strong>George Boyle</strong> <a href="mailto:george@thebuds.net">george@thebuds.net</a> <br/>
+                            <strong>George Boyle</strong> <a href="mailto:george@thebuds.net">george@thebuds.net</a>
+                            <br/>
                             <strong>Ruairi O'Brien</strong> <a href="mailto:ruairitobrien@gmail.com">ruairitobrien@gmail.com</a>
                         </address>
                     </span>
@@ -131,31 +76,3 @@
     </section>
 </template>
 
-<template name="envelope">
-    <li>
-        {{name}}
-        <button class="delete-envelope" type="button" data-button="{{_id}}">Delete</button>
-    </li>
-</template>
-
-<template name="envelopeoption">
-    <option value='{{_id}}'>{{name}}</option>
-</template>
-
-<template name="income">
-    <li>
-        {{date}}: {{amount}}
-        <button class="delete-income" type="button" data-button="{{_id}}">Delete</button>
-    </li>
-</template>
-
-<template name="demand">
-    <li>
-        {{date}}: {{envelope.name}}: {{amount}}
-        <button class="delete-demand" type="button" data-button="{{_id}}">Delete</button>
-    </li>
-</template>
-
-<template name="fill">
-    <li>{{date}}: {{envelope}}: {{amount}}</li>
-</template>

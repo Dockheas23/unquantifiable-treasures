@@ -1,0 +1,34 @@
+<template name="budgetTemplate">
+    <h2>Run Budget</h2>
+
+    <p>
+
+    <form class="form-horizontal run-budget">
+        <input id="openingBalance" type="text" placeholder="Opening Balance"/>
+        <button type="submit" class="btn-success">Run Budget</button>
+    </form>
+    </p>
+    <h2>Result</h2>
+
+    <h3>Fills</h3>
+    <ul>
+        {{#each fills}}
+            {{> fill}}
+        {{/each}}
+    </ul>
+    <h3>Closing Balance</h3>
+
+    <p>{{closingBalance}}</p>
+
+
+    <p>
+        <button id="clearBudget" class="delete-envelope btn btn-danger btn-xs" type="button">
+            Clear Budget
+        </button>
+    </p>
+</template>
+
+
+<template name="fill">
+    <li>{{date}}: {{envelope}}: {{amount}}</li>
+</template>
