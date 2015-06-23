@@ -1,10 +1,10 @@
-var url = 'http://localhost:8080/budgets';
+var endpoint = 'http://localhost:8080';
 
-FillClient = function (args) {
+BudgetClient = function (args) {
     if (args) {
-        this._url = args.url || url;
+        this._endpoint = args.endpoint || endpoint;
     } else {
-        this._url = url;
+        this._endpoint = endpoint;
     }
 };
 
@@ -16,7 +16,7 @@ FillClient = function (args) {
  * @param args
  * @returns {{balance: number, fills: *[]}}
  */
-FillClient.prototype.getFills = function (args) {
+BudgetClient.prototype.createBudget = function (args) {
 
     /**
      Example request:
@@ -39,9 +39,17 @@ FillClient.prototype.getFills = function (args) {
 
      */
 
-    var result = HTTP.post(this._url, {
+    var result = HTTP.post(this._endpoint + '/budgets', {
         data: args.budgetRequest,
         headers: {"Authorization": args.userId}
     });
+    return result.data;
+};
+
+BudgetClient.prototype.getLatestBudget = function (args) {
+    var result = HTTP.get(this._endpoint + '/budgets/latest',
+            {
+                headers: {"Authorization": args.userId}
+            });
     return result.data;
 };

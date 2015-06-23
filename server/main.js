@@ -92,9 +92,14 @@ Meteor.methods({
      * @param args {incomes, demands, balance}
      * @returns {{balance, fills}}
      */
-    getFills: function (args) {
-        var fillClient = new FillClient();
-        return fillClient.getFills(args);
+    createBudget: function (args) {
+        var budgetClient = new BudgetClient();
+        return budgetClient.createBudget(args);
+    },
+
+    getLatestBudget: function (args) {
+        var budgetClient = new BudgetClient();
+        return budgetClient.getLatestBudget(args);
     },
 
     clearBudget: function () {
