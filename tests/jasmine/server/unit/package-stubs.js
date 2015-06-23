@@ -7087,7 +7087,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "9390dc89397207d41560faf9e69a01b2de62a748"
+                  "value": "d44f436f536e6abd01168f67e27560e7d1fdcda8"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7211,7 +7211,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 1
+              "value": 3
             },
             "timeout": {
               "type": "constant",
@@ -7854,7 +7854,7 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "3219cdd02902b983e0d9595aacee4768cc1f0180"
+          "value": "2f74dda5dc3ba8573964530df4cc10afff69fe86"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
@@ -9846,127 +9846,7 @@ var packageMetadata = {
       "type": "object",
       "members": {
         "karmaChilds": {
-          "type": "object",
-          "members": {
-            "jasmine-client-unit": {
-              "type": "object",
-              "members": {
-                "taskName": {
-                  "type": "constant",
-                  "value": "jasmine-client-unit"
-                },
-                "appPath": {
-                  "type": "constant",
-                  "value": "/Users/ruairiobrien/Dev/GR/unquantifiable-treasures"
-                },
-                "pid": {
-                  "type": "constant",
-                  "value": 7649
-                },
-                "fout": {
-                  "type": "constant",
-                  "value": 39
-                },
-                "child": {
-                  "type": "object",
-                  "members": {
-                    "domain": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "signalCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "exitCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "pid": {
-                      "type": "constant",
-                      "value": 7649
-                    },
-                    "stdin": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdout": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stderr": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdio": {
-                      "type": "array"
-                    },
-                    "spawn": {
-                      "type": "function"
-                    },
-                    "kill": {
-                      "type": "function"
-                    },
-                    "ref": {
-                      "type": "function"
-                    },
-                    "unref": {
-                      "type": "function"
-                    },
-                    "setMaxListeners": {
-                      "type": "function"
-                    },
-                    "emit": {
-                      "type": "function"
-                    },
-                    "addListener": {
-                      "type": "function",
-                      "refID": 17
-                    },
-                    "on": {
-                      "ref": 17
-                    },
-                    "once": {
-                      "type": "function"
-                    },
-                    "removeListener": {
-                      "type": "function"
-                    },
-                    "removeAllListeners": {
-                      "type": "function"
-                    },
-                    "listeners": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "getTaskName": {
-                  "type": "function"
-                },
-                "getChild": {
-                  "type": "function"
-                },
-                "getPid": {
-                  "type": "function"
-                },
-                "isDead": {
-                  "type": "function"
-                },
-                "isRunning": {
-                  "type": "function"
-                },
-                "readPid": {
-                  "type": "function"
-                },
-                "spawn": {
-                  "type": "function"
-                },
-                "kill": {
-                  "type": "function"
-                }
-              }
-            }
-          }
+          "type": "object"
         },
         "getKarmaChild": {
           "type": "function"
@@ -10009,6 +9889,184 @@ var packageMetadata = {
   "sacha:spin": {},
   "ian:bootstrap-3": {},
   "ian:accounts-ui-bootstrap-3": {},
+  "raix:eventemitter": {
+    "EventEmitter": {
+      "type": "function",
+      "members": {
+        "listenerCount": {
+          "type": "function"
+        },
+        "prototype": {
+          "type": "object",
+          "members": {
+            "setMaxListeners": {
+              "type": "function"
+            },
+            "emit": {
+              "type": "function"
+            },
+            "addListener": {
+              "type": "function",
+              "refID": 8
+            },
+            "on": {
+              "ref": 8
+            },
+            "once": {
+              "type": "function"
+            },
+            "removeListener": {
+              "type": "function"
+            },
+            "removeAllListeners": {
+              "type": "function"
+            },
+            "listeners": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "meteorspark:util": {
+    "Util": {
+      "type": "object",
+      "members": {
+        "format": {
+          "type": "function"
+        },
+        "deprecate": {
+          "type": "function"
+        },
+        "print": {
+          "type": "function"
+        },
+        "puts": {
+          "type": "function"
+        },
+        "debug": {
+          "type": "function"
+        },
+        "error": {
+          "type": "function"
+        },
+        "inspect": {
+          "type": "function",
+          "members": {
+            "colors": {
+              "type": "object",
+              "members": {
+                "bold": {
+                  "type": "array"
+                },
+                "italic": {
+                  "type": "array"
+                },
+                "underline": {
+                  "type": "array"
+                },
+                "inverse": {
+                  "type": "array"
+                },
+                "white": {
+                  "type": "array"
+                },
+                "grey": {
+                  "type": "array"
+                },
+                "black": {
+                  "type": "array"
+                },
+                "blue": {
+                  "type": "array"
+                },
+                "cyan": {
+                  "type": "array"
+                },
+                "green": {
+                  "type": "array"
+                },
+                "magenta": {
+                  "type": "array"
+                },
+                "red": {
+                  "type": "array"
+                },
+                "yellow": {
+                  "type": "array"
+                }
+              }
+            },
+            "styles": {
+              "type": "object",
+              "members": {
+                "special": {
+                  "type": "constant",
+                  "value": "cyan"
+                },
+                "number": {
+                  "type": "constant",
+                  "value": "yellow"
+                },
+                "boolean": {
+                  "type": "constant",
+                  "value": "yellow"
+                },
+                "undefined": {
+                  "type": "constant",
+                  "value": "grey"
+                },
+                "null": {
+                  "type": "constant",
+                  "value": "bold"
+                },
+                "string": {
+                  "type": "constant",
+                  "value": "green"
+                },
+                "date": {
+                  "type": "constant",
+                  "value": "magenta"
+                },
+                "regexp": {
+                  "type": "constant",
+                  "value": "red"
+                }
+              }
+            }
+          }
+        },
+        "isArray": {
+          "type": "function"
+        },
+        "isRegExp": {
+          "type": "function"
+        },
+        "isDate": {
+          "type": "function"
+        },
+        "isError": {
+          "type": "function"
+        },
+        "p": {
+          "type": "function"
+        },
+        "log": {
+          "type": "function"
+        },
+        "exec": {
+          "type": "function"
+        },
+        "pump": {
+          "type": "function"
+        },
+        "inherits": {
+          "type": "function"
+        }
+      }
+    }
+  },
   "url": {
     "URL": {
       "type": "object"
@@ -12898,11 +12956,11 @@ var packageMetadata = {
             },
             "pluralNotFound": {
               "type": "constant",
-              "value": "plural_not_found0.16411660169251263"
+              "value": "plural_not_found0.973769303644076"
             },
             "contextNotFound": {
               "type": "constant",
-              "value": "context_not_found0.9844464361667633"
+              "value": "context_not_found0.308456840692088"
             },
             "cookieExpirationTime": {
               "type": "undefined"
@@ -12942,6 +13000,10 @@ var packageMetadata = {
     "TAPi18n": {
       "type": "object",
       "members": {
+        "domain": {
+          "type": "null",
+          "value": null
+        },
         "conf": {
           "type": "null",
           "value": null
@@ -12955,6 +13017,9 @@ var packageMetadata = {
         "translations": {
           "type": "object"
         },
+        "server_translators": {
+          "type": "object"
+        },
         "addResourceBundle": {
           "type": "function"
         },
@@ -12964,19 +13029,30 @@ var packageMetadata = {
         "loadTranslations": {
           "type": "function"
         },
-        "server_translators": {
-          "type": "object",
-          "members": {
-            "en": {
-              "type": "function",
-              "members": {
-                "lng": {
-                  "type": "constant",
-                  "value": "en"
-                }
-              }
-            }
-          }
+        "setMaxListeners": {
+          "type": "function"
+        },
+        "emit": {
+          "type": "function"
+        },
+        "addListener": {
+          "type": "function",
+          "refID": 15
+        },
+        "on": {
+          "ref": 15
+        },
+        "once": {
+          "type": "function"
+        },
+        "removeListener": {
+          "type": "function"
+        },
+        "removeAllListeners": {
+          "type": "function"
+        },
+        "listeners": {
+          "type": "function"
         }
       }
     }
