@@ -6,14 +6,14 @@ function getDateString(date) {
 
 function getBudgetRequest(balance) {
     var budgetRequest = {balance: balance, income: [], demands: []};
-    Demands.find({}).forEach(function (demand) {
+    Demands.find({owner: Meteor.userId()}).forEach(function (demand) {
         budgetRequest.demands.push({
             period: {start: getDateString(demand.date)},
             envelope: demand.envelope.name,
             amount: Number(demand.amount)
         });
     });
-    Incomes.find({}).forEach(function (income) {
+    Incomes.find({owner: Meteor.userId()}).forEach(function (income) {
         budgetRequest.income.push({
             date: getDateString(income.date),
             amount: Number(income.amount)
