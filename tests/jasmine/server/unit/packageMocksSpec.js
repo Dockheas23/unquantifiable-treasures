@@ -101,6 +101,10 @@ var packageMetadata = {
             "/sockjs/": {
               "type": "constant",
               "value": "network"
+            },
+            "/_oauth/": {
+              "type": "constant",
+              "value": "network"
             }
           }
         },
@@ -7088,7 +7092,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "d44f436f536e6abd01168f67e27560e7d1fdcda8"
+                  "value": "d9089603c299368428d6923d627f9e4c0e64c378"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7212,7 +7216,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 3
+              "value": 2
             },
             "timeout": {
               "type": "constant",
@@ -7855,11 +7859,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "2f74dda5dc3ba8573964530df4cc10afff69fe86"
+          "value": "c0f4e9c34d28f4227ed25c8ade07912344e41a3b"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "5c6d60162a534c7d1f0bc60b4e8426437e96a102"
+          "value": "9b25a3547641f9a92e23e06e65c6bd7ebae73d21"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -8022,6 +8026,17 @@ var packageMetadata = {
         "createUser": {
           "type": "function"
         },
+        "oauth": {
+          "type": "object",
+          "members": {
+            "registerService": {
+              "type": "function"
+            },
+            "serviceNames": {
+              "type": "function"
+            }
+          }
+        },
         "loginServiceConfiguration": {
           "type": "object",
           "members": {
@@ -8165,1914 +8180,113 @@ var packageMetadata = {
       }
     }
   },
-  "iron:core": {
-    "Iron": {
+  "accounts-ui": {},
+  "service-configuration": {
+    "ServiceConfiguration": {
       "type": "object",
       "members": {
-        "utils": {
+        "configurations": {
           "type": "object",
           "members": {
-            "assert": {
+            "find": {
               "type": "function"
             },
-            "warn": {
+            "findOne": {
               "type": "function"
             },
-            "defaultValue": {
+            "insert": {
               "type": "function"
             },
-            "inherits": {
+            "update": {
               "type": "function"
             },
-            "extend": {
+            "remove": {
               "type": "function"
             },
-            "namespace": {
+            "upsert": {
               "type": "function"
             },
-            "resolve": {
+            "rawCollection": {
               "type": "function"
             },
-            "capitalize": {
+            "rawDatabase": {
               "type": "function"
             },
-            "classCase": {
+            "allow": {
               "type": "function"
             },
-            "camelCase": {
-              "type": "function"
-            },
-            "notifyDeprecated": {
-              "type": "function"
-            },
-            "withDeprecatedNotice": {
-              "type": "function"
-            },
-            "debug": {
-              "type": "function"
-            },
-            "get": {
+            "deny": {
               "type": "function"
             }
           }
         },
-        "DynamicTemplate": {
-          "type": "function",
-          "members": {
-            "getParentDataContext": {
-              "type": "function",
-              "refID": 31
-            },
-            "getDataContext": {
-              "type": "function",
-              "refID": 33
-            },
-            "getInclusionArguments": {
-              "type": "function",
-              "refID": 35
-            },
-            "args": {
-              "type": "function",
-              "refID": 37
-            },
-            "extend": {
-              "type": "function",
-              "refID": 39
-            },
-            "findFirstLookupHost": {
-              "type": "function",
-              "refID": 41
-            },
-            "findLookupHostWithProperty": {
-              "type": "function",
-              "refID": 43
-            },
-            "findLookupHostWithHelper": {
-              "type": "function",
-              "refID": 45
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "template": {
-                  "type": "function",
-                  "refID": 48
-                },
-                "defaultTemplate": {
-                  "type": "function",
-                  "refID": 50
-                },
-                "clear": {
-                  "type": "function"
-                },
-                "data": {
-                  "type": "function",
-                  "refID": 54
-                },
-                "create": {
-                  "type": "function",
-                  "refID": 56
-                },
-                "renderView": {
-                  "type": "function",
-                  "refID": 58
-                },
-                "destroy": {
-                  "type": "function",
-                  "refID": 60
-                },
-                "onViewCreated": {
-                  "type": "function",
-                  "refID": 62
-                },
-                "onViewReady": {
-                  "type": "function",
-                  "refID": 64
-                },
-                "onViewDestroyed": {
-                  "type": "function",
-                  "refID": 66
-                },
-                "events": {
-                  "type": "function",
-                  "refID": 68
-                },
-                "insert": {
-                  "type": "function",
-                  "refID": 70
-                }
-              }
-            }
-          }
-        },
-        "Layout": {
-          "type": "function",
-          "refID": 72,
-          "members": {
-            "DEFAULT_REGION": {
-              "type": "constant",
-              "value": "main"
-            },
-            "getParentDataContext": {
-              "ref": 31
-            },
-            "getDataContext": {
-              "ref": 33
-            },
-            "getInclusionArguments": {
-              "ref": 35
-            },
-            "args": {
-              "ref": 37
-            },
-            "extend": {
-              "ref": 39
-            },
-            "findFirstLookupHost": {
-              "ref": 41
-            },
-            "findLookupHostWithProperty": {
-              "ref": 43
-            },
-            "findLookupHostWithHelper": {
-              "ref": 45
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "constructor": {
-                  "ref": 72
-                },
-                "region": {
-                  "type": "function"
-                },
-                "destroyRegions": {
-                  "type": "function"
-                },
-                "render": {
-                  "type": "function"
-                },
-                "has": {
-                  "type": "function"
-                },
-                "regionKeys": {
-                  "type": "function"
-                },
-                "clear": {
-                  "type": "function"
-                },
-                "clearAll": {
-                  "type": "function"
-                },
-                "beginRendering": {
-                  "type": "function"
-                },
-                "onRegionCreated": {
-                  "type": "function"
-                },
-                "onRegionRendered": {
-                  "type": "function"
-                },
-                "onRegionDestroyed": {
-                  "type": "function"
-                },
-                "template": {
-                  "ref": 48
-                },
-                "defaultTemplate": {
-                  "ref": 50
-                },
-                "data": {
-                  "ref": 54
-                },
-                "create": {
-                  "ref": 56
-                },
-                "renderView": {
-                  "ref": 58
-                },
-                "destroy": {
-                  "ref": 60
-                },
-                "onViewCreated": {
-                  "ref": 62
-                },
-                "onViewReady": {
-                  "ref": 64
-                },
-                "onViewDestroyed": {
-                  "ref": 66
-                },
-                "events": {
-                  "ref": 68
-                },
-                "insert": {
-                  "ref": 70
-                }
-              }
-            }
-          }
-        },
-        "Url": {
-          "type": "function",
-          "members": {
-            "normalize": {
-              "type": "function"
-            },
-            "isSameOrigin": {
-              "type": "function"
-            },
-            "fromQueryString": {
-              "type": "function"
-            },
-            "toQueryString": {
-              "type": "function"
-            },
-            "parse": {
-              "type": "function"
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "test": {
-                  "type": "function"
-                },
-                "exec": {
-                  "type": "function"
-                },
-                "params": {
-                  "type": "function"
-                },
-                "resolve": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "MiddlewareStack": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "findByName": {
-                  "type": "function"
-                },
-                "push": {
-                  "type": "function"
-                },
-                "append": {
-                  "type": "function"
-                },
-                "insertAt": {
-                  "type": "function"
-                },
-                "insertBefore": {
-                  "type": "function"
-                },
-                "insertAfter": {
-                  "type": "function"
-                },
-                "concat": {
-                  "type": "function"
-                },
-                "dispatch": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "Controller": {
-          "type": "function",
-          "members": {
-            "extend": {
-              "type": "function",
-              "refID": 135
-            },
-            "events": {
-              "type": "function",
-              "refID": 137
-            },
-            "helpers": {
-              "type": "function",
-              "refID": 139
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "layout": {
-                  "type": "function",
-                  "refID": 142
-                },
-                "render": {
-                  "type": "function",
-                  "refID": 144
-                },
-                "beginRendering": {
-                  "type": "function",
-                  "refID": 146
-                },
-                "init": {
-                  "type": "function"
-                },
-                "wait": {
-                  "type": "function",
-                  "refID": 150
-                },
-                "ready": {
-                  "type": "function",
-                  "refID": 152
-                }
-              }
-            }
-          }
-        },
-        "RouteController": {
-          "type": "function",
-          "members": {
-            "extend": {
-              "ref": 135
-            },
-            "events": {
-              "ref": 137
-            },
-            "helpers": {
-              "ref": 139
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "constructor": {
-                  "type": "function"
-                },
-                "lookupOption": {
-                  "type": "function"
-                },
-                "configureFromUrl": {
-                  "type": "function"
-                },
-                "runHooks": {
-                  "type": "function"
-                },
-                "getParams": {
-                  "type": "function"
-                },
-                "setParams": {
-                  "type": "function"
-                },
-                "init": {
-                  "type": "function"
-                },
-                "dispatch": {
-                  "type": "function"
-                },
-                "layout": {
-                  "ref": 142
-                },
-                "render": {
-                  "ref": 144
-                },
-                "beginRendering": {
-                  "ref": 146
-                },
-                "wait": {
-                  "ref": 150
-                },
-                "ready": {
-                  "ref": 152
-                }
-              }
-            }
-          }
-        },
-        "Route": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "getName": {
-                  "type": "function"
-                },
-                "findControllerConstructor": {
-                  "type": "function"
-                },
-                "createController": {
-                  "type": "function"
-                },
-                "setControllerParams": {
-                  "type": "function"
-                },
-                "dispatch": {
-                  "type": "function"
-                },
-                "path": {
-                  "type": "function"
-                },
-                "url": {
-                  "type": "function"
-                },
-                "params": {
-                  "type": "function"
-                },
-                "get": {
-                  "type": "function"
-                },
-                "post": {
-                  "type": "function"
-                },
-                "put": {
-                  "type": "function"
-                },
-                "delete": {
-                  "type": "function"
-                },
-                "patch": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "Router": {
-          "type": "function",
-          "members": {
-            "HOOK_TYPES": {
-              "type": "array"
-            },
-            "hooks": {
-              "type": "object",
-              "members": {
-                "loading": {
-                  "type": "function"
-                },
-                "dataNotFound": {
-                  "type": "function"
-                }
-              }
-            },
-            "plugins": {
-              "type": "object",
-              "members": {
-                "loading": {
-                  "type": "function"
-                },
-                "dataNotFound": {
-                  "type": "function"
-                }
-              }
-            },
-            "bodyParser": {
-              "type": "function",
-              "members": {
-                "json": {
-                  "type": "function"
-                },
-                "raw": {
-                  "type": "function"
-                },
-                "text": {
-                  "type": "function"
-                },
-                "urlencoded": {
-                  "type": "function"
-                }
-              }
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "init": {
-                  "type": "function"
-                },
-                "configure": {
-                  "type": "function"
-                },
-                "map": {
-                  "type": "function"
-                },
-                "route": {
-                  "type": "function"
-                },
-                "findFirstRoute": {
-                  "type": "function"
-                },
-                "path": {
-                  "type": "function"
-                },
-                "url": {
-                  "type": "function"
-                },
-                "createController": {
-                  "type": "function"
-                },
-                "setTemplateNameConverter": {
-                  "type": "function"
-                },
-                "setControllerNameConverter": {
-                  "type": "function"
-                },
-                "toTemplateName": {
-                  "type": "function"
-                },
-                "toControllerName": {
-                  "type": "function"
-                },
-                "addHook": {
-                  "type": "function"
-                },
-                "lookupHook": {
-                  "type": "function"
-                },
-                "getHooks": {
-                  "type": "function"
-                },
-                "onRun": {
-                  "type": "function"
-                },
-                "onRerun": {
-                  "type": "function"
-                },
-                "onBeforeAction": {
-                  "type": "function"
-                },
-                "onAfterAction": {
-                  "type": "function"
-                },
-                "onStop": {
-                  "type": "function"
-                },
-                "waitOn": {
-                  "type": "function"
-                },
-                "subscriptions": {
-                  "type": "function"
-                },
-                "load": {
-                  "type": "function"
-                },
-                "before": {
-                  "type": "function"
-                },
-                "after": {
-                  "type": "function"
-                },
-                "unload": {
-                  "type": "function"
-                },
-                "plugin": {
-                  "type": "function"
-                },
-                "configureBodyParsers": {
-                  "type": "function"
-                },
-                "start": {
-                  "type": "function"
-                },
-                "dispatch": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "iron:dynamic-template": {},
-  "iron:layout": {},
-  "iron:url": {},
-  "iron:middleware-stack": {
-    "Handler": {
-      "type": "function",
-      "members": {
-        "prototype": {
-          "type": "object",
-          "members": {
-            "test": {
-              "type": "function"
-            },
-            "params": {
-              "type": "function"
-            },
-            "resolve": {
-              "type": "function"
-            },
-            "clone": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "iron:location": {},
-  "reactive-dict": {
-    "ReactiveDict": {
-      "type": "function",
-      "members": {
-        "prototype": {
-          "type": "object",
-          "members": {
-            "set": {
-              "type": "function"
-            },
-            "setDefault": {
-              "type": "function"
-            },
-            "get": {
-              "type": "function"
-            },
-            "equals": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "iron:controller": {},
-  "iron:router": {
-    "Router": {
-      "type": "function",
-      "members": {
-        "routes": {
-          "type": "array"
-        },
-        "options": {
-          "type": "object",
-          "members": {
-            "layoutTemplate": {
-              "type": "constant",
-              "value": "layout"
-            },
-            "loadingTemplate": {
-              "type": "constant",
-              "value": "loading"
-            },
-            "notFoundTemplate": {
-              "type": "constant",
-              "value": "template404"
-            }
-          }
-        },
-        "init": {
-          "type": "function"
-        },
-        "configure": {
-          "type": "function"
-        },
-        "map": {
-          "type": "function"
-        },
-        "route": {
-          "type": "function"
-        },
-        "findFirstRoute": {
-          "type": "function"
-        },
-        "path": {
-          "type": "function"
-        },
-        "url": {
-          "type": "function"
-        },
-        "createController": {
-          "type": "function"
-        },
-        "setTemplateNameConverter": {
-          "type": "function"
-        },
-        "setControllerNameConverter": {
-          "type": "function"
-        },
-        "toTemplateName": {
-          "type": "function"
-        },
-        "toControllerName": {
-          "type": "function"
-        },
-        "addHook": {
-          "type": "function"
-        },
-        "lookupHook": {
-          "type": "function"
-        },
-        "getHooks": {
-          "type": "function"
-        },
-        "onRun": {
-          "type": "function"
-        },
-        "onRerun": {
-          "type": "function"
-        },
-        "onBeforeAction": {
-          "type": "function"
-        },
-        "onAfterAction": {
-          "type": "function"
-        },
-        "onStop": {
-          "type": "function"
-        },
-        "waitOn": {
-          "type": "function"
-        },
-        "subscriptions": {
-          "type": "function"
-        },
-        "load": {
-          "type": "function"
-        },
-        "before": {
-          "type": "function"
-        },
-        "after": {
-          "type": "function"
-        },
-        "unload": {
-          "type": "function"
-        },
-        "plugin": {
-          "type": "function"
-        },
-        "configureBodyParsers": {
-          "type": "function"
-        },
-        "start": {
-          "type": "function"
-        },
-        "dispatch": {
-          "type": "function"
-        }
-      }
-    },
-    "RouteController": {
-      "type": "function",
-      "members": {
-        "extend": {
-          "type": "function"
-        },
-        "events": {
-          "type": "function"
-        },
-        "helpers": {
-          "type": "function"
-        },
-        "prototype": {
-          "type": "object",
-          "members": {
-            "constructor": {
-              "type": "function"
-            },
-            "lookupOption": {
-              "type": "function"
-            },
-            "configureFromUrl": {
-              "type": "function"
-            },
-            "runHooks": {
-              "type": "function"
-            },
-            "getParams": {
-              "type": "function"
-            },
-            "setParams": {
-              "type": "function"
-            },
-            "init": {
-              "type": "function"
-            },
-            "dispatch": {
-              "type": "function"
-            },
-            "layout": {
-              "type": "function"
-            },
-            "render": {
-              "type": "function"
-            },
-            "beginRendering": {
-              "type": "function"
-            },
-            "wait": {
-              "type": "function"
-            },
-            "ready": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "coffeescript": {},
-  "practicalmeteor:loglevel": {
-    "loglevel": {
-      "type": "object",
-      "members": {
-        "createLogger": {
-          "type": "function"
-        },
-        "createPackageLogger": {
-          "type": "function"
-        },
-        "createAppLogger": {
+        "ConfigError": {
           "type": "function"
         }
       }
     }
   },
-  "velocity:chokidar": {
-    "chokidar": {
-      "type": "object",
-      "members": {
-        "FSWatcher": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "add": {
-                  "type": "function"
-                },
-                "unwatch": {
-                  "type": "function"
-                },
-                "close": {
-                  "type": "function"
-                },
-                "setMaxListeners": {
-                  "type": "function"
-                },
-                "emit": {
-                  "type": "function"
-                },
-                "addListener": {
-                  "type": "function",
-                  "refID": 13
-                },
-                "on": {
-                  "ref": 13
-                },
-                "once": {
-                  "type": "function"
-                },
-                "removeListener": {
-                  "type": "function"
-                },
-                "removeAllListeners": {
-                  "type": "function"
-                },
-                "listeners": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "watch": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "velocity:meteor-internals": {
-    "VelocityMeteorInternals": {
-      "type": "object",
-      "members": {
-        "parseStack": {
-          "type": "object",
-          "members": {
-            "markBottom": {
-              "type": "function"
-            }
-          }
-        },
-        "buildmessage": {
-          "type": "object",
-          "members": {
-            "markBoundary": {
-              "type": "function"
-            }
-          }
-        },
-        "files": {
-          "type": "object",
-          "members": {
-            "cwd": {
-              "type": "function"
-            },
-            "findAppDir": {
-              "type": "function"
-            },
-            "findPackageDir": {
-              "type": "function"
-            },
-            "statOrNull": {
-              "type": "function"
-            },
-            "runJavaScript": {
-              "type": "function"
-            },
-            "FancySyntaxError": {
-              "type": "function"
-            },
-            "writeFile": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "writeFile"
-                }
-              }
-            },
-            "appendFile": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "appendFile"
-                }
-              }
-            },
-            "readFile": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "readFile"
-                }
-              }
-            },
-            "stat": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "stat"
-                }
-              }
-            },
-            "lstat": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "lstat"
-                }
-              }
-            },
-            "exists": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "exists"
-                }
-              }
-            },
-            "rename": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "rename"
-                }
-              }
-            },
-            "realpath": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "realpath"
-                }
-              }
-            },
-            "readdir": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "readdir"
-                }
-              }
-            },
-            "rmdir": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "rmdir"
-                }
-              }
-            },
-            "mkdir": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "mkdir"
-                }
-              }
-            },
-            "unlink": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "unlink"
-                }
-              }
-            },
-            "chmod": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "chmod"
-                }
-              }
-            },
-            "open": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "open"
-                }
-              }
-            },
-            "read": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "read"
-                }
-              }
-            },
-            "write": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "write"
-                }
-              }
-            },
-            "close": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "close"
-                }
-              }
-            },
-            "symlink": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "symlink"
-                }
-              }
-            },
-            "readlink": {
-              "type": "function",
-              "members": {
-                "displayName": {
-                  "type": "constant",
-                  "value": "readlink"
-                }
-              }
-            },
-            "createReadStream": {
-              "type": "function"
-            },
-            "createWriteStream": {
-              "type": "function"
-            },
-            "watchFile": {
-              "type": "function"
-            },
-            "unwatchFile": {
-              "type": "function"
-            },
-            "pathJoin": {
-              "type": "function"
-            },
-            "pathNormalize": {
-              "type": "function"
-            },
-            "pathRelative": {
-              "type": "function"
-            },
-            "pathResolve": {
-              "type": "function"
-            },
-            "pathDirname": {
-              "type": "function"
-            },
-            "pathBasename": {
-              "type": "function"
-            },
-            "pathExtname": {
-              "type": "function"
-            },
-            "pathSep": {
-              "type": "constant",
-              "value": "/"
-            },
-            "pathDelimiter": {
-              "type": "constant",
-              "value": ":"
-            },
-            "pathOsDelimiter": {
-              "type": "constant",
-              "value": ":"
-            },
-            "convertToStandardPath": {
-              "type": "function"
-            },
-            "convertToOSPath": {
-              "type": "function"
-            },
-            "convertToWindowsPath": {
-              "type": "function"
-            },
-            "convertToPosixPath": {
-              "type": "function"
-            },
-            "convertToStandardLineEndings": {
-              "type": "function"
-            },
-            "convertToOSLineEndings": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "sanjo:long-running-child-process": {
-    "LongRunningChildProcess": {
-      "type": "function",
-      "members": {
-        "prototype": {
-          "type": "object",
-          "members": {
-            "taskName": {
-              "type": "null",
-              "value": null
-            },
-            "child": {
-              "type": "null",
-              "value": null
-            },
-            "pid": {
-              "type": "null",
-              "value": null
-            },
-            "getTaskName": {
-              "type": "function"
-            },
-            "getChild": {
-              "type": "function"
-            },
-            "getPid": {
-              "type": "function"
-            },
-            "isDead": {
-              "type": "function"
-            },
-            "isRunning": {
-              "type": "function"
-            },
-            "readPid": {
-              "type": "function"
-            },
-            "spawn": {
-              "type": "function"
-            },
-            "kill": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "sanjo:meteor-version": {
-    "MeteorVersion": {
-      "type": "object",
-      "members": {
-        "getSemanticVersion": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "package-version-parser": {
-    "PackageVersion": {
-      "type": "function",
-      "members": {
-        "parse": {
-          "type": "function"
-        },
-        "versionMagnitude": {
-          "type": "function"
-        },
-        "lessThan": {
-          "type": "function"
-        },
-        "majorVersion": {
-          "type": "function"
-        },
-        "compare": {
-          "type": "function"
-        },
-        "getValidServerVersion": {
-          "type": "function"
-        },
-        "VersionConstraint": {
-          "type": "function"
-        },
-        "parseVersionConstraint": {
-          "type": "function"
-        },
-        "PackageConstraint": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "toString": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "parsePackageConstraint": {
-          "type": "function"
-        },
-        "validatePackageName": {
-          "type": "function"
-        },
-        "invalidFirstFormatConstraint": {
-          "type": "function"
-        },
-        "removeBuildID": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "sanjo:meteor-files-helpers": {
-    "MeteorFilesHelpers": {
-      "type": "object",
-      "members": {
-        "getAppPath": {
-          "type": "function"
-        },
-        "getMeteorToolPath": {
-          "type": "function"
-        },
-        "getMeteorInstallationPath": {
-          "type": "function"
-        },
-        "getNodeModulePath": {
-          "type": "function"
-        },
-        "getPackageVersions": {
-          "type": "function"
-        },
-        "getPackageVersion": {
-          "type": "function"
-        },
-        "isPackageInstalled": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "velocity:core": {
-    "Velocity": {
-      "type": "object",
-      "members": {
-        "startup": {
-          "type": "function"
-        },
-        "getAppPath": {
-          "type": "function"
-        },
-        "getTestsPath": {
-          "type": "function"
-        },
-        "getPackagesPath": {
-          "type": "function"
-        },
-        "getPackagePath": {
-          "type": "function"
-        },
-        "postProcessors": {
-          "type": "array"
-        },
-        "addPostProcessor": {
-          "type": "function"
-        },
-        "getReportGithubIssueMessage": {
-          "type": "function"
-        },
-        "registerTestingFramework": {
-          "type": "function"
-        },
-        "onTest": {
-          "type": "function"
-        },
-        "setOption": {
-          "type": "function"
-        },
-        "setOptions": {
-          "type": "function"
-        },
-        "getOption": {
-          "type": "function"
-        },
-        "mirrorMeteorReleaseName": {
-          "type": "constant",
-          "value": "velocity:METEOR"
-        },
-        "mirrorMeteorVersion": {
-          "type": "constant",
-          "value": "1.1.0.2_3"
-        },
-        "mirrorMeteorRelease": {
-          "type": "constant",
-          "value": "velocity:METEOR@1.1.0.2_3"
-        },
-        "mirrorMeteorToolReleaseName": {
-          "type": "constant",
-          "value": "velocity:meteor-tool"
-        },
-        "mirrorMeteorToolVersion": {
-          "type": "constant",
-          "value": "1.1.3_4"
-        },
-        "mirrorMeteorToolRelease": {
-          "type": "constant",
-          "value": "velocity:meteor-tool@1.1.3_4"
-        }
-      }
-    },
-    "VelocityTestFiles": {
-      "type": "object",
-      "members": {
-        "find": {
-          "type": "function"
-        },
-        "findOne": {
-          "type": "function"
-        },
-        "insert": {
-          "type": "function"
-        },
-        "update": {
-          "type": "function"
-        },
-        "remove": {
-          "type": "function"
-        },
-        "upsert": {
-          "type": "function"
-        },
-        "rawCollection": {
-          "type": "function"
-        },
-        "rawDatabase": {
-          "type": "function"
-        },
-        "allow": {
-          "type": "function"
-        },
-        "deny": {
-          "type": "function"
-        }
-      }
-    },
-    "VelocityFixtureFiles": {
-      "type": "object",
-      "members": {
-        "find": {
-          "type": "function"
-        },
-        "findOne": {
-          "type": "function"
-        },
-        "insert": {
-          "type": "function"
-        },
-        "update": {
-          "type": "function"
-        },
-        "remove": {
-          "type": "function"
-        },
-        "upsert": {
-          "type": "function"
-        },
-        "rawCollection": {
-          "type": "function"
-        },
-        "rawDatabase": {
-          "type": "function"
-        },
-        "allow": {
-          "type": "function"
-        },
-        "deny": {
-          "type": "function"
-        }
-      }
-    },
-    "VelocityTestReports": {
-      "type": "object",
-      "members": {
-        "find": {
-          "type": "function"
-        },
-        "findOne": {
-          "type": "function"
-        },
-        "insert": {
-          "type": "function"
-        },
-        "update": {
-          "type": "function"
-        },
-        "remove": {
-          "type": "function"
-        },
-        "upsert": {
-          "type": "function"
-        },
-        "rawCollection": {
-          "type": "function"
-        },
-        "rawDatabase": {
-          "type": "function"
-        },
-        "allow": {
-          "type": "function"
-        },
-        "deny": {
-          "type": "function"
-        }
-      }
-    },
-    "VelocityAggregateReports": {
-      "type": "object",
-      "members": {
-        "find": {
-          "type": "function"
-        },
-        "findOne": {
-          "type": "function"
-        },
-        "insert": {
-          "type": "function"
-        },
-        "update": {
-          "type": "function"
-        },
-        "remove": {
-          "type": "function"
-        },
-        "upsert": {
-          "type": "function"
-        },
-        "rawCollection": {
-          "type": "function"
-        },
-        "rawDatabase": {
-          "type": "function"
-        },
-        "allow": {
-          "type": "function"
-        },
-        "deny": {
-          "type": "function"
-        }
-      }
-    },
-    "VelocityLogs": {
-      "type": "object",
-      "members": {
-        "find": {
-          "type": "function"
-        },
-        "findOne": {
-          "type": "function"
-        },
-        "insert": {
-          "type": "function"
-        },
-        "update": {
-          "type": "function"
-        },
-        "remove": {
-          "type": "function"
-        },
-        "upsert": {
-          "type": "function"
-        },
-        "rawCollection": {
-          "type": "function"
-        },
-        "rawDatabase": {
-          "type": "function"
-        },
-        "allow": {
-          "type": "function"
-        },
-        "deny": {
-          "type": "function"
-        }
-      }
-    },
-    "VelocityMirrors": {
-      "type": "object",
-      "members": {
-        "find": {
-          "type": "function"
-        },
-        "findOne": {
-          "type": "function"
-        },
-        "insert": {
-          "type": "function"
-        },
-        "update": {
-          "type": "function"
-        },
-        "remove": {
-          "type": "function"
-        },
-        "upsert": {
-          "type": "function"
-        },
-        "rawCollection": {
-          "type": "function"
-        },
-        "rawDatabase": {
-          "type": "function"
-        },
-        "allow": {
-          "type": "function"
-        },
-        "deny": {
-          "type": "function"
-        }
-      }
-    },
-    "VelocityOptions": {
-      "type": "object",
-      "members": {
-        "find": {
-          "type": "function"
-        },
-        "findOne": {
-          "type": "function"
-        },
-        "insert": {
-          "type": "function"
-        },
-        "update": {
-          "type": "function"
-        },
-        "remove": {
-          "type": "function"
-        },
-        "upsert": {
-          "type": "function"
-        },
-        "rawCollection": {
-          "type": "function"
-        },
-        "rawDatabase": {
-          "type": "function"
-        },
-        "allow": {
-          "type": "function"
-        },
-        "deny": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "velocity:shim": {},
-  "velocity:meteor-stubs": {
-    "MeteorStubs": {
-      "type": "object",
-      "members": {
-        "install": {
-          "type": "function"
-        },
-        "uninstall": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "sanjo:karma": {
-    "Karma": {
-      "type": "object",
-      "members": {
-        "start": {
-          "type": "function"
-        },
-        "setConfig": {
-          "type": "function"
-        }
-      }
-    },
-    "KarmaInternals": {
-      "type": "object",
-      "members": {
-        "karmaChilds": {
-          "type": "object"
-        },
-        "getKarmaChild": {
-          "type": "function"
-        },
-        "setKarmaChild": {
-          "type": "function"
-        },
-        "startKarmaServer": {
-          "type": "function"
-        },
-        "writeKarmaConfig": {
-          "type": "function"
-        },
-        "generateKarmaConfig": {
-          "type": "function"
-        },
-        "readKarmaConfig": {
-          "type": "function"
-        },
-        "getConfigPath": {
-          "type": "function"
-        },
-        "getKarmaPath": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "sanjo:jasmine": {
-    "Jasmine": {
-      "type": "object",
-      "members": {
-        "onTest": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "velocity:html-reporter": {},
-  "sacha:spin": {},
-  "ian:bootstrap-3": {},
-  "ian:accounts-ui-bootstrap-3": {},
-  "raix:eventemitter": {
-    "EventEmitter": {
-      "type": "function",
-      "members": {
-        "listenerCount": {
-          "type": "function"
-        },
-        "prototype": {
-          "type": "object",
-          "members": {
-            "setMaxListeners": {
-              "type": "function"
-            },
-            "emit": {
-              "type": "function"
-            },
-            "addListener": {
-              "type": "function",
-              "refID": 8
-            },
-            "on": {
-              "ref": 8
-            },
-            "once": {
-              "type": "function"
-            },
-            "removeListener": {
-              "type": "function"
-            },
-            "removeAllListeners": {
-              "type": "function"
-            },
-            "listeners": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "meteorspark:util": {
-    "Util": {
-      "type": "object",
-      "members": {
-        "format": {
-          "type": "function"
-        },
-        "deprecate": {
-          "type": "function"
-        },
-        "print": {
-          "type": "function"
-        },
-        "puts": {
-          "type": "function"
-        },
-        "debug": {
-          "type": "function"
-        },
-        "error": {
-          "type": "function"
-        },
-        "inspect": {
-          "type": "function",
-          "members": {
-            "colors": {
-              "type": "object",
-              "members": {
-                "bold": {
-                  "type": "array"
-                },
-                "italic": {
-                  "type": "array"
-                },
-                "underline": {
-                  "type": "array"
-                },
-                "inverse": {
-                  "type": "array"
-                },
-                "white": {
-                  "type": "array"
-                },
-                "grey": {
-                  "type": "array"
-                },
-                "black": {
-                  "type": "array"
-                },
-                "blue": {
-                  "type": "array"
-                },
-                "cyan": {
-                  "type": "array"
-                },
-                "green": {
-                  "type": "array"
-                },
-                "magenta": {
-                  "type": "array"
-                },
-                "red": {
-                  "type": "array"
-                },
-                "yellow": {
-                  "type": "array"
-                }
-              }
-            },
-            "styles": {
-              "type": "object",
-              "members": {
-                "special": {
-                  "type": "constant",
-                  "value": "cyan"
-                },
-                "number": {
-                  "type": "constant",
-                  "value": "yellow"
-                },
-                "boolean": {
-                  "type": "constant",
-                  "value": "yellow"
-                },
-                "undefined": {
-                  "type": "constant",
-                  "value": "grey"
-                },
-                "null": {
-                  "type": "constant",
-                  "value": "bold"
-                },
-                "string": {
-                  "type": "constant",
-                  "value": "green"
-                },
-                "date": {
-                  "type": "constant",
-                  "value": "magenta"
-                },
-                "regexp": {
-                  "type": "constant",
-                  "value": "red"
-                }
-              }
-            }
-          }
-        },
-        "isArray": {
-          "type": "function"
-        },
-        "isRegExp": {
-          "type": "function"
-        },
-        "isDate": {
-          "type": "function"
-        },
-        "isError": {
-          "type": "function"
-        },
-        "p": {
-          "type": "function"
-        },
-        "log": {
-          "type": "function"
-        },
-        "exec": {
-          "type": "function"
-        },
-        "pump": {
-          "type": "function"
-        },
-        "inherits": {
-          "type": "function"
-        }
-      }
-    }
-  },
+  "localstorage": {},
   "url": {
     "URL": {
       "type": "object"
     }
   },
+  "oauth": {
+    "OAuth": {
+      "type": "object",
+      "members": {
+        "registerService": {
+          "type": "function"
+        },
+        "retrieveCredential": {
+          "type": "function"
+        },
+        "sealSecret": {
+          "type": "function"
+        },
+        "openSecret": {
+          "type": "function"
+        },
+        "openSecrets": {
+          "type": "function"
+        }
+      }
+    },
+    "OAuthTest": {
+      "type": "object",
+      "members": {
+        "unregisterService": {
+          "type": "function"
+        },
+        "middleware": {
+          "type": "function"
+        }
+      }
+    },
+    "Oauth": {
+      "type": "object",
+      "members": {
+        "registerService": {
+          "type": "function"
+        },
+        "retrieveCredential": {
+          "type": "function"
+        },
+        "sealSecret": {
+          "type": "function"
+        },
+        "openSecret": {
+          "type": "function"
+        },
+        "openSecrets": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "accounts-oauth": {},
+  "oauth2": {},
   "http": {
     "HTTP": {
       "type": "object",
@@ -10090,16 +8304,6 @@ var packageMetadata = {
           "type": "function"
         },
         "call": {
-          "type": "function"
-        },
-        "methodsMaxDataLength": {
-          "type": "constant",
-          "value": 5242880
-        },
-        "defaultAuth": {
-          "type": "function"
-        },
-        "methods": {
           "type": "function"
         }
       }
@@ -10713,2353 +8917,981 @@ var packageMetadata = {
       }
     }
   },
-  "cfs:http-methods": {
-    "HTTP": {
+  "facebook": {
+    "Facebook": {
       "type": "object",
       "members": {
-        "get": {
-          "type": "function"
-        },
-        "post": {
-          "type": "function"
-        },
-        "put": {
-          "type": "function"
-        },
-        "del": {
-          "type": "function"
-        },
-        "call": {
-          "type": "function"
-        },
-        "methodsMaxDataLength": {
-          "type": "constant",
-          "value": 5242880
-        },
-        "defaultAuth": {
-          "type": "function"
-        },
-        "methods": {
-          "type": "function"
-        }
-      }
-    },
-    "_methodHTTP": {
-      "type": "object",
-      "members": {
-        "methodHandlers": {
-          "type": "object"
-        },
-        "methodTree": {
-          "type": "object"
-        },
-        "nameFollowsConventions": {
-          "type": "function"
-        },
-        "getNameList": {
-          "type": "function"
-        },
-        "createObject": {
-          "type": "function"
-        },
-        "addToMethodTree": {
-          "type": "function"
-        },
-        "getMethod": {
-          "type": "function"
-        },
-        "getUserId": {
-          "type": "function"
-        },
-        "defaultOptionsHandler": {
+        "retrieveCredential": {
           "type": "function"
         }
       }
     }
   },
-  "tap:i18n": {
-    "TAPi18next": {
-      "type": "object",
+  "accounts-facebook": {},
+  "oauth1": {
+    "OAuth1Binding": {
+      "type": "function",
       "members": {
-        "init": {
-          "type": "function"
-        },
-        "setLng": {
-          "type": "function"
-        },
-        "preload": {
-          "type": "function"
-        },
-        "addResourceBundle": {
-          "type": "function"
-        },
-        "removeResourceBundle": {
-          "type": "function"
-        },
-        "loadNamespace": {
-          "type": "function"
-        },
-        "loadNamespaces": {
-          "type": "function"
-        },
-        "setDefaultNamespace": {
-          "type": "function"
-        },
-        "t": {
-          "type": "function",
-          "refID": 17
-        },
-        "translate": {
-          "ref": 17
-        },
-        "exists": {
-          "type": "function"
-        },
-        "detectLanguage": {
-          "type": "function",
-          "refID": 21
-        },
-        "pluralExtensions": {
+        "prototype": {
           "type": "object",
           "members": {
-            "rules": {
-              "type": "object",
-              "members": {
-                "ach": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Acholi"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "af": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Afrikaans"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ak": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Akan"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "am": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Amharic"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "an": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Aragonese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ar": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Arabic"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "arn": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Mapudungun"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ast": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Asturian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ay": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Aymará"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "az": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Azerbaijani"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "be": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Belarusian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "bg": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Bulgarian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "bn": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Bengali"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "bo": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Tibetan"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "br": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Breton"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "bs": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Bosnian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ca": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Catalan"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "cgg": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Chiga"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "cs": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Czech"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "csb": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Kashubian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "cy": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Welsh"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "da": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Danish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "de": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "German"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "dz": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Dzongkha"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "el": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Greek"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "en": {
-                  "type": "object",
-                  "refID": 125,
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "English"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "eo": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Esperanto"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "es": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Spanish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "es_ar": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Argentinean Spanish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "et": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Estonian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "eu": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Basque"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "fa": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Persian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "fi": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Finnish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "fil": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Filipino"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "fo": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Faroese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "fr": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "French"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "fur": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Friulian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "fy": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Frisian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ga": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Irish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "gd": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Scottish Gaelic"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "gl": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Galician"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "gu": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Gujarati"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "gun": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Gun"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ha": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Hausa"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "he": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Hebrew"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "hi": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Hindi"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "hr": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Croatian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "hu": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Hungarian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "hy": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Armenian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ia": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Interlingua"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "id": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Indonesian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "is": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Icelandic"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "it": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Italian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ja": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Japanese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "jbo": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Lojban"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "jv": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Javanese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ka": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Georgian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "kk": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Kazakh"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "km": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Khmer"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "kn": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Kannada"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ko": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Korean"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ku": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Kurdish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "kw": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Cornish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ky": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Kyrgyz"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "lb": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Letzeburgesch"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ln": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Lingala"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "lo": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Lao"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "lt": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Lithuanian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "lv": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Latvian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mai": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Maithili"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mfe": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Mauritian Creole"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mg": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Malagasy"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mi": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Maori"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mk": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Macedonian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ml": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Malayalam"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mn": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Mongolian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mnk": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Mandinka"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mr": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Marathi"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ms": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Malay"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "mt": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Maltese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "nah": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Nahuatl"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "nap": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Neapolitan"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "nb": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Norwegian Bokmal"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ne": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Nepali"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "nl": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Dutch"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "nn": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Norwegian Nynorsk"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "no": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Norwegian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "nso": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Northern Sotho"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "oc": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Occitan"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "or": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Oriya"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "pa": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Punjabi"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "pap": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Papiamento"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "pl": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Polish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "pms": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Piemontese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ps": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Pashto"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "pt": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Portuguese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "pt_br": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Brazilian Portuguese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "rm": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Romansh"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ro": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Romanian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ru": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Russian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "sah": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Yakut"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "sco": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Scots"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "se": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Northern Sami"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "si": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Sinhala"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "sk": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Slovak"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "sl": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Slovenian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "so": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Somali"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "son": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Songhay"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "sq": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Albanian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "sr": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Serbian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "su": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Sundanese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "sv": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Swedish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "sw": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Swahili"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ta": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Tamil"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "te": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Telugu"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "tg": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Tajik"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "th": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Thai"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ti": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Tigrinya"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "tk": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Turkmen"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "tr": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Turkish"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "tt": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Tatar"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ug": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Uyghur"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "uk": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Ukrainian"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "ur": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Urdu"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "uz": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Uzbek"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "vi": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Vietnamese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "wa": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Walloon"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "wo": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Wolof"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "yo": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Yoruba"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "zh": {
-                  "type": "object",
-                  "members": {
-                    "name": {
-                      "type": "constant",
-                      "value": "Chinese"
-                    },
-                    "numbers": {
-                      "type": "array"
-                    },
-                    "plurals": {
-                      "type": "function"
-                    }
-                  }
-                }
-              }
-            },
-            "addRule": {
+            "prepareRequestToken": {
               "type": "function"
             },
-            "setCurrentLng": {
+            "prepareAccessToken": {
+              "type": "function"
+            },
+            "call": {
               "type": "function"
             },
             "get": {
               "type": "function"
             },
-            "currentRule": {
-              "type": "object",
-              "members": {
-                "lng": {
-                  "type": "constant",
-                  "value": "en"
-                },
-                "rule": {
-                  "ref": 125
-                }
-              }
-            }
-          }
-        },
-        "sync": {
-          "type": "object",
-          "members": {
-            "load": {
+            "post": {
               "type": "function"
-            },
-            "postMissing": {
-              "type": "function"
-            }
-          }
-        },
-        "functions": {
-          "type": "object",
-          "members": {
-            "extend": {
-              "type": "function"
-            },
-            "each": {
-              "type": "function"
-            },
-            "ajax": {
-              "type": "function"
-            },
-            "cookie": {
-              "type": "object",
-              "members": {
-                "create": {
-                  "type": "function"
-                },
-                "read": {
-                  "type": "function"
-                },
-                "remove": {
-                  "type": "function"
-                }
-              }
-            },
-            "detectLanguage": {
-              "ref": 21
-            },
-            "escape": {
-              "type": "function"
-            },
-            "log": {
-              "type": "function"
-            },
-            "toLanguages": {
-              "type": "function"
-            },
-            "regexEscape": {
-              "type": "function"
-            },
-            "applyReplacement": {
-              "type": "function"
-            }
-          }
-        },
-        "lng": {
-          "type": "function"
-        },
-        "addPostProcessor": {
-          "type": "function"
-        },
-        "options": {
-          "type": "object",
-          "members": {
-            "lng": {
-              "type": "constant",
-              "value": "en"
-            },
-            "load": {
-              "type": "constant",
-              "value": "all"
-            },
-            "preload": {
-              "type": "array"
-            },
-            "fallbackLng": {
-              "type": "array"
-            },
-            "fallbackNS": {
-              "type": "array"
-            },
-            "detectLngQS": {
-              "type": "constant",
-              "value": "setLng"
-            },
-            "ns": {
-              "type": "object",
-              "members": {
-                "namespaces": {
-                  "type": "array"
-                },
-                "defaultNs": {
-                  "type": "constant",
-                  "value": "translation"
-                }
-              }
-            },
-            "nsseparator": {
-              "type": "constant",
-              "value": ":"
-            },
-            "keyseparator": {
-              "type": "constant",
-              "value": "."
-            },
-            "selectorAttr": {
-              "type": "constant",
-              "value": "data-i18n"
-            },
-            "resGetPath": {
-              "type": "constant",
-              "value": "locales/__lng__/__ns__.json"
-            },
-            "resPostPath": {
-              "type": "constant",
-              "value": "locales/add/__lng__/__ns__"
-            },
-            "resStore": {
-              "type": "object"
-            },
-            "localStorageExpirationTime": {
-              "type": "constant",
-              "value": 604800000
-            },
-            "sendMissingTo": {
-              "type": "constant",
-              "value": "fallback"
-            },
-            "sendType": {
-              "type": "constant",
-              "value": "POST"
-            },
-            "interpolationPrefix": {
-              "type": "constant",
-              "value": "__"
-            },
-            "interpolationSuffix": {
-              "type": "constant",
-              "value": "__"
-            },
-            "reusePrefix": {
-              "type": "constant",
-              "value": "$t("
-            },
-            "reuseSuffix": {
-              "type": "constant",
-              "value": ")"
-            },
-            "pluralSuffix": {
-              "type": "constant",
-              "value": "_plural"
-            },
-            "pluralNotFound": {
-              "type": "constant",
-              "value": "plural_not_found0.973769303644076"
-            },
-            "contextNotFound": {
-              "type": "constant",
-              "value": "context_not_found0.308456840692088"
-            },
-            "cookieExpirationTime": {
-              "type": "undefined"
-            },
-            "cookieName": {
-              "type": "constant",
-              "value": "TAPi18next"
-            },
-            "cookieDomain": {
-              "type": "undefined"
-            },
-            "objectTreeKeyHandler": {
-              "type": "undefined"
-            },
-            "postProcess": {
-              "type": "array"
-            },
-            "parseMissingKey": {
-              "type": "undefined"
-            },
-            "shortcutFunction": {
-              "type": "constant",
-              "value": "sprintf"
-            },
-            "interpolationPrefixEscaped": {
-              "type": "constant",
-              "value": "__"
-            },
-            "interpolationSuffixEscaped": {
-              "type": "constant",
-              "value": "__"
             }
           }
         }
       }
     },
-    "TAPi18n": {
+    "OAuth1Test": {
+      "type": "undefined"
+    }
+  },
+  "twitter": {
+    "Twitter": {
       "type": "object",
       "members": {
-        "domain": {
-          "type": "null",
-          "value": null
+        "whitelistedFields": {
+          "type": "array"
         },
-        "conf": {
-          "type": "null",
-          "value": null
-        },
-        "packages": {
-          "type": "object"
-        },
-        "languages_names": {
-          "type": "object"
-        },
-        "translations": {
-          "type": "object"
-        },
-        "server_translators": {
-          "type": "object"
-        },
-        "addResourceBundle": {
-          "type": "function"
-        },
-        "getLanguages": {
-          "type": "function"
-        },
-        "loadTranslations": {
-          "type": "function"
-        },
-        "setMaxListeners": {
-          "type": "function"
-        },
-        "emit": {
-          "type": "function"
-        },
-        "addListener": {
-          "type": "function",
-          "refID": 15
-        },
-        "on": {
-          "ref": 15
-        },
-        "once": {
-          "type": "function"
-        },
-        "removeListener": {
-          "type": "function"
-        },
-        "removeAllListeners": {
-          "type": "function"
-        },
-        "listeners": {
+        "retrieveCredential": {
           "type": "function"
         }
       }
     }
   },
-  "mrt:jquery-ui": {},
-  "mizzao:jquery-ui": {},
+  "accounts-twitter": {},
+  "coffeescript": {},
+  "practicalmeteor:loglevel": {
+    "loglevel": {
+      "type": "object",
+      "members": {
+        "createLogger": {
+          "type": "function"
+        },
+        "createPackageLogger": {
+          "type": "function"
+        },
+        "createAppLogger": {
+          "type": "function"
+        }
+      }
+    },
+    "ObjectLogger": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "enter": {
+              "type": "function"
+            },
+            "return": {
+              "type": "function"
+            },
+            "bindMethod": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "velocity:chokidar": {
+    "chokidar": {
+      "type": "object",
+      "members": {
+        "FSWatcher": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "add": {
+                  "type": "function"
+                },
+                "unwatch": {
+                  "type": "function"
+                },
+                "close": {
+                  "type": "function"
+                },
+                "setMaxListeners": {
+                  "type": "function"
+                },
+                "emit": {
+                  "type": "function"
+                },
+                "addListener": {
+                  "type": "function",
+                  "refID": 13
+                },
+                "on": {
+                  "ref": 13
+                },
+                "once": {
+                  "type": "function"
+                },
+                "removeListener": {
+                  "type": "function"
+                },
+                "removeAllListeners": {
+                  "type": "function"
+                },
+                "listeners": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "watch": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "velocity:meteor-internals": {
+    "VelocityMeteorInternals": {
+      "type": "object",
+      "members": {
+        "parseStack": {
+          "type": "object",
+          "members": {
+            "markBottom": {
+              "type": "function"
+            }
+          }
+        },
+        "buildmessage": {
+          "type": "object",
+          "members": {
+            "markBoundary": {
+              "type": "function"
+            }
+          }
+        },
+        "files": {
+          "type": "object",
+          "members": {
+            "cwd": {
+              "type": "function"
+            },
+            "findAppDir": {
+              "type": "function"
+            },
+            "findPackageDir": {
+              "type": "function"
+            },
+            "statOrNull": {
+              "type": "function"
+            },
+            "runJavaScript": {
+              "type": "function"
+            },
+            "FancySyntaxError": {
+              "type": "function"
+            },
+            "writeFile": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "writeFile"
+                }
+              }
+            },
+            "appendFile": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "appendFile"
+                }
+              }
+            },
+            "readFile": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "readFile"
+                }
+              }
+            },
+            "stat": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "stat"
+                }
+              }
+            },
+            "lstat": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "lstat"
+                }
+              }
+            },
+            "exists": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "exists"
+                }
+              }
+            },
+            "rename": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "rename"
+                }
+              }
+            },
+            "realpath": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "realpath"
+                }
+              }
+            },
+            "readdir": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "readdir"
+                }
+              }
+            },
+            "rmdir": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "rmdir"
+                }
+              }
+            },
+            "mkdir": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "mkdir"
+                }
+              }
+            },
+            "unlink": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "unlink"
+                }
+              }
+            },
+            "chmod": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "chmod"
+                }
+              }
+            },
+            "open": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "open"
+                }
+              }
+            },
+            "read": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "read"
+                }
+              }
+            },
+            "write": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "write"
+                }
+              }
+            },
+            "close": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "close"
+                }
+              }
+            },
+            "symlink": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "symlink"
+                }
+              }
+            },
+            "readlink": {
+              "type": "function",
+              "members": {
+                "displayName": {
+                  "type": "constant",
+                  "value": "readlink"
+                }
+              }
+            },
+            "createReadStream": {
+              "type": "function"
+            },
+            "createWriteStream": {
+              "type": "function"
+            },
+            "watchFile": {
+              "type": "function"
+            },
+            "unwatchFile": {
+              "type": "function"
+            },
+            "pathJoin": {
+              "type": "function"
+            },
+            "pathNormalize": {
+              "type": "function"
+            },
+            "pathRelative": {
+              "type": "function"
+            },
+            "pathResolve": {
+              "type": "function"
+            },
+            "pathDirname": {
+              "type": "function"
+            },
+            "pathBasename": {
+              "type": "function"
+            },
+            "pathExtname": {
+              "type": "function"
+            },
+            "pathSep": {
+              "type": "constant",
+              "value": "/"
+            },
+            "pathDelimiter": {
+              "type": "constant",
+              "value": ":"
+            },
+            "pathOsDelimiter": {
+              "type": "constant",
+              "value": ":"
+            },
+            "convertToStandardPath": {
+              "type": "function"
+            },
+            "convertToOSPath": {
+              "type": "function"
+            },
+            "convertToWindowsPath": {
+              "type": "function"
+            },
+            "convertToPosixPath": {
+              "type": "function"
+            },
+            "convertToStandardLineEndings": {
+              "type": "function"
+            },
+            "convertToOSLineEndings": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "velocity:source-map-support": {
+    "SourceMapSupport": {
+      "type": "object",
+      "members": {
+        "install": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "sanjo:long-running-child-process": {
+    "LongRunningChildProcess": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "taskName": {
+              "type": "null",
+              "value": null
+            },
+            "child": {
+              "type": "null",
+              "value": null
+            },
+            "pid": {
+              "type": "null",
+              "value": null
+            },
+            "getTaskName": {
+              "type": "function"
+            },
+            "getChild": {
+              "type": "function"
+            },
+            "getPid": {
+              "type": "function"
+            },
+            "isDead": {
+              "type": "function"
+            },
+            "isRunning": {
+              "type": "function"
+            },
+            "readPid": {
+              "type": "function"
+            },
+            "spawn": {
+              "type": "function"
+            },
+            "kill": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sanjo:meteor-version": {
+    "MeteorVersion": {
+      "type": "object",
+      "members": {
+        "getSemanticVersion": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "package-version-parser": {
+    "PackageVersion": {
+      "type": "function",
+      "members": {
+        "parse": {
+          "type": "function"
+        },
+        "versionMagnitude": {
+          "type": "function"
+        },
+        "lessThan": {
+          "type": "function"
+        },
+        "majorVersion": {
+          "type": "function"
+        },
+        "compare": {
+          "type": "function"
+        },
+        "getValidServerVersion": {
+          "type": "function"
+        },
+        "VersionConstraint": {
+          "type": "function"
+        },
+        "parseVersionConstraint": {
+          "type": "function"
+        },
+        "PackageConstraint": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "toString": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "parsePackageConstraint": {
+          "type": "function"
+        },
+        "validatePackageName": {
+          "type": "function"
+        },
+        "invalidFirstFormatConstraint": {
+          "type": "function"
+        },
+        "removeBuildID": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "sanjo:meteor-files-helpers": {
+    "MeteorFilesHelpers": {
+      "type": "object",
+      "members": {
+        "getAppPath": {
+          "type": "function"
+        },
+        "getMeteorToolPath": {
+          "type": "function"
+        },
+        "getMeteorInstallationPath": {
+          "type": "function"
+        },
+        "getNodeModulePath": {
+          "type": "function"
+        },
+        "getPackageVersions": {
+          "type": "function"
+        },
+        "getPackageVersion": {
+          "type": "function"
+        },
+        "isPackageInstalled": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "velocity:core": {
+    "Velocity": {
+      "type": "object",
+      "members": {
+        "reusableMirrors": {
+          "type": "array"
+        },
+        "startup": {
+          "type": "function"
+        },
+        "getAppPath": {
+          "type": "function"
+        },
+        "getTestsPath": {
+          "type": "function"
+        },
+        "getPackagesPath": {
+          "type": "function"
+        },
+        "getPackagePath": {
+          "type": "function"
+        },
+        "postProcessors": {
+          "type": "array"
+        },
+        "addPostProcessor": {
+          "type": "function"
+        },
+        "getReportGithubIssueMessage": {
+          "type": "function"
+        },
+        "registerTestingFramework": {
+          "type": "function"
+        },
+        "unregisterTestingFramework": {
+          "type": "function"
+        },
+        "onTest": {
+          "type": "function"
+        },
+        "setOption": {
+          "type": "function"
+        },
+        "setOptions": {
+          "type": "function"
+        },
+        "getOption": {
+          "type": "function"
+        },
+        "mirrorMeteorReleaseName": {
+          "type": "constant",
+          "value": "velocity:METEOR"
+        },
+        "mirrorMeteorVersion": {
+          "type": "constant",
+          "value": "1.1.0.3_2"
+        },
+        "mirrorMeteorRelease": {
+          "type": "constant",
+          "value": "velocity:METEOR@1.1.0.3_2"
+        },
+        "mirrorMeteorToolReleaseName": {
+          "type": "constant",
+          "value": "velocity:meteor-tool"
+        },
+        "mirrorMeteorToolVersion": {
+          "type": "constant",
+          "value": "1.1.4_2"
+        },
+        "mirrorMeteorToolRelease": {
+          "type": "constant",
+          "value": "velocity:meteor-tool@1.1.4_2"
+        }
+      }
+    },
+    "VelocityTestFiles": {
+      "type": "object",
+      "members": {
+        "find": {
+          "type": "function"
+        },
+        "findOne": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "update": {
+          "type": "function"
+        },
+        "remove": {
+          "type": "function"
+        },
+        "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
+        "allow": {
+          "type": "function"
+        },
+        "deny": {
+          "type": "function"
+        }
+      }
+    },
+    "VelocityFixtureFiles": {
+      "type": "object",
+      "members": {
+        "find": {
+          "type": "function"
+        },
+        "findOne": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "update": {
+          "type": "function"
+        },
+        "remove": {
+          "type": "function"
+        },
+        "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
+        "allow": {
+          "type": "function"
+        },
+        "deny": {
+          "type": "function"
+        }
+      }
+    },
+    "VelocityTestReports": {
+      "type": "object",
+      "members": {
+        "find": {
+          "type": "function"
+        },
+        "findOne": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "update": {
+          "type": "function"
+        },
+        "remove": {
+          "type": "function"
+        },
+        "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
+        "allow": {
+          "type": "function"
+        },
+        "deny": {
+          "type": "function"
+        }
+      }
+    },
+    "VelocityAggregateReports": {
+      "type": "object",
+      "members": {
+        "find": {
+          "type": "function"
+        },
+        "findOne": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "update": {
+          "type": "function"
+        },
+        "remove": {
+          "type": "function"
+        },
+        "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
+        "allow": {
+          "type": "function"
+        },
+        "deny": {
+          "type": "function"
+        }
+      }
+    },
+    "VelocityLogs": {
+      "type": "object",
+      "members": {
+        "find": {
+          "type": "function"
+        },
+        "findOne": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "update": {
+          "type": "function"
+        },
+        "remove": {
+          "type": "function"
+        },
+        "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
+        "allow": {
+          "type": "function"
+        },
+        "deny": {
+          "type": "function"
+        }
+      }
+    },
+    "VelocityMirrors": {
+      "type": "object",
+      "members": {
+        "find": {
+          "type": "function"
+        },
+        "findOne": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "update": {
+          "type": "function"
+        },
+        "remove": {
+          "type": "function"
+        },
+        "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
+        "allow": {
+          "type": "function"
+        },
+        "deny": {
+          "type": "function"
+        }
+      }
+    },
+    "VelocityOptions": {
+      "type": "object",
+      "members": {
+        "find": {
+          "type": "function"
+        },
+        "findOne": {
+          "type": "function"
+        },
+        "insert": {
+          "type": "function"
+        },
+        "update": {
+          "type": "function"
+        },
+        "remove": {
+          "type": "function"
+        },
+        "upsert": {
+          "type": "function"
+        },
+        "rawCollection": {
+          "type": "function"
+        },
+        "rawDatabase": {
+          "type": "function"
+        },
+        "allow": {
+          "type": "function"
+        },
+        "deny": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "velocity:shim": {},
+  "velocity:meteor-stubs": {
+    "MeteorStubs": {
+      "type": "object",
+      "members": {
+        "install": {
+          "type": "function"
+        },
+        "uninstall": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "sanjo:karma": {
+    "Karma": {
+      "type": "object",
+      "members": {
+        "start": {
+          "type": "function"
+        },
+        "setConfig": {
+          "type": "function"
+        }
+      }
+    },
+    "KarmaInternals": {
+      "type": "object",
+      "members": {
+        "karmaChilds": {
+          "type": "object"
+        },
+        "getKarmaChild": {
+          "type": "function"
+        },
+        "setKarmaChild": {
+          "type": "function"
+        },
+        "startKarmaServer": {
+          "type": "function"
+        },
+        "writeKarmaConfig": {
+          "type": "function"
+        },
+        "generateKarmaConfig": {
+          "type": "function"
+        },
+        "readKarmaConfig": {
+          "type": "function"
+        },
+        "getConfigPath": {
+          "type": "function"
+        },
+        "getKarmaPath": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "sanjo:jasmine": {
+    "Jasmine": {
+      "type": "object",
+      "members": {
+        "onTest": {
+          "type": "function"
+        },
+        "setKarmaConfig": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "grigio:babel": {},
+  "velocity:html-reporter": {},
+  "urigo:angular": {},
+  "angular:angular-material": {},
+  "angularui:angular-ui-router": {},
   "session": {},
   "livedata": {
     "DDP": {
@@ -13128,51 +9960,6 @@ var packageMetadata = {
     },
     "LivedataTest": {
       "type": "undefined"
-    }
-  },
-  "service-configuration": {
-    "ServiceConfiguration": {
-      "type": "object",
-      "members": {
-        "configurations": {
-          "type": "object",
-          "members": {
-            "find": {
-              "type": "function"
-            },
-            "findOne": {
-              "type": "function"
-            },
-            "insert": {
-              "type": "function"
-            },
-            "update": {
-              "type": "function"
-            },
-            "remove": {
-              "type": "function"
-            },
-            "upsert": {
-              "type": "function"
-            },
-            "rawCollection": {
-              "type": "function"
-            },
-            "rawDatabase": {
-              "type": "function"
-            },
-            "allow": {
-              "type": "function"
-            },
-            "deny": {
-              "type": "function"
-            }
-          }
-        },
-        "ConfigError": {
-          "type": "function"
-        }
-      }
     }
   }
 }
