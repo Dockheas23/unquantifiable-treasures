@@ -1,6 +1,17 @@
 <head>
     <title>Unquantifiable Treasures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 </head>
-<body>
+
+<body layout="column">
+<md-toolbar md-scroll-shrink layout="row" layout-align="start center" layout-padding>
+    <span flex></span>
+
+    <div class="navbar-right navbar-text">
+        <meteor-include src="loginButtons"></meteor-include>
+    </div>
+</md-toolbar>
+<div ui-view class="container-fluid"></div>
 </body>
