@@ -1,6 +1,119 @@
-<h1>Cunt!</h1>
+<h1>Welcome to Unquantifiable Treasures!</h1>
+<div layout="row">
+    <div flex="">
+        <h3>Envelopes</h3>
+        <md-list>
+            <md-list-item data-ng-repeat="envelope in dashboard.envelopes">
+                <p>{{envelope.name}}
+                <md-button type="button"
+                           data-ng-model="dashboard.envelopes"
+                           data-ng-click="dashboard.removeEnvelope(envelope._id)"
+                           >
+                           Delete
+                </md-button>
+                </p>
+            </md-list-item>
+        </md-list>
+        <form data-ng-submit="dashboard.addEnvelope($event)">
+            <md-input-container>
+                <label>Envelope</label>
+                <input name="envelopeName" type="text" required="true"/>
+            </md-input-container>
+            <md-button type="submit">Add Envelope</md-button>
+        </form>
+    </div>
 
+    <div flex="">
+        <h3>Income</h3>
+        <md-list>
+            <md-list-item data-ng-repeat="income in dashboard.incomes">
+                <p>{{income.date | date: "yyyy-MM-dd"}}: {{income.amount}}
+                <md-button type="button"
+                           data-ng-model="dashboard.incomes"
+                           data-ng-click="dashboard.removeIncome(income._id)"
+                           >
+                           Delete
+                </md-button>
+                </p>
+            </md-list-item>
+        </md-list>
+        <form data-ng-submit="dashboard.addIncome($event)">
+            <md-input-container>
+                <label>Date</label>
+                <input class="date"
+                       name="incomeDate"
+                       type="text"
+                       required="true"
+                       />
+            </md-input-container>
+            <md-input-container>
+                <label>Amount</label>
+                <input name="incomeAmount"
+                       type="text"
+                       required="true"
+                       />
+            </md-input-container>
+            <md-button type="submit">Add Income</md-button>
+        </form>
+    </div>
 
-<md-button ng-click="dashboard.openToast()">
-    Open a Toast!
-</md-button>
+    <div flex="">
+        <h3>Demands</h3>
+        <md-list>
+            <md-list-item data-ng-repeat="demand in dashboard.demands">
+                <p>{{demand.date | date: "yyyy-MM-dd"}}:
+                {{demand.envelope.name}}: {{demand.amount}}
+                <md-button type="button"
+                           data-ng-model="dashboard.demands"
+                           data-ng-click="dashboard.removeDemand(demand._id)"
+                           >
+                           Delete
+                </md-button>
+                </p>
+            </md-list-item>
+        </md-list>
+        <form ng-submit="dashboard.addDemand($event, env)">
+            <md-input-container>
+                <label>Envelope</label>
+                <md-select name="demandEnvelope"
+                           required="true"
+                           data-ng-model="env"
+                           >
+                           <md-option data-ng-value="envelope"
+                                      data-ng-repeat="envelope in dashboard.envelopes"
+                                      >
+                                      {{envelope.name}}
+                           </md-option>
+                </md-select>
+            </md-input-container>
+            <md-input-container>
+                <label>Date</label>
+                <input name="demandDate" type="text" required="true"/>
+            </md-input-container>
+            <md-input-container>
+                <label>Amount</label>
+                <input name="demandAmount" type="text" required="true"/>
+            </md-input-container>
+            <md-button type="submit">Add Demand</md-button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <h3>Run Budget</h3>
+    <md-input-container>
+        <label>Opening Balance</label>
+        <input type="text" data-ng-model="dashboard.openingBalance"/>
+    </md-input-container>
+    <md-button data-ng-click="dashboard.runBudget()">
+        Run Budget
+    </md-button>
+    <md-button data-ng-click="dashboard.clearBudget()">
+        Clear Budget
+    </md-button>
+</div>
+
+<div>
+    <h2>Result</h2>
+    <pre data-ng-model="dashboard.currentBudget">{{dashboard.currentBudget}}</pre>
+</div>

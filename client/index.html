@@ -6,12 +6,16 @@
 </head>
 
 <body layout="column">
-<md-toolbar md-scroll-shrink layout="row" layout-align="start center" layout-padding>
-    <span flex></span>
+    <md-toolbar layout="row"
+                layout-align="start center"
+                layout-padding=""
+                md-scroll-shrink=""
+                >
+        <span flex=""></span>
 
-    <div class="navbar-right navbar-text">
-        <meteor-include src="loginButtons"></meteor-include>
-    </div>
-</md-toolbar>
-<div ui-view class="container-fluid"></div>
+        <div>
+            <meteor-include src="loginButtons"></meteor-include>
+        </div>
+    </md-toolbar>
+    <div class="container-fluid" data-ui-view=""></div>
 </body>
