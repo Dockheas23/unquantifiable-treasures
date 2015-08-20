@@ -1,4 +1,6 @@
-angular.module("ut").run(["$rootScope", "$location", function ($rootScope, $location) {
+var utApp = angular.module("ut");
+
+utApp.run(["$rootScope", "$location", function ($rootScope, $location) {
   $rootScope.$on("$stateChangeError", function (event, next, previous, error) {
     // We can catch the error thrown when the $requireUser promise is rejected
     // and redirect the user back to the main page
@@ -15,7 +17,7 @@ angular.module("ut").run(["$rootScope", "$location", function ($rootScope, $loca
     })
 }]);
 
-angular.module("ut").config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
+utApp.config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
   function ($urlRouterProvider, $stateProvider, $locationProvider) {
 
     $locationProvider.html5Mode(true);
