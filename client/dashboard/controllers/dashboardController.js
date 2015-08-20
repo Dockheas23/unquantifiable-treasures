@@ -3,39 +3,40 @@ angular.module('ut')
 .controller('DashboardController', DashboardController);
 
 
-DashboardController.$inject = ['dashboardFactory', '$mdToast'];
-DashboardFactory.$inject = ['$http', '$meteor'];
+DashboardController.$inject = ['$mdToast', 'dashboardFactory'];
+DashboardFactory.$inject = ['$meteor'];
 
-function DashboardFactory($http, $meteor) {
+function DashboardFactory($meteor) {
     var factory = {};
+    var currentUserId = Meteor.userId();
     factory.getDateString = function (date) {
         return date.toISOString().slice(0, 10);
     };
     factory.getDemands = function () {
         return $meteor.collection(function () {
-            return Demands.find({owner: Meteor.userId()});
+            return Demands.find({owner: currentUserId});
         });
     };
     factory.getEnvelopes = function () {
         return $meteor.collection(function () {
-            return Envelopes.find({owner: Meteor.userId()});
+            return Envelopes.find({owner: currentUserId});
         });
     };
     factory.getIncomes = function () {
         return $meteor.collection(function () {
-            return Incomes.find({owner: Meteor.userId()});
+            return Incomes.find({owner: currentUserId});
         });
     };
     factory.getBudgetRequest = function (balance) {
         var budgetRequest = {balance: balance, income: [], demands: []};
-        Demands.find({owner: Meteor.userId()}).forEach(function (demand) {
+        Demands.find({owner: currentUserId}).forEach(function (demand) {
             budgetRequest.demands.push({
                 period: {start: factory.getDateString(demand.date)},
                 envelope: demand.envelope.name,
                 amount: Number(demand.amount)
             });
         });
-        Incomes.find({owner: Meteor.userId()}).forEach(function (income) {
+        Incomes.find({owner: currentUserId}).forEach(function (income) {
             budgetRequest.income.push({
                 date: factory.getDateString(income.date),
                 amount: Number(income.amount)
@@ -43,99 +44,99 @@ function DashboardFactory($http, $meteor) {
         });
         return budgetRequest;
     };
-    factory.getLatestBudget = function (vm) {
-        Meteor.call('getLatestBudget', {
+    factory.getLatestBudget = function () {
+        return $meteor.call('getLatestBudget', {
             userId: Meteor.userId()
-        },
-        function (err, result) {
-            vm.currentBudget = JSON.stringify(result, null, "	");
-            vm.openToast();
         });
     };
-    factory.runBudget = function (vm) {
-        var balance = Number(vm.openingBalance) || 0;
-        Meteor.call('createBudget', {
+    factory.runBudget = function (openingBalance) {
+        var balance = Number(openingBalance) || 0;
+        return $meteor.call('createBudget', {
             budgetRequest: factory.getBudgetRequest(balance),
             userId: Meteor.userId()
-        },
-        function (err, result) {
-            vm.currentBudget = JSON.stringify(result, null, "	");
-            vm.openToast();
         });
     };
-    factory.clearBudget = function (vm) {
-        Meteor.call('clearBudget', function () {
-            vm.currentBudget = null;
-            vm.openToast();
-        });
+    factory.clearBudget = function () {
+        return $meteor.call('clearBudget');
     }
     return factory;
 }
 
-function DashboardController(dashboardFactory, $mdToast) {
+function DashboardController($mdToast, dashboardFactory) {
   'use strict';
   var vm = this;
+  vm.currentUserId = Meteor.userId();
   vm.demands = dashboardFactory.getDemands();
   vm.envelopes = dashboardFactory.getEnvelopes();
   vm.incomes = dashboardFactory.getIncomes();
-  dashboardFactory.getLatestBudget(vm);
+  dashboardFactory.getLatestBudget()
+      .then(function (result) {
+          vm.currentBudget = JSON.stringify(result, null, "	");
+      });
 
-  vm.addDemand = function (event, env) {
-    var demandEnvelope = Envelopes.findOne({_id: env._id});
-    var demandDate = new Date(event.target.demandDate.value);
-    var demandAmount = Number(event.target.demandAmount.value);
-    vm.demands.push({
+  vm.addDemand = function () {
+    var demandEnvelope = Envelopes.findOne({_id: vm.dFormEnvelope._id});
+    var demandDate = new Date(vm.dFormDate);
+    var demandAmount = Number(vm.dFormAmount);
+    vm.demands.save({
         envelope: demandEnvelope,
         date: demandDate,
         amount: demandAmount,
-        owner: Meteor.userId()
+        owner: vm.currentUserId
     });
-    event.target.demandAmount.value = '';
+    vm.dFormEnvelope = null;
+    vm.dFormDate = null;
+    vm.dFormAmount = null;
     return false;
   };
 
-  vm.addEnvelope = function (event) {
-    var envelopeName = event.target.envelopeName.value;
-    vm.envelopes.push({
-        name: envelopeName,
-        owner: Meteor.userId()
+  vm.addEnvelope = function () {
+    vm.envelopes.save({
+        name: vm.eFormName,
+        owner: vm.currentUserId
     });
-    event.target.envelopeName.value = '';
+    vm.eFormName = null;
     return false;
   };
 
-  vm.addIncome = function (event) {
-    var incomeDate = new Date(event.target.incomeDate.value);
-    var incomeAmount = Number(event.target.incomeAmount.value);
-    vm.incomes.push({
+  vm.addIncome = function () {
+    var incomeDate = new Date(vm.iFormDate);
+    var incomeAmount = Number(vm.iFormAmount);
+    vm.incomes.save({
         date: incomeDate,
         amount: incomeAmount,
-        owner: Meteor.userId()
+        owner: vm.currentUserId
     });
-    event.target.incomeDate.value = '';
-    event.target.incomeAmount.value = '';
+    vm.iFormDate = null;
+    vm.iFormAmount = null;
     return false;
   };
 
-  vm.removeDemand = function (demandId) {
-    Demands.remove({_id: demandId});
+  vm.removeDemand = function (demand) {
+    vm.demands.remove(demand);
   };
 
-  vm.removeEnvelope = function (envelopeId) {
-    Envelopes.remove({_id: envelopeId});
+  vm.removeEnvelope = function (envelope) {
+    vm.envelopes.remove(envelope);
   };
 
-  vm.removeIncome = function (incomeId) {
-    Incomes.remove({_id: incomeId});
+  vm.removeIncome = function (income) {
+    vm.incomes.remove(income);
   };
 
   vm.runBudget = function (event) {
-    dashboardFactory.runBudget(vm);
+    dashboardFactory.runBudget(vm.openingBalance)
+        .then(function (result) {
+            vm.currentBudget = JSON.stringify(result, null, "	");
+        });
     return false;
   };
 
   vm.clearBudget = function (event) {
-    dashboardFactory.clearBudget(vm);
+    dashboardFactory.clearBudget()
+        .then(function (result) {
+            vm.currentBudget = null;
+        });
     return false;
   };
 
