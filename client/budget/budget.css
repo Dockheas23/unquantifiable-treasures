@@ -1,0 +1,20 @@
+.budgetCalendar #horizontal-container {
+    height: 100px;
+    width: 830px; }
+
+.budgetCalendar #vertical-container {
+    height: 1000px;
+    width: 830px;
+}
+.budgetCalendar .repeated-item {
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 84px;
+    padding-top: 35px;
+    text-align: center;
+    width: 50px; }
+.budgetCalendar md-content {
+    margin: 16px; }
+.budgetCalendar md-virtual-repeat-container {
+    border: solid 1px grey; }

@@ -3,7 +3,7 @@ angular.module('ut')
 .controller('DashboardController', DashboardController);
 
 
-DashboardController.$inject = ['$mdToast', 'dashboardFactory'];
+DashboardController.$inject = ['$mdToast', 'dashboardFactory', '$state'];
 DashboardFactory.$inject = ['$meteor'];
 
 function DashboardFactory($meteor) {
@@ -62,7 +62,7 @@ function DashboardFactory($meteor) {
     return factory;
 }
 
-function DashboardController($mdToast, dashboardFactory) {
+function DashboardController($mdToast, dashboardFactory, $state) {
   'use strict';
   var vm = this;
   vm.currentUserId = Meteor.userId();
@@ -128,6 +128,7 @@ function DashboardController($mdToast, dashboardFactory) {
     dashboardFactory.runBudget(vm.openingBalance)
         .then(function (result) {
             vm.currentBudget = JSON.stringify(result, null, "	");
+            $state.go('budget');
         });
     return false;
   };

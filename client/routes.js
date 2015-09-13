@@ -36,6 +36,12 @@ utApp.config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
       .state('about', {
         url: '/about',
         templateUrl: 'client/about/views/about.ng.html'
+      })
+      .state('budget', {
+        url: '/budget',
+        templateUrl: 'client/budget/views/budget-calendar.ng.html',
+        controller: 'BudgetController',
+        controllerAs: 'bc'
       });
 
     $urlRouterProvider.otherwise("/");

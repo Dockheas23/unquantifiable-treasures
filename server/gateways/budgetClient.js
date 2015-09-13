@@ -19,9 +19,10 @@ BudgetClient = function (args) {
 BudgetClient.prototype.createBudget = function (args) {
 
   /**
-   Example request:
-
-   budgetRequest: {
+   *
+   * Example request:
+   *
+   * budgetRequest: {
                 income: [{
                     date: "2015-03-01",
                     amount: 2222

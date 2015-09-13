@@ -1,0 +1,18 @@
+<md-content layout="column" class="budgetCalendar">
+
+    <md-virtual-repeat-container id="vertical-container" md-orient-vertical>
+        <div md-virtual-repeat="month in bc.calendar.months"
+             class="grepeated-item" flex>
+            {{month.name}}
+            <md-virtual-repeat-container id="horizontal-container" md-orient-horizontal>
+                <div md-virtual-repeat="day in month.days"
+                     class="repeated-item" flex>
+                    []
+                </div>
+            </md-virtual-repeat-container>
+        </div>
+    </md-virtual-repeat-container>
+
+</md-content>
+
+
